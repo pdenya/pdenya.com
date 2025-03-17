@@ -9,12 +9,12 @@ params:
   description: Solving problems
   defaultTheme: auto
   disableThemeToggle: true
-  showShareButtons: true
+  showShareButtons: false
   showReadingTime: true
   showToc: false
   showBreadCrumbs: true
   showCodeCopyButtons: true
-  comments: true
+  comments: false
   hideFooter: true
   assets:
     favicon: /favicon.ico

@@ -5,9 +5,6 @@
     <loc>http://localhost:1313/pages/</loc>
     <lastmod>2022-10-17T18:05:30+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2022-10-17T18:05:30+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/portfolio/</loc>
     <lastmod>2022-10-17T18:05:30+00:00</lastmod>
   </url><url>
@@ -22,6 +19,9 @@
   </url><url>
     <loc>http://localhost:1313/category/uncategorized/</loc>
     <lastmod>2017-03-10T05:30:08+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2016-09-15T15:10:59+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2016-09-15T15:10:59+00:00</lastmod>
@@ -152,6 +152,12 @@
     <loc>http://localhost:1313/2013/07/30/custom-relative-time-with-date-components/</loc>
     <lastmod>2013-07-30T18:43:38+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2013-07-28T01:01:43+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2013-07-26T04:16:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/2013/07/23/disabling-the-print-hotkey-in-os-x/</loc>
     <lastmod>2013-07-23T17:20:24+00:00</lastmod>
   </url><url>
@@ -164,17 +170,32 @@
     <loc>http://localhost:1313/category/illustrator/</loc>
     <lastmod>2013-07-18T22:10:39+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/xcode-folder-patterns/</loc>
+    <lastmod>2013-07-17T01:45:42+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/2013/07/16/assigning-variable-defaults-in-php/</loc>
     <lastmod>2013-07-16T18:21:43+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/category/php/</loc>
     <lastmod>2013-07-16T18:21:43+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2013-07-16T17:37:43+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2013-07-14T02:21:12+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2013-07-12T07:51:18+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/2013/07/11/ie8-select-element-change-event-not-firing-with-the-keyboard/</loc>
     <lastmod>2013-07-11T14:00:45+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/2013/07/10/getting-a-particular-superview-in-objective-c/</loc>
     <lastmod>2013-07-11T05:00:05+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2013-07-10T05:02:54+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2013-07-09T19:24:29+00:00</lastmod>
