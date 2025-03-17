@@ -1,0 +1,189 @@
+/* Custom CSS for pdenya.com */
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 10px 5px 0;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: none !important;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-bottom: none !important;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(46, 80, 144, 0.1);
+  color: var(--primary-color) !important;
+}
+
+.home-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+:root {
+  --primary-color: #2e5090;
+  --secondary-color: #4a6db5;
+  --background: #f7f9fc;
+  --text-color: #333;
+  --light-text-color: #666;
+  --border-color: #ddd;
+}
+
+.dark {
+  --primary-color: #6d8ac8;
+  --secondary-color: #4a6db5;
+  --background: #1a1a1a;
+  --text-color: #eee;
+  --light-text-color: #bbb;
+  --border-color: #444;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.post-content {
+  font-size: 1.1rem;
+}
+
+.post-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.post-content a:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.post-content strong {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  background: var(--background);
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.logo-img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-image: url('/me_round.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#menu {
+  margin-left: auto;
+}
+
+#menu a {
+  color: var(--text-color);
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+#menu a:hover, #menu a.active {
+  color: var(--primary-color);
+}
+
+/* Homepage styles */
+.home-profile {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 0;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Posts */
+.post-entry {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background: var(--background);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-entry:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.entry-header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+/* Code blocks */
+pre {
+  border-radius: 6px;
+  padding: 15px;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+}
