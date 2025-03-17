@@ -3,8 +3,11 @@
     <header class="entry-header">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
-    <div class="entry-content">
-        {{ .Content | markdownify }}
+    <div class="home-profile">
+        <img src="/me_round.png" alt="Paul Denya" class="profile-image">
+        <div class="entry-content">
+            {{ .Content | markdownify }}
+        </div>
     </div>
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
