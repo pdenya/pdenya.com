@@ -6,7 +6,6 @@ date: "2013-07-26T04:16:00+00:00"
 draft: "true"
 guid: https://pdenya.com/?p=141
 title: A light commuter laptop backpack
-url: /
 
 ---
 ## My pre-purchase requirements

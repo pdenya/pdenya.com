@@ -23,9 +23,9 @@
     </item>
     <item>
       <title>Bitbucket</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/blog/bitbucket/</link>
       <pubDate>Sun, 14 Jul 2013 02:21:12 +0000</pubDate>
-      <guid>http://localhost:1313/</guid>
+      <guid>http://localhost:1313/blog/bitbucket/</guid>
       <description>&lt;p&gt;If you have side projects not backed up with git offsite, you should go sign up for a bit bucket account.&lt;/p&gt;</description>
     </item>
   </channel>

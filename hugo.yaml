@@ -16,6 +16,7 @@ params:
   showCodeCopyButtons: true
   comments: false
   hideFooter: true
+  showPostNavLinks: false
   assets:
     favicon: /favicon.ico
     disableHLJS: true

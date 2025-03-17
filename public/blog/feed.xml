@@ -599,9 +599,9 @@
     </item>
     <item>
       <title>A light commuter laptop backpack</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/blog/a-light-commuter-laptop-backpack/</link>
       <pubDate>Fri, 26 Jul 2013 04:16:00 +0000</pubDate>
-      <guid>http://localhost:1313/</guid>
+      <guid>http://localhost:1313/blog/a-light-commuter-laptop-backpack/</guid>
       <description>&lt;h2 id=&#34;my-pre-purchase-requirements&#34;&gt;My pre-purchase requirements&lt;/h2&gt;
 &lt;h2 id=&#34;the-product&#34;&gt;The Product&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.caselogic.com/en-us/us/products/laptop-cases/laptop-backpacks/16-laptop-backpack-&#34;&gt;http://www.caselogic.com/en-us/us/products/laptop-cases/laptop-backpacks/16-laptop-backpack-&lt;/a&gt; &lt;em&gt;-ulb&lt;/em&gt;- &lt;em&gt;116&lt;/em&gt;-_gray#&lt;/p&gt;
@@ -651,13 +651,6 @@
 &lt;p&gt;&lt;img alt=&#34;illustrator_cannot_be_found&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/07/illustrator_cannot_be_found.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>XCode folder patterns</title>
-      <link>http://localhost:1313/posts/xcode-folder-patterns/</link>
-      <pubDate>Wed, 17 Jul 2013 01:45:42 +0000</pubDate>
-      <guid>http://localhost:1313/posts/xcode-folder-patterns/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s a small gallery of popular and a few assorted github objective c project sidebars fully expanded.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Assigning variable defaults in PHP</title>
       <link>http://localhost:1313/2013/07/16/assigning-variable-defaults-in-php/</link>
       <pubDate>Tue, 16 Jul 2013 18:21:43 +0000</pubDate>
@@ -679,23 +672,23 @@
     </item>
     <item>
       <title>Tracking down exceptions in XCode</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/blog/tracking-down-exceptions-in-xcode/</link>
       <pubDate>Tue, 16 Jul 2013 17:37:43 +0000</pubDate>
-      <guid>http://localhost:1313/</guid>
+      <guid>http://localhost:1313/blog/tracking-down-exceptions-in-xcode/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1093999/stack-trace-or-more-info-on-unhandled-exception-in-xcode-iphone&#34;&gt;http://stackoverflow.com/questions/1093999/stack-trace-or-more-info-on-unhandled-exception-in-xcode-iphone&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bitbucket</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/blog/bitbucket/</link>
       <pubDate>Sun, 14 Jul 2013 02:21:12 +0000</pubDate>
-      <guid>http://localhost:1313/</guid>
+      <guid>http://localhost:1313/blog/bitbucket/</guid>
       <description>&lt;p&gt;If you have side projects not backed up with git offsite, you should go sign up for a bit bucket account.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sane default categories</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/blog/sane-default-categories/</link>
       <pubDate>Fri, 12 Jul 2013 07:51:18 +0000</pubDate>
-      <guid>http://localhost:1313/</guid>
+      <guid>http://localhost:1313/blog/sane-default-categories/</guid>
       <description></description>
     </item>
     <item>

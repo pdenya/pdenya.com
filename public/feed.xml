@@ -29,15 +29,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
-      <title>Home</title>
-      <link>http://localhost:1313/</link>
-      <pubDate>Thu, 15 Sep 2016 15:10:59 +0000</pubDate>
-       <guid isPermaLink="false">https://pdenya.com/?page_id=449</guid> 
-      <description>&lt;p&gt;Over the past &lt;strong&gt;15+ years&lt;/strong&gt; I’ve delivered software projects for small startups, established businesses, and major brands.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Nowadays I architect AI systems and build products for early-stage startups&lt;/strong&gt; including PressFriendly, the one I co-founded.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;I prefer to work with Ruby and React&lt;/strong&gt; but i&amp;rsquo;ve also worked professionally in Javascript/Typescript, PHP, Python, and Swift. I’ve used many frameworks including Rails, Laravel, NLTK, Scikit-learn, Django, Vue, Ember, Angular, CakePHP, Symphony, jQuery, and more.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Disable Full Screen Shortcut on Mac OSX 10.10 Yosemite</title>
       <link>http://localhost:1313/2015/05/23/disable-full-screen-shortcut-mac-osx-10-10-yosemite/</link>
       <pubDate>Sun, 24 May 2015 05:43:04 +0000</pubDate>
@@ -677,14 +668,14 @@
     </item>
     <item>
       <title>Good faux meat</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/pages/good-faux-meat/</link>
       <pubDate>Sun, 28 Jul 2013 01:01:43 +0000</pubDate>
        <guid isPermaLink="false">https://pdenya.com/?page_id=149</guid> 
       <description>&lt;p&gt;Chipotles new veggie&lt;/p&gt;</description>
     </item>
     <item>
       <title>A light commuter laptop backpack</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/blog/a-light-commuter-laptop-backpack/</link>
       <pubDate>Fri, 26 Jul 2013 04:16:00 +0000</pubDate>
        <guid isPermaLink="false">https://pdenya.com/?p=141</guid> 
       <description>&lt;h2 id=&#34;my-pre-purchase-requirements&#34;&gt;My pre-purchase requirements&lt;/h2&gt;
@@ -736,13 +727,6 @@
 &lt;p&gt;&lt;img alt=&#34;illustrator_cannot_be_found&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/07/illustrator_cannot_be_found.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>XCode folder patterns</title>
-      <link>http://localhost:1313/posts/xcode-folder-patterns/</link>
-      <pubDate>Wed, 17 Jul 2013 01:45:42 +0000</pubDate>
-       <guid isPermaLink="false">https://pdenya.com/?p=82</guid> 
-      <description>&lt;p&gt;Here&amp;rsquo;s a small gallery of popular and a few assorted github objective c project sidebars fully expanded.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Assigning variable defaults in PHP</title>
       <link>http://localhost:1313/2013/07/16/assigning-variable-defaults-in-php/</link>
       <pubDate>Tue, 16 Jul 2013 18:21:43 +0000</pubDate>
@@ -764,21 +748,21 @@
     </item>
     <item>
       <title>Tracking down exceptions in XCode</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/blog/tracking-down-exceptions-in-xcode/</link>
       <pubDate>Tue, 16 Jul 2013 17:37:43 +0000</pubDate>
        <guid isPermaLink="false">https://pdenya.com/?p=72</guid> 
       <description>&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1093999/stack-trace-or-more-info-on-unhandled-exception-in-xcode-iphone&#34;&gt;http://stackoverflow.com/questions/1093999/stack-trace-or-more-info-on-unhandled-exception-in-xcode-iphone&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bitbucket</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/blog/bitbucket/</link>
       <pubDate>Sun, 14 Jul 2013 02:21:12 +0000</pubDate>
        <guid isPermaLink="false">https://pdenya.com/?p=71</guid> 
       <description>&lt;p&gt;If you have side projects not backed up with git offsite, you should go sign up for a bit bucket account.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sane default categories</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/blog/sane-default-categories/</link>
       <pubDate>Fri, 12 Jul 2013 07:51:18 +0000</pubDate>
        <guid isPermaLink="false">https://pdenya.com/?p=57</guid> 
       <description></description>
@@ -829,7 +813,7 @@
     </item>
     <item>
       <title>Work</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/work/</link>
       <pubDate>Wed, 10 Jul 2013 05:02:54 +0000</pubDate>
        <guid isPermaLink="false">https://pdenya.com/?page_id=20</guid> 
       <description>&lt;p&gt;[vc_row][vc_column][vc_custom_heading text=&amp;ldquo;Things I&amp;rsquo;ve made&amp;rdquo; use_theme_fonts=&amp;ldquo;yes&amp;rdquo;][vc_column_text]I’ve built a lot of cool things. Here’s a few of them.[/vc_column_text][/vc_column][/vc_row][vc_row][vc_column][vc_custom_heading text=&amp;ldquo;Pitchfriendly&amp;rdquo; font_container=&amp;ldquo;tag:h3|text_align:left&amp;rdquo; use_theme_fonts=&amp;ldquo;yes&amp;rdquo;][/vc_column][vc_column width=&amp;ldquo;2/3&amp;rdquo;][vc_column_text]PitchFriendly is an outreach tool for PR reps with a focus on organization and time savings. It includes email scheduling, read receipts, reply handling, press list handling, team sharing, a metrics dashboard and other efficiency features.&lt;/p&gt;

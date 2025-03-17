@@ -20,15 +20,6 @@
 &lt;p&gt;Scraped articles from thousands of publications into Elasticsearch using Python. Detected reporter name and categories using scraping tools and NLTK. Built classifiers and used several other methods to quantify how much reporter will like a pitch.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Home</title>
-      <link>http://localhost:1313/</link>
-      <pubDate>Thu, 15 Sep 2016 15:10:59 +0000</pubDate>
-      <guid>http://localhost:1313/</guid>
-      <description>&lt;p&gt;Over the past &lt;strong&gt;15+ years&lt;/strong&gt; I’ve delivered software projects for small startups, established businesses, and major brands.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Nowadays I architect AI systems and build products for early-stage startups&lt;/strong&gt; including PressFriendly, the one I co-founded.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;I prefer to work with Ruby and React&lt;/strong&gt; but i&amp;rsquo;ve also worked professionally in Javascript/Typescript, PHP, Python, and Swift. I’ve used many frameworks including Rails, Laravel, NLTK, Scikit-learn, Django, Vue, Ember, Angular, CakePHP, Symphony, jQuery, and more.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Privacy Policy</title>
       <link>http://localhost:1313/privacy-policy/</link>
       <pubDate>Tue, 24 Sep 2013 18:39:43 +0000</pubDate>
@@ -88,16 +79,16 @@
     </item>
     <item>
       <title>Good faux meat</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/pages/good-faux-meat/</link>
       <pubDate>Sun, 28 Jul 2013 01:01:43 +0000</pubDate>
-      <guid>http://localhost:1313/</guid>
+      <guid>http://localhost:1313/pages/good-faux-meat/</guid>
       <description>&lt;p&gt;Chipotles new veggie&lt;/p&gt;</description>
     </item>
     <item>
       <title>Work</title>
-      <link>http://localhost:1313/</link>
+      <link>http://localhost:1313/work/</link>
       <pubDate>Wed, 10 Jul 2013 05:02:54 +0000</pubDate>
-      <guid>http://localhost:1313/</guid>
+      <guid>http://localhost:1313/work/</guid>
       <description>&lt;p&gt;[vc_row][vc_column][vc_custom_heading text=&amp;ldquo;Things I&amp;rsquo;ve made&amp;rdquo; use_theme_fonts=&amp;ldquo;yes&amp;rdquo;][vc_column_text]I’ve built a lot of cool things. Here’s a few of them.[/vc_column_text][/vc_column][/vc_row][vc_row][vc_column][vc_custom_heading text=&amp;ldquo;Pitchfriendly&amp;rdquo; font_container=&amp;ldquo;tag:h3|text_align:left&amp;rdquo; use_theme_fonts=&amp;ldquo;yes&amp;rdquo;][/vc_column][vc_column width=&amp;ldquo;2/3&amp;rdquo;][vc_column_text]PitchFriendly is an outreach tool for PR reps with a focus on organization and time savings. It includes email scheduling, read receipts, reply handling, press list handling, team sharing, a metrics dashboard and other efficiency features.&lt;/p&gt;
 &lt;p&gt;PitchFriendly also includes functionality to generate a press list of reporters likely to respond well to particular stories.  It works by maintaining a separate classifier for each reporter trained with the articles they&amp;rsquo;ve published recently.&lt;/p&gt;</description>
     </item>

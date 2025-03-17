@@ -4,7 +4,7 @@ date: "2013-07-10T05:02:54+00:00"
 draft: "true"
 guid: https://pdenya.com/?page_id=20
 title: Work
-url: /
+url: /work
 
 ---
 \[vc\_row\]\[vc\_column\]\[vc\_custom\_heading text="Things I've made" use\_theme\_fonts="yes"\]\[vc\_column\_text\]I’ve built a lot of cool things. Here’s a few of them.\[/vc\_column\_text\]\[/vc\_column\]\[/vc\_row\]\[vc\_row\]\[vc\_column\]\[vc\_custom\_heading text="Pitchfriendly" font\_container="tag:h3\|text\_align:left" use\_theme\_fonts="yes"\]\[/vc\_column\]\[vc\_column width="2/3"\]\[vc\_column\_text\]PitchFriendly is an outreach tool for PR reps with a focus on organization and time savings. It includes email scheduling, read receipts, reply handling, press list handling, team sharing, a metrics dashboard and other efficiency features.
