@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Objective-C on Paul Denya</title>
+    <link>http://localhost:1313/category/objective-c/</link>
+    <description>Recent content in Objective-C on Paul Denya</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 15 Aug 2013 15:00:05 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/category/objective-c/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sharing a single NSDateFormatter instance</title>
+      <link>http://localhost:1313/2013/08/15/sharing-a-single-nsdateformatter-instance/</link>
+      <pubDate>Thu, 15 Aug 2013 15:00:05 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/15/sharing-a-single-nsdateformatter-instance/</guid>
+      <description>&lt;p&gt;Formatting dates in cellForRowAtIndexPath or another method that gets called very often will make an app noticeably slower if an NSDateFormatter needs to be initialized on every call. Storing the NSDateFormatter in a property or making it static are both fine options but if it&amp;rsquo;s around anyway it might as well be used by the rest of the app.&lt;/p&gt;
+&lt;h2 id=&#34;nsdateformatter-instance-category&#34;&gt;NSDateFormatter Instance Category&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-objc&#34; data-lang=&#34;objc&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//NSDateFormatter Category
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;+ (NSDateFormatter &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)&lt;span style=&#34;color:#a6e22e&#34;&gt;instance&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; dispatch_once_t onceMark;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; NSDateFormatter &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;formatter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; nil;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    dispatch_once(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;onceMark, &lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        formatter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [[NSDateFormatter alloc] init];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; formatter;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//Usage
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;NSDateFormatter &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;dateformatter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSDateFormatter instance];
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;drawbacks&#34;&gt;Drawbacks&lt;/h2&gt;
+&lt;p&gt;If there are multiple date formats in use the date format needs to be set before each use. Not a major drawback but it can get annoying.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Retina alterative to CGRectIntegral</title>
+      <link>http://localhost:1313/2013/08/14/retina-alterative-to-cgrectintegral/</link>
+      <pubDate>Wed, 14 Aug 2013 15:00:07 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/14/retina-alterative-to-cgrectintegral/</guid>
+      <description>&lt;p&gt;CGRectIntegral is a function for rounding all the values of a CGRect at once, typically used for snapping frames to pixels. For a good example of how this helps prevent image blurring and other related rendering issues see &lt;a href=&#34;http://stackoverflow.com/a/9975374/659989&#34;&gt;this stackoverflow answer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On retina screens CGRectIntegral still rounds to the nearest point (1.0) rather than the nearest pixel (0.5) which isn&amp;rsquo;t ideal.&lt;/p&gt;
+&lt;p&gt;My solution to this is implemented as a UIView category which matches my use case for CGRectIntegral 100% of the time. Your mileage may vary.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Checking if a UITableViewCell is fully visible</title>
+      <link>http://localhost:1313/2013/08/07/checking-if-a-uitableviewcell-is-fully-visible/</link>
+      <pubDate>Wed, 07 Aug 2013 15:00:38 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/07/checking-if-a-uitableviewcell-is-fully-visible/</guid>
+      <description>&lt;p&gt;Sometime you need to know if a UITableViewCell is completely visible and for those times there&amp;rsquo;s this handy UITableViewCell category.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-objc&#34; data-lang=&#34;objc&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//Place in UITableViewCell Category
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;- (&lt;span style=&#34;color:#66d9ef&#34;&gt;BOOL&lt;/span&gt;) &lt;span style=&#34;color:#a6e22e&#34;&gt;isCompletelyVisible&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// For parents category see pdenya.com/g/uiview_parents
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    UITableView &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;tableview &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (UITableView &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)[self parents:[UITableView &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt;]];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    CGRect rect &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [tableview rectForRowAtIndexPath:[tableview indexPathForCell:self]];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    rect &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [tableview convertRect:rect toView:tableview.superview];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;BOOL&lt;/span&gt; completelyVisible &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; CGRectContainsRect(tableview.frame, rect);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; completelyVisible;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I&amp;rsquo;d like to mention that you can skip this check entirely if your goal is to make sure a cell is completely visible. With UITableViewScrollPositionNone scrollToRowAtIndexPath:atScrollPosition:animated: doesn&amp;rsquo;t scroll at all if the cell is totally visible and in other cases it scrolls as little as possible which is usually the ideal behavior.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tap anywhere else to cancel in Objective C</title>
+      <link>http://localhost:1313/2013/08/06/tap-anywhere-else-to-cancel-in-objective-c/</link>
+      <pubDate>Tue, 06 Aug 2013 17:10:57 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/06/tap-anywhere-else-to-cancel-in-objective-c/</guid>
+      <description>&lt;p&gt;Whenever you have a modal element that outside touches should cancel a few things need to happen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Touches inside the modal element should behave normally&lt;/li&gt;
+&lt;li&gt;Outside touches should not trigger touch events on tappable elements&lt;/li&gt;
+&lt;li&gt;Outside touches should trigger a handler to close the modal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In my case I was swiping a UITableViewCell and revealing a controls view that should close if any other UITableViewCell is tapped.&lt;/p&gt;
+&lt;h2 id=&#34;hittestwithevent---the-easiest-method&#34;&gt;hitTest:withEvent - The easiest method&lt;/h2&gt;
+&lt;p&gt;Touch events bubble down from the root view rather than up from the target view which makes this a bit easier. On whichever view needs to capture the touch events, we need to override hitTest:withEvent: to return nil and call a function whenever a modal is open and a view other than the modal is tapped. I overrode this method in my UITableView&amp;rsquo;s superview.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Custom Relative Time with Date Components</title>
+      <link>http://localhost:1313/2013/07/30/custom-relative-time-with-date-components/</link>
+      <pubDate>Tue, 30 Jul 2013 18:43:38 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/30/custom-relative-time-with-date-components/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s an if chain that figures out the relative time. The current version suites my needs but it&amp;rsquo;s easy to modify.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-objc&#34; data-lang=&#34;objc&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//print date to countdown_label
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;NSCalendar &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;calendar &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NSDate &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;fromDate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSDate date];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NSDate &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;toDate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [user filtered_until];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NSDateComponents &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;components &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [calendar components:NSDayCalendarUnit&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;NSHourCalendarUnit&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;NSMinuteCalendarUnit fromDate:fromDate toDate:toDate options:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NSString &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.day &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%i days&amp;#34;&lt;/span&gt;, components.day];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//1d 4hrs
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.day &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; components.hour &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%id %ihrs&amp;#34;&lt;/span&gt;, components.day, components.hour];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//1d 1hr
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.day &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; components.hour &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%id %ihr&amp;#34;&lt;/span&gt;, components.day, components.hour];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//1 day  ..this probably won&amp;#39;t happen
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.day &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; components.hour &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%i day&amp;#34;&lt;/span&gt;, components.day];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//12 hours
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.hour &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%i hours&amp;#34;&lt;/span&gt;, components.hour];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//1 hour
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.hour &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;1 hour&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//48 mins
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.minute &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%i mins&amp;#34;&lt;/span&gt;, components.minute];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//1 min
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.minute &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;1 min&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//0 min or less
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;now&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Getting a particular superview in Objective-C</title>
+      <link>http://localhost:1313/2013/07/10/getting-a-particular-superview-in-objective-c/</link>
+      <pubDate>Thu, 11 Jul 2013 05:00:05 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/10/getting-a-particular-superview-in-objective-c/</guid>
+      <description>&lt;p&gt;If you have, for example, a child view of a UITableViewCell and you need to get the UITableViewCell in question you can quickly do something like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-objc&#34; data-lang=&#34;objc&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;UITableViewCell &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;cell &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (UITableViewCell &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)the_view.superview.superview;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It works but this code is fragile because it requires that the view heirarchy not change (also things like this usually point to a code organization issue but hey, i&amp;rsquo;m not here to judge). If we want to be able to add a scrollview in between without editing this method we&amp;rsquo;ll have to take a different approach.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

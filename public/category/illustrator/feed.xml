@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Illustrator on Paul Denya</title>
+    <link>http://localhost:1313/category/illustrator/</link>
+    <description>Recent content in Illustrator on Paul Denya</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 18 Jul 2013 22:10:39 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/category/illustrator/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exporting PDFs in Illustrator</title>
+      <link>http://localhost:1313/2013/07/18/exporting-pdfs-in-illustrator/</link>
+      <pubDate>Thu, 18 Jul 2013 22:10:39 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/18/exporting-pdfs-in-illustrator/</guid>
+      <description>&lt;p&gt;There are a few common issues with saving PDFs in Adobe Illustrator. I experienced these with CS5 (5.1 specifically) but while looking for a fix I saw reports of the same errors from users with CS2, CS3, CS4, and CS6 as well. Commond errors include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;This file cannot be found.&amp;rdquo; when trying to save a PDF in Illustrator&lt;/li&gt;
+&lt;li&gt;Saved PDFs coming out blank white or empty with file sizes 500k+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;this-file-cannot-be-found&#34;&gt;This file cannot be found&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;illustrator_cannot_be_found&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/07/illustrator_cannot_be_found.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

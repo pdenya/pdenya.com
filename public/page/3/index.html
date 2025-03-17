@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.142.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Paul Denya</title>
+
+<meta name="description" content="Solving problems">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fcb3718b9739f6b39cc36096f68dccc8a7e0d3e24fc6b09c575e0c25ec8f35b2.css" integrity="sha256-/LNxi5c59rOcw2CW9o3MyKfg0&#43;JPxrCcV14MJeyPNbI=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/feed.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Paul Denya (Alt + H)">Paul Denya</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span class="active">Home</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Retina alterative to CGRectIntegral
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>CGRectIntegral is a function for rounding all the values of a CGRect at once, typically used for snapping frames to pixels. For a good example of how this helps prevent image blurring and other related rendering issues see this stackoverflow answer.
+On retina screens CGRectIntegral still rounds to the nearest point (1.0) rather than the nearest pixel (0.5) which isn’t ideal.
+My solution to this is implemented as a UIView category which matches my use case for CGRectIntegral 100% of the time. Your mileage may vary.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-08-14 15:00:07 +0000 +0000'>August 14, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Retina alterative to CGRectIntegral" href="http://localhost:1313/2013/08/14/retina-alterative-to-cgrectintegral/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Mac constantly switching to a new finder window when the space key is pressed
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If whenever you press the space key your mac shifts focus to a finder window you should be able to fix it by hard booting Finder. Open terminal and run:
+killall Finder </p>
+  </div>
+  <footer class="entry-footer"><span title='2013-08-13 15:00:13 +0000 +0000'>August 13, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Mac constantly switching to a new finder window when the space key is pressed" href="http://localhost:1313/2013/08/13/mac-constantly-switching-to-a-new-finder-window-when-the-space-key-is-pressed/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Unarchiving 7z files on OS X
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Brew is always saving the day.
+# Install p7zip brew install p7zip # extract 7z x file.7z </p>
+  </div>
+  <footer class="entry-footer"><span title='2013-08-12 15:00:33 +0000 +0000'>August 12, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Unarchiving 7z files on OS X" href="http://localhost:1313/2013/08/12/unarchiving-7z-files-on-os-x/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Quick Browser Detection One Liners
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>// You can expand this out in any line below // but it makes things much more readable var ua = navigator.userAgent.toString().toLowerCase(); //Browsers var IE6 = false /*@cc_on || @_jscript_version &lt; 5.7 @*/ var IE7 = (document.all &amp;&amp; !window.opera &amp;&amp; window.XMLHttpRequest &amp;&amp; ua.indexOf(&#39;trident/4.0&#39;) == -1) ? true : false; var IE8 = (ua.indexOf(&#39;trident/4.0&#39;) != -1); var IE9 = ua.indexOf(&#34;trident/5&#34;)&gt;-1; var IE10 = ua.indexOf(&#34;trident/6&#34;)&gt;-1; var SAFARI = (ua.indexOf(&#34;safari&#34;) != -1) &amp;&amp; (ua.indexOf(&#34;chrome&#34;) == -1); var FIREFOX = (ua.indexOf(&#34;firefox&#34;) != -1); var CHROME = (ua.indexOf(&#34;chrome&#34;) != -1); //Platforms var MAC = (ua.indexOf(&#34;mac&#34;)!=-1) ? true: false; var WINDOWS = (navigator.appVersion.indexOf(&#34;Win&#34;)!=-1) ? true : false; var LINUX = (navigator.appVersion.indexOf(&#34;Linux&#34;)!=-1) ? true : false; var UNIX = (navigator.appVersion.indexOf(&#34;X11&#34;)!=-1) ? true : false; var IOS = ((ua.indexOf(&#34;iphone&#34;)!=-1) || (ua.indexOf(&#34;ipod&#34;)!=-1) || (ua.indexOf(&#34;ipad&#34;)!=-1)) ? true : false; var ANDROID = ua.indexOf(&#34;android&#34;)!=-1) ? true: false; var BLACKBERRY = (ua.indexOf(&#34;blackberry&#34;)!=-1) ? true: false; //mobile browsers var OPERA_MINI = (ua.indexOf(&#34;opera mini&#34;)!=-1) ? true: false; </p>
+  </div>
+  <footer class="entry-footer"><span title='2013-08-09 15:00:03 +0000 +0000'>August 9, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Quick Browser Detection One Liners" href="http://localhost:1313/2013/08/09/quick-browser-detection-one-liners/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Vertical space in bootstrap
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I use Bootstrap for most personal projects lately but one thing that consistently gets me is the lack of vertical spacing classes.
+Quick fix I added these classes to my bootstrap stylesheet
+.voffset { margin-top: 2px; } .voffset1 { margin-top: 5px; } .voffset2 { margin-top: 10px; } .voffset3 { margin-top: 15px; } .voffset4 { margin-top: 30px; } .voffset5 { margin-top: 40px; } .voffset6 { margin-top: 60px; } .voffset7 { margin-top: 80px; } .voffset8 { margin-top: 100px; } .voffset9 { margin-top: 150px; } Example Vertically offset text </p>
+  </div>
+  <footer class="entry-footer"><span title='2013-08-08 15:00:13 +0000 +0000'>August 8, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Vertical space in bootstrap" href="http://localhost:1313/2013/08/08/vertical-space-in-bootstrap/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Checking if a UITableViewCell is fully visible
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Sometime you need to know if a UITableViewCell is completely visible and for those times there’s this handy UITableViewCell category.
+//Place in UITableViewCell Category - (BOOL) isCompletelyVisible { // For parents category see pdenya.com/g/uiview_parents UITableView *tableview = (UITableView *)[self parents:[UITableView class]]; CGRect rect = [tableview rectForRowAtIndexPath:[tableview indexPathForCell:self]]; rect = [tableview convertRect:rect toView:tableview.superview]; BOOL completelyVisible = CGRectContainsRect(tableview.frame, rect); return completelyVisible; } I’d like to mention that you can skip this check entirely if your goal is to make sure a cell is completely visible. With UITableViewScrollPositionNone scrollToRowAtIndexPath:atScrollPosition:animated: doesn’t scroll at all if the cell is totally visible and in other cases it scrolls as little as possible which is usually the ideal behavior.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-08-07 15:00:38 +0000 +0000'>August 7, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Checking if a UITableViewCell is fully visible" href="http://localhost:1313/2013/08/07/checking-if-a-uitableviewcell-is-fully-visible/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">HelloSign for Gmail
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>HelloSign for Gmail is a browser extension for Chrome, FireFox and Safari that lets users fill out and sign documents without ever leaving Gmail.
+The user clicks the sign button next to an attachment and the file is uploaded to HelloSign and the HelloSign editor is opened in a lightbox for the user to sign and make annotations. When the user clicks Continue the iframe closes, a compose window opens in Gmail (as if the user had clicked reply) and the signed document is attached, ready to be sent.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-08-06 19:24:54 +0000 +0000'>August 6, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to HelloSign for Gmail" href="http://localhost:1313/2013/08/06/hellosign-for-gmail/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tap anywhere else to cancel in Objective C
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Whenever you have a modal element that outside touches should cancel a few things need to happen:
+Touches inside the modal element should behave normally Outside touches should not trigger touch events on tappable elements Outside touches should trigger a handler to close the modal In my case I was swiping a UITableViewCell and revealing a controls view that should close if any other UITableViewCell is tapped.
+hitTest:withEvent - The easiest method Touch events bubble down from the root view rather than up from the target view which makes this a bit easier. On whichever view needs to capture the touch events, we need to override hitTest:withEvent: to return nil and call a function whenever a modal is open and a view other than the modal is tapped. I overrode this method in my UITableView’s superview.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-08-06 17:10:57 +0000 +0000'>August 6, 2013</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Tap anywhere else to cancel in Objective C" href="http://localhost:1313/2013/08/06/tap-anywhere-else-to-cancel-in-objective-c/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hiding the WP Admin Bar
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>There’s a few plugins for hiding the WordPress admin bar that shows up on top of your site when you’re logged in but it seems like overkill.
+If you don’t care about preventing it from loading you can drop this in your stylesheet at wp-admin/themes.php?page=editcss to hide it.
+html { margin-top: 0!important; } #wpadminbar { display: none; } </p>
+  </div>
+  <footer class="entry-footer"><span title='2013-08-03 17:36:09 +0000 +0000'>August 3, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Hiding the WP Admin Bar" href="http://localhost:1313/2013/08/03/hiding-the-wp-admin-bar/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Accepting developer roles on facebook
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Log into Facebook and go to https://developers.facebook.com/apps.
+Register as a developer if you haven’t yet This process is a pain and involves entering your phone number and receiving a confirmation text.
+Check for invites You should get a notification at the top about any pending invites.
+Click through and confirm.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-08-02 04:30:40 +0000 +0000'>August 2, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Accepting developer roles on facebook" href="http://localhost:1313/2013/08/01/accepting-developer-roles-on-facebook/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/2/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/4/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Work on Paul Denya</title>
+    <link>http://localhost:1313/category/work/</link>
+    <description>Recent content in Work on Paul Denya</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 26 Oct 2013 00:14:48 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/category/work/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Status for Facebook</title>
+      <link>http://localhost:1313/2013/10/25/status-for-facebook/</link>
+      <pubDate>Sat, 26 Oct 2013 00:14:48 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/25/status-for-facebook/</guid>
+      <description>&lt;p&gt;I recently built a 3rd party Facebook app for iOS that makes your Facebook feed look like your twitter feed&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/status-for-facebook/id683859608?mt=8&#34;&gt;&lt;img alt=&#34;screen568x568&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/10/screen568x568-169x300.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/status-for-facebook/id683859608?mt=8&#34;&gt;Check it our for free in the app store&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spider Match! is featured in iTunes!</title>
+      <link>http://localhost:1313/2013/10/03/spider-match-is-featured-in-itunes/</link>
+      <pubDate>Thu, 03 Oct 2013 21:50:48 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/03/spider-match-is-featured-in-itunes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2013/10/Screen-Shot-2013-10-03-at-2.47.42-PM.png&#34;&gt;&lt;img alt=&#34;Screen Shot 2013-10-03 at 2.47.42 PM&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/10/Screen-Shot-2013-10-03-at-2.47.42-PM.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure what this will mean for sales but really cool either way.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/id715084336?mt=8&#34;&gt;Check it out in the app store&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Animal Match Games for iOS</title>
+      <link>http://localhost:1313/2013/09/09/animal-match-games-for-ios/</link>
+      <pubDate>Mon, 09 Sep 2013 15:00:24 +0000</pubDate>
+      <guid>http://localhost:1313/2013/09/09/animal-match-games-for-ios/</guid>
+      <description>&lt;p&gt;I built a simple iOS match game for my kids that addresses a few common shortcomings of existing kids apps and then themed it when they wanted more animals.&lt;/p&gt;
+&lt;p&gt;Differences that I felt were important:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There&amp;rsquo;s nothing to distract from the gameplay. I don&amp;rsquo;t do promotions, ads, in app purchases or even more inocuous things like a start button or settings page. If the app is open, it&amp;rsquo;s ready to play.&lt;/li&gt;
+&lt;li&gt;No sounds. My kids love to play with the vibration toggle on my phone and being able to give them something to play with that definitely won&amp;rsquo;t make noise has been very helpful at times.&lt;/li&gt;
+&lt;li&gt;All 3 are universal apps so it&amp;rsquo;s not necessary to buy it again on the iPad.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-apps&#34;&gt;The Apps&lt;/h2&gt;
+&lt;h3 id=&#34;animal-match&#34;&gt;Animal Match&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2013/08/animal_match.png&#34;&gt;&lt;img alt=&#34;animal_match&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/08/animal_match-169x300.png&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/animal-match!/id498695602?ls=1&amp;amp;mt=8&#34;&gt;View in App Store&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HelloSign for Gmail</title>
+      <link>http://localhost:1313/2013/08/06/hellosign-for-gmail/</link>
+      <pubDate>Tue, 06 Aug 2013 19:24:54 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/06/hellosign-for-gmail/</guid>
+      <description>&lt;p&gt;HelloSign for Gmail is a browser extension for Chrome, FireFox and Safari that lets users fill out and sign documents without ever leaving Gmail.&lt;/p&gt;
+&lt;p&gt;The user clicks the sign button next to an attachment and the file is uploaded to HelloSign and the HelloSign editor is opened in a lightbox for the user to sign and make annotations. When the user clicks Continue the iframe closes, a compose window opens in Gmail (as if the user had clicked reply) and the signed document is attached, ready to be sent.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Blog | Paul Denya</title>
+<meta name="keywords" content="">
+<meta name="description" content="Blog - Paul Denya">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/blog/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fcb3718b9739f6b39cc36096f68dccc8a7e0d3e24fc6b09c575e0c25ec8f35b2.css" integrity="sha256-/LNxi5c59rOcw2CW9o3MyKfg0&#43;JPxrCcV14MJeyPNbI=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/feed.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Paul Denya (Alt + H)">Paul Denya</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog" title="Blog">
+                    <span class="active">Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+  <h1>
+    Blog
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A less frustrating suspend shortcut for VMWare Fusion
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>“⌘ &#43; w” in VMWare has been frustrating me for months. The situation goes something like this:
+I have a VM open and active I hit “⌘ &#43; W” like an idiot My VM starts suspending, forcing me to wait for suspending and resuming to complete I needed a way to stop myself from accidentally closing my VMs multiple times per week.
+The Fix It’s pretty simple, we just remap “⌘ &#43; w” to something else like “⌘ &#43; ⇧ &#43; w” in System Preferences. First, open System Preferences and go to Keyboard &gt; Keyboard Shortcuts &gt; Application Shortcuts. Use “File-&gt;Close” as the menu title and VMWare Fusion as the application.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-07-31 18:02:31 +0000 +0000'>July 31, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to A less frustrating suspend shortcut for VMWare Fusion" href="http://localhost:1313/2013/07/31/frustrating-vmware-fusion-suspend-shortcut/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Custom Relative Time with Date Components
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Here’s an if chain that figures out the relative time. The current version suites my needs but it’s easy to modify.
+//print date to countdown_label NSCalendar *calendar = [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease]; NSDate *fromDate = [NSDate date]; NSDate *toDate = [user filtered_until]; NSDateComponents *components = [calendar components:NSDayCalendarUnit|NSHourCalendarUnit|NSMinuteCalendarUnit fromDate:fromDate toDate:toDate options:0]; NSString *countdown_text = @&#34;&#34;; if (components.day &gt; 1) { countdown_text = [NSString stringWithFormat:@&#34;%i days&#34;, components.day]; } //1d 4hrs else if (components.day &gt; 0 &amp;&amp; components.hour &gt; 1) { countdown_text = [NSString stringWithFormat:@&#34;%id %ihrs&#34;, components.day, components.hour]; } //1d 1hr else if (components.day &gt; 0 &amp;&amp; components.hour == 1) { countdown_text = [NSString stringWithFormat:@&#34;%id %ihr&#34;, components.day, components.hour]; } //1 day ..this probably won&#39;t happen else if (components.day &gt; 0 &amp;&amp; components.hour == 0) { countdown_text = [NSString stringWithFormat:@&#34;%i day&#34;, components.day]; } //12 hours else if (components.hour &gt; 1) { countdown_text = [NSString stringWithFormat:@&#34;%i hours&#34;, components.hour]; } //1 hour else if (components.hour == 1) { countdown_text = @&#34;1 hour&#34;; } //48 mins else if (components.minute &gt; 1) { countdown_text = [NSString stringWithFormat:@&#34;%i mins&#34;, components.minute]; } //1 min else if (components.minute == 1) { countdown_text = @&#34;1 min&#34;; } //0 min or less else { countdown_text = @&#34;now&#34;; } </p>
+  </div>
+  <footer class="entry-footer"><span title='2013-07-30 18:43:38 +0000 +0000'>July 30, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Custom Relative Time with Date Components" href="http://localhost:1313/2013/07/30/custom-relative-time-with-date-components/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Disabling the Print hotkey in OS X
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The print hotkey is not useful to me. If it opened immediately and was immediately dismissible with esc it would be less frustrating but as it is every time the print dialogue opens I need to wait several seconds before I can dismiss it regardless of which app it’s in.
+“⌘&#43;P” has been frustrating me for a while, being next to “⌘&#43;[”. Now that i’m using Sublime Text 2 as my editor of choice it’s worse because “⌘&#43;P” is ST2’s default quick open hotkey.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-07-23 17:20:24 +0000 +0000'>July 23, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Disabling the Print hotkey in OS X" href="http://localhost:1313/2013/07/23/disabling-the-print-hotkey-in-os-x/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Custom Theme for Sublime Text 2 and XCode
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>My personal syntax highlighting theme. I use this in various forms aside from Sublime Text 2 including on this blog for the code examples and in XCode, Sublime Text 2, and where ever else I can get away with it.
+Color Codes Background - #161714
+Text Color - #e6e2da
+Green - #ADBC68
+Dark Blue - #4793CB
+Light Blue - #A5CFE1
+Burnt Orange - #D76E28
+Orange - #FD971F
+Grey - #686760
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-07-22 22:32:41 +0000 +0000'>July 22, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Custom Theme for Sublime Text 2 and XCode" href="http://localhost:1313/2013/07/22/custom-tmtheme-for-sublime-text-2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Exporting PDFs in Illustrator
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>There are a few common issues with saving PDFs in Adobe Illustrator. I experienced these with CS5 (5.1 specifically) but while looking for a fix I saw reports of the same errors from users with CS2, CS3, CS4, and CS6 as well. Commond errors include:
+“This file cannot be found.” when trying to save a PDF in Illustrator Saved PDFs coming out blank white or empty with file sizes 500k&#43; This file cannot be found ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-07-18 22:10:39 +0000 +0000'>July 18, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Exporting PDFs in Illustrator" href="http://localhost:1313/2013/07/18/exporting-pdfs-in-illustrator/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Assigning variable defaults in PHP
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>It’d be nice if PHP had a quick Or-Equals expression like Ruby:
+user ||= User.new but we make do with few slightly less sugary idioms.
+The standard way if (isset($user)) { $user = new User(); } A bit shorter $user = isset($user) ? $user : new User(); Shorter still This is my preferred way of making sure variables are set. Short and clear.
+isset($user) || $user = new User(); Expressions with defaults It’s usually best not to treat variable assignments as booleans but in cases like this I think it’s clear enough what’s happening.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-07-16 18:21:43 +0000 +0000'>July 16, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Assigning variable defaults in PHP" href="http://localhost:1313/2013/07/16/assigning-variable-defaults-in-php/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">IE8 select element change event not firing with the keyboard
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Change events on select elements don’t fire in IE8 when the user confirms the selection with the enter key until the user clicks elsewhere. If your users are waiting on something in particular to happen after updating the select this is a bit of a problem.
+Here’s my solution:
+// jQuery syntax for ease of reading var the_select = $(&#34;#my_select&#34;); // this works great for most browsers the_select.change(function() { console.log(&#39;changed&#39;); }); // if IE8 if ($.browser.msie &amp;&amp; parseInt($.browser.version, 10) &lt;= 8) { // get the keypress event the_select.keypress(function(e) { // if the user pushed enter if(e.keyCode === $.ui.keyCode.ENTER) { // manually trigger the change handler $(this).change() // blur afterwards isn&#39;t ideal but // it doesn&#39;t work correctly otherwise .blur(); } }); } </p>
+  </div>
+  <footer class="entry-footer"><span title='2013-07-11 14:00:45 +0000 +0000'>July 11, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to IE8 select element change event not firing with the keyboard" href="http://localhost:1313/2013/07/11/ie8-select-element-change-event-not-firing-with-the-keyboard/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Getting a particular superview in Objective-C
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If you have, for example, a child view of a UITableViewCell and you need to get the UITableViewCell in question you can quickly do something like:
+UITableViewCell *cell = (UITableViewCell *)the_view.superview.superview; It works but this code is fragile because it requires that the view heirarchy not change (also things like this usually point to a code organization issue but hey, i’m not here to judge). If we want to be able to add a scrollview in between without editing this method we’ll have to take a different approach.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-07-11 05:00:05 +0000 +0000'>July 11, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Getting a particular superview in Objective-C" href="http://localhost:1313/2013/07/10/getting-a-particular-superview-in-objective-c/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Debugging Javascript with Console
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A quick review.
+Console.log() //how to print a log statement console.log(&#39;That thing you expected to happen is now happening!&#39;); //how to break production sites in internet explorer console.log(&#39;anything&#39;); //how to log safer function l(str){if(window.console&amp;&amp;console.log){console.log(str);}} l(&#39;I can forget this in my code base without breaking anything!&#39;); Console.trace() //how to figure out what&#39;s calling what console.trace(); //console.trace example: function a() { console.trace(); } function b() { a(); } function c() { b(); } function d() { b(); } if (Math.random() &lt; 0.5) { c(); } else { d(); } If you copy and paste that console.trace example into the Chrome Console you’ll get a full stack trace like this one:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-07-09 19:24:29 +0000 +0000'>July 9, 2013</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Paul</footer>
+  <a class="entry-link" aria-label="post link to Debugging Javascript with Console" href="http://localhost:1313/2013/07/09/hello-world/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/blog/page/3/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

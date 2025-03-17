@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Uncategorized on Paul Denya</title>
+    <link>http://localhost:1313/category/uncategorized/</link>
+    <description>Recent content in Uncategorized on Paul Denya</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 10 Mar 2017 05:30:08 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/category/uncategorized/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git file history</title>
+      <link>http://localhost:1313/2017/03/09/git-file-history/</link>
+      <pubDate>Fri, 10 Mar 2017 05:30:08 +0000</pubDate>
+      <guid>http://localhost:1313/2017/03/09/git-file-history/</guid>
+      <description>&lt;p&gt;View the commit history for a particular file with git on the command line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git log --follow -p -- filename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Updating git on OS X Mavericks</title>
+      <link>http://localhost:1313/2015/01/13/updating-git-os-x-mavericks/</link>
+      <pubDate>Tue, 13 Jan 2015 19:37:48 +0000</pubDate>
+      <guid>http://localhost:1313/2015/01/13/updating-git-os-x-mavericks/</guid>
+      <description>&lt;p&gt;The easiest way to update git to 2.2.1 or higher is to use homebrew.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you get a &lt;code&gt;command not found&lt;/code&gt; error, you can install homebrew from &lt;a href=&#34;http://brew.sh&#34;&gt;brew.sh&lt;/a&gt; (scroll down for a one liner, i won&amp;rsquo;t copy it here in case it updates). If you get a different error, check out &lt;a href=&#34;http://localhost:1313/2015/01/13/updating-homebrew-yosemite/&#34;&gt;Updating homebrew on yosemite&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Updating Homebrew on Yosemite</title>
+      <link>http://localhost:1313/2015/01/13/updating-homebrew-yosemite/</link>
+      <pubDate>Tue, 13 Jan 2015 19:33:16 +0000</pubDate>
+      <guid>http://localhost:1313/2015/01/13/updating-homebrew-yosemite/</guid>
+      <description>&lt;h3 id=&#34;the-error&#34;&gt;The Error&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/local/bin/brew: line 21: /usr/local/Library/brew.rb: Undefined error: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew doctor
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/local/bin/brew: line 21: /usr/local/Library/brew.rb: Undefined error: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;the-fix&#34;&gt;The Fix&lt;/h3&gt;
+&lt;p&gt;Make homebrew think &lt;code&gt;/System/Library/Frameworks/Ruby.framework/Versions/1.8&lt;/code&gt; still exists until you successfully update:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd /System/Library/Frameworks/Ruby.framework/Versions
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo ln -s Current 1.8
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo rm 1.8
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>OS X pg gem install or bundle install issues</title>
+      <link>http://localhost:1313/2014/08/15/os-x-pg-gem-install-bundle-install-issues/</link>
+      <pubDate>Sat, 16 Aug 2014 00:38:44 +0000</pubDate>
+      <guid>http://localhost:1313/2014/08/15/os-x-pg-gem-install-bundle-install-issues/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re getting errors like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Building native extensions.  This could take a &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ERROR:  Error installing pg:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ERROR: Failed to build gem native extension.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby extconf.rb
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; pg_config... yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Using config values from /usr/local/bin/pg_config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; libpq-fe.h... yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; libpq/libpq-fs.h... yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; pg_config_manual.h... yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; PQconnectdb&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; in -lpq... no
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; PQconnectdb&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; in -llibpq... no
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; PQconnectdb&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; in -lms/libpq... no
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Can&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt;t find the PostgreSQL client library &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;libpq&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;*** extconf.rb failed ***
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Could not create Makefile due to some reason, probably lack of necessary
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;libraries and/or headers.  Check the mkmf.log file &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; more details.  You may
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;need configuration options.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Provided configuration options:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-opt-dir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-opt-dir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-opt-include
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-opt-include&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;opt-dir&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/include
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-opt-lib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-opt-lib&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;opt-dir&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/lib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-make-prog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-make-prog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --srcdir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --curdir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --ruby&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg-config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg-config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg_config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg_config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg-dir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg-dir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg-include
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg-include&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;pg-dir&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/include
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg-lib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg-lib&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;pg-dir&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-libpqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-libpqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-ms/libpqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-ms/libpqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Gem files will remain installed in /Library/Ruby/Gems/2.0.0/gems/pg-0.17.1 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; inspection.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Results logged to /Library/Ruby/Gems/2.0.0/gems/pg-0.17.1/ext/gem_make.out
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Try:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bonjour issues cause problems with teleport</title>
+      <link>http://localhost:1313/2013/11/25/teleport-showing-accept-prompt/</link>
+      <pubDate>Mon, 25 Nov 2013 18:35:24 +0000</pubDate>
+      <guid>http://localhost:1313/2013/11/25/teleport-showing-accept-prompt/</guid>
+      <description>&lt;p&gt;Common issues caused by bonjour with &lt;a href=&#34;abyssoft.com/software/teleport&#34;&gt;Teleport&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Teleport not connecting&lt;/li&gt;
+&lt;li&gt;Teleport not showing the accept prompt&lt;/li&gt;
+&lt;li&gt;Teleport only able to connect in one direction and not the other&lt;/li&gt;
+&lt;li&gt;Teleport can&amp;rsquo;t reconnect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;making-sure-bonjour-is-working&#34;&gt;Making sure Bonjour is working&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Messages.app &amp;gt; Preferences &amp;gt; Accounts &amp;gt; Bonjour &amp;gt; Enable Bonjour instant messaging (on both computers)&lt;/li&gt;
+&lt;li&gt;Locate your other computer in the buddy list (⌘1) and send a message between computers.&lt;/li&gt;
+&lt;li&gt;Disable Teleport on both computers&lt;/li&gt;
+&lt;li&gt;Restart both computers (sorry)&lt;/li&gt;
+&lt;li&gt;Enable Teleport on both computers and hopefully connect&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

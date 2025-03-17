@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Paul Denya</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content on Paul Denya</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 10 Mar 2017 05:30:08 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git file history</title>
+      <link>http://localhost:1313/2017/03/09/git-file-history/</link>
+      <pubDate>Fri, 10 Mar 2017 05:30:08 +0000</pubDate>
+      <guid>http://localhost:1313/2017/03/09/git-file-history/</guid>
+      <description>&lt;p&gt;View the commit history for a particular file with git on the command line:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git log --follow -p -- filename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Disable Full Screen Shortcut on Mac OSX 10.10 Yosemite</title>
+      <link>http://localhost:1313/2015/05/23/disable-full-screen-shortcut-mac-osx-10-10-yosemite/</link>
+      <pubDate>Sun, 24 May 2015 05:43:04 +0000</pubDate>
+      <guid>http://localhost:1313/2015/05/23/disable-full-screen-shortcut-mac-osx-10-10-yosemite/</guid>
+      <description>&lt;p&gt;Full screen is super annoying on OS X lately. I use &lt;a href=&#34;http://www.irradiatedsoftware.com/sizeup/&#34;&gt;SizeUp&lt;/a&gt; which gives me a shortcut for expanding the windows instead of using the green button but i&amp;rsquo;m still having random encounters with full screen mode because of the shortcut ctrl+shift+f. So here&amp;rsquo;s how to disable that..or at least make it harder to do by accident:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Change full screen shortcut to Shift + Ctrl + Opt + Cmd + F&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;defaults write -g NSUserKeyEquivalents -dict-add &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Enter Full Screen&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$&lt;span style=&#34;color:#e6db74&#34;&gt;~^@F&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Remove all images from JQuery UI CSS</title>
+      <link>http://localhost:1313/2015/05/04/remove-images-jquery-ui-css/</link>
+      <pubDate>Mon, 04 May 2015 18:55:37 +0000</pubDate>
+      <guid>http://localhost:1313/2015/05/04/remove-images-jquery-ui-css/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/* remove all default background images from jquery ui */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-active&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-active&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-active&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-active&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-default&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-error&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-error-text&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-error&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-error&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-error&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-highlight&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-highlight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-highlight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-highlight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-hover&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-focus&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-focus&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-focus&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-focus&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-overlay&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-shadow&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;background-image&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Updating git on OS X Mavericks</title>
+      <link>http://localhost:1313/2015/01/13/updating-git-os-x-mavericks/</link>
+      <pubDate>Tue, 13 Jan 2015 19:37:48 +0000</pubDate>
+      <guid>http://localhost:1313/2015/01/13/updating-git-os-x-mavericks/</guid>
+      <description>&lt;p&gt;The easiest way to update git to 2.2.1 or higher is to use homebrew.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you get a &lt;code&gt;command not found&lt;/code&gt; error, you can install homebrew from &lt;a href=&#34;http://brew.sh&#34;&gt;brew.sh&lt;/a&gt; (scroll down for a one liner, i won&amp;rsquo;t copy it here in case it updates). If you get a different error, check out &lt;a href=&#34;http://localhost:1313/2015/01/13/updating-homebrew-yosemite/&#34;&gt;Updating homebrew on yosemite&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Updating Homebrew on Yosemite</title>
+      <link>http://localhost:1313/2015/01/13/updating-homebrew-yosemite/</link>
+      <pubDate>Tue, 13 Jan 2015 19:33:16 +0000</pubDate>
+      <guid>http://localhost:1313/2015/01/13/updating-homebrew-yosemite/</guid>
+      <description>&lt;h3 id=&#34;the-error&#34;&gt;The Error&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/local/bin/brew: line 21: /usr/local/Library/brew.rb: Undefined error: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ brew doctor
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/local/bin/brew: /usr/local/Library/brew.rb: /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby: bad interpreter: No such file or directory
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/local/bin/brew: line 21: /usr/local/Library/brew.rb: Undefined error: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;the-fix&#34;&gt;The Fix&lt;/h3&gt;
+&lt;p&gt;Make homebrew think &lt;code&gt;/System/Library/Frameworks/Ruby.framework/Versions/1.8&lt;/code&gt; still exists until you successfully update:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd /System/Library/Frameworks/Ruby.framework/Versions
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo ln -s Current 1.8
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo rm 1.8
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>OS X pg gem install or bundle install issues</title>
+      <link>http://localhost:1313/2014/08/15/os-x-pg-gem-install-bundle-install-issues/</link>
+      <pubDate>Sat, 16 Aug 2014 00:38:44 +0000</pubDate>
+      <guid>http://localhost:1313/2014/08/15/os-x-pg-gem-install-bundle-install-issues/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re getting errors like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Building native extensions.  This could take a &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ERROR:  Error installing pg:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ERROR: Failed to build gem native extension.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby extconf.rb
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; pg_config... yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Using config values from /usr/local/bin/pg_config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; libpq-fe.h... yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; libpq/libpq-fs.h... yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; pg_config_manual.h... yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; PQconnectdb&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; in -lpq... no
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; PQconnectdb&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; in -llibpq... no
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;checking &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; PQconnectdb&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; in -lms/libpq... no
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Can&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt;t find the PostgreSQL client library &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;libpq&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;*** extconf.rb failed ***
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Could not create Makefile due to some reason, probably lack of necessary
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;libraries and/or headers.  Check the mkmf.log file &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; more details.  You may
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;need configuration options.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Provided configuration options:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-opt-dir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-opt-dir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-opt-include
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-opt-include&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;opt-dir&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/include
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-opt-lib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-opt-lib&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;opt-dir&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/lib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-make-prog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-make-prog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --srcdir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --curdir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --ruby&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg-config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg-config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg_config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg_config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg-dir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg-dir
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg-include
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg-include&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;pg-dir&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/include
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pg-lib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pg-lib&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;pg-dir&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-pqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-pqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-libpqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-libpqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --with-ms/libpqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    --without-ms/libpqlib
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Gem files will remain installed in /Library/Ruby/Gems/2.0.0/gems/pg-0.17.1 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; inspection.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Results logged to /Library/Ruby/Gems/2.0.0/gems/pg-0.17.1/ext/gem_make.out
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Try:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quick Top Level Domain Lookup in Python</title>
+      <link>http://localhost:1313/2014/06/03/quick-top-level-domain-lookup-python/</link>
+      <pubDate>Tue, 03 Jun 2014 20:09:41 +0000</pubDate>
+      <guid>http://localhost:1313/2014/06/03/quick-top-level-domain-lookup-python/</guid>
+      <description>&lt;p&gt;Python&amp;rsquo;s get_tld works very well but is slow if you&amp;rsquo;re looking up a batch of domain names. Here&amp;rsquo;s a faster version that falls back on get_tld:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; tld &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; get_tld
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; re
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;quick_tld&lt;/span&gt;(url):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    tld_prog &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; re&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;compile(&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(?P&amp;lt;tld&amp;gt;[^./]+\.(com|net|org|co\.uk))($|/)&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ip_prog &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; re&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;compile(&lt;span style=&#34;color:#e6db74&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        tld_match &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; tld_prog&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;search(url)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; tld_match:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; tld_match&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;group(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tld&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; ip_prog&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;match&lt;/span&gt;(article&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;url):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; get_tld(url)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; e:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Postgres Bytea Size</title>
+      <link>http://localhost:1313/2014/01/16/postgres-bytea-size/</link>
+      <pubDate>Fri, 17 Jan 2014 02:15:54 +0000</pubDate>
+      <guid>http://localhost:1313/2014/01/16/postgres-bytea-size/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;octet_length&lt;/code&gt; function returns the length in bytes size of a bytea field. From the docs: &amp;ldquo;Number of bytes in binary string&amp;rdquo;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;octet_length&lt;/span&gt;(the_data_field) &lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;table_name&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;#&lt;/span&gt; byte &lt;span style=&#34;color:#66d9ef&#34;&gt;size&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;http://www.postgresql.org/docs/8.2/static/functions-binarystring.html&#34;&gt;More binary string functions&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bonjour issues cause problems with teleport</title>
+      <link>http://localhost:1313/2013/11/25/teleport-showing-accept-prompt/</link>
+      <pubDate>Mon, 25 Nov 2013 18:35:24 +0000</pubDate>
+      <guid>http://localhost:1313/2013/11/25/teleport-showing-accept-prompt/</guid>
+      <description>&lt;p&gt;Common issues caused by bonjour with &lt;a href=&#34;abyssoft.com/software/teleport&#34;&gt;Teleport&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Teleport not connecting&lt;/li&gt;
+&lt;li&gt;Teleport not showing the accept prompt&lt;/li&gt;
+&lt;li&gt;Teleport only able to connect in one direction and not the other&lt;/li&gt;
+&lt;li&gt;Teleport can&amp;rsquo;t reconnect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;making-sure-bonjour-is-working&#34;&gt;Making sure Bonjour is working&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Messages.app &amp;gt; Preferences &amp;gt; Accounts &amp;gt; Bonjour &amp;gt; Enable Bonjour instant messaging (on both computers)&lt;/li&gt;
+&lt;li&gt;Locate your other computer in the buddy list (⌘1) and send a message between computers.&lt;/li&gt;
+&lt;li&gt;Disable Teleport on both computers&lt;/li&gt;
+&lt;li&gt;Restart both computers (sorry)&lt;/li&gt;
+&lt;li&gt;Enable Teleport on both computers and hopefully connect&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Better read-only view for google spreadsheets</title>
+      <link>http://localhost:1313/2013/10/28/better-read-only-view-for-google-spreadsheets/</link>
+      <pubDate>Mon, 28 Oct 2013 15:00:36 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/28/better-read-only-view-for-google-spreadsheets/</guid>
+      <description>&lt;p&gt;If you need read only access to a google docs spreadsheet it&amp;rsquo;s much faster and easier to use an exported version. Just go to File &amp;gt; Download As &amp;gt; Web Page and it&amp;rsquo;ll open a new window with the fully loaded spreadsheet.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a &lt;a href=&#34;https://docs.google.com/spreadsheet/ccc?key=0Ajf-Cys1JrC9dHpmQjNtakpVdW9yLVpsR0xWT1FYenc&amp;amp;usp=sharing&#34;&gt;public spreadsheet&lt;/a&gt; if you want to try it out.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Status for Facebook</title>
+      <link>http://localhost:1313/2013/10/25/status-for-facebook/</link>
+      <pubDate>Sat, 26 Oct 2013 00:14:48 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/25/status-for-facebook/</guid>
+      <description>&lt;p&gt;I recently built a 3rd party Facebook app for iOS that makes your Facebook feed look like your twitter feed&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/status-for-facebook/id683859608?mt=8&#34;&gt;&lt;img alt=&#34;screen568x568&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/10/screen568x568-169x300.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/status-for-facebook/id683859608?mt=8&#34;&gt;Check it our for free in the app store&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problems authenticating on public wifi</title>
+      <link>http://localhost:1313/2013/10/24/problems-authenticating-on-public-wifi/</link>
+      <pubDate>Fri, 25 Oct 2013 00:45:14 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/24/problems-authenticating-on-public-wifi/</guid>
+      <description>&lt;p&gt;At Starbucks or McDonalds, on airplanes, at libraries or anywhere else they have free wifi you get popups asking you to accept terms and conditions and click a [Connect Now] button.&lt;/p&gt;
+&lt;p&gt;If you ever have problems getting these screens to display it&amp;rsquo;s almost certainly because you&amp;rsquo;re using non-default DNS servers. The solution for me was to go to System Preferences &amp;gt; Network and create a new Location called &amp;ldquo;Default DNS&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Debugging bottlenecks in Javascript</title>
+      <link>http://localhost:1313/2013/10/14/debugging-bottlenecks-in-javascript/</link>
+      <pubDate>Mon, 14 Oct 2013 15:00:29 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/14/debugging-bottlenecks-in-javascript/</guid>
+      <description>&lt;p&gt;For most bottleneck debugging Chrome Inspector&amp;rsquo;s profiles view in invaluable until a bottleneck is identified and then it becomes a bit cumbersome. I like to have a quicker overview of the piece i&amp;rsquo;m working on optimizing.&lt;/p&gt;
+&lt;p&gt;I use this small and easy timer snippet.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;timer&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;timer&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;t&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Date().&lt;span style=&#34;color:#a6e22e&#34;&gt;getTime&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Execution time: &amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; ((&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Date().&lt;span style=&#34;color:#a6e22e&#34;&gt;getTime&lt;/span&gt;()) &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;timer&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;t&lt;/span&gt;));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//Example
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;timer&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;start&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;timer&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;first landmark passed: &amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;timer&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;second landmark passed: &amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;})();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Spider Match! is featured in iTunes!</title>
+      <link>http://localhost:1313/2013/10/03/spider-match-is-featured-in-itunes/</link>
+      <pubDate>Thu, 03 Oct 2013 21:50:48 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/03/spider-match-is-featured-in-itunes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2013/10/Screen-Shot-2013-10-03-at-2.47.42-PM.png&#34;&gt;&lt;img alt=&#34;Screen Shot 2013-10-03 at 2.47.42 PM&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/10/Screen-Shot-2013-10-03-at-2.47.42-PM.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure what this will mean for sales but really cool either way.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/id715084336?mt=8&#34;&gt;Check it out in the app store&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logging into postgres on Bitnami&#39;s Ruby Stack VM</title>
+      <link>http://localhost:1313/2013/10/03/logging-into-postgres-on-bitnamis-ruby-stack-vm/</link>
+      <pubDate>Thu, 03 Oct 2013 15:00:19 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/03/logging-into-postgres-on-bitnamis-ruby-stack-vm/</guid>
+      <description>&lt;p&gt;The VM for the &lt;a href=&#34;http://bitnami.com/stack/ruby&#34;&gt;Bitnami Ruby Stack&lt;/a&gt; doesn&amp;rsquo;t have the correct credentials for postgres anywhere that I could find. Incorrect credentials that I saw on the Bitnami site, in the docs hosted on the VM, or on the internet while searching for a solution:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: root
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: root
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass: root
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: administrator
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass: bitnami
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: bitnami
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass: bitnami
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: postgres
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: postgres
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass: bitnami
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: postgres
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass: postgres
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I never found the correct combination but instead simply installed postgres via apt-get and moved the bitnami postgres installation outside of $PATH in case I need it in the future.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Custom cursors, relative paths, and internet explorer</title>
+      <link>http://localhost:1313/2013/10/02/custom-cursors-relative-paths-and-internet-explorer/</link>
+      <pubDate>Wed, 02 Oct 2013 15:00:57 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/02/custom-cursors-relative-paths-and-internet-explorer/</guid>
+      <description>&lt;p&gt;Custom cursors in an external CSS file will 404 in Internet Explorer unless your using fully qualified urls. This effects IE6, IE7, IE8, IE9 and IE10.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-happening&#34;&gt;What is happening&lt;/h2&gt;
+&lt;p&gt;Internet Explorer for some ungodly reason treats relative font paths as relative to the page, not relative to the CSS File.&lt;/p&gt;
+&lt;h2 id=&#34;my-fix&#34;&gt;My Fix&lt;/h2&gt;
+&lt;p&gt;You can fully qualify the URL for all clients but I work offline often so I&amp;rsquo;d rather have Chrome referencing my dev server rather than the production CDN. Normally I&amp;rsquo;d turn to CSS hacks here but there&amp;rsquo;s nothing easy to include inline for IE10. I ended up using the &lt;code&gt;ie&lt;/code&gt; class which is added via javascript onReady because IE10 doesn&amp;rsquo;t support conditional comments.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Aggressively removing DS_Store files in git repos</title>
+      <link>http://localhost:1313/2013/09/18/aggressively-removing-ds_store-files-in-git-repos/</link>
+      <pubDate>Wed, 18 Sep 2013 15:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2013/09/18/aggressively-removing-ds_store-files-in-git-repos/</guid>
+      <description>&lt;p&gt;DS_Store files in git repositories is a minor problem for a &lt;a href=&#34;https://twitter.com/search?q=github%20ds_store&#34;&gt;lot of people&lt;/a&gt;. Global .gitignore files are a great solution to not commiting DS_Store files but it won&amp;rsquo;t actively remove them from your project directories.&lt;/p&gt;
+&lt;p&gt;This is my shortcut for &lt;code&gt;git status&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    find . -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*.DS_Store&amp;#39;&lt;/span&gt; -type f -delete   &lt;span style=&#34;color:#75715e&#34;&gt;#find and delete DS_Store files&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    git status -s -b        &lt;span style=&#34;color:#75715e&#34;&gt;#s - simple output, b - include branch name&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Animal Match Games for iOS</title>
+      <link>http://localhost:1313/2013/09/09/animal-match-games-for-ios/</link>
+      <pubDate>Mon, 09 Sep 2013 15:00:24 +0000</pubDate>
+      <guid>http://localhost:1313/2013/09/09/animal-match-games-for-ios/</guid>
+      <description>&lt;p&gt;I built a simple iOS match game for my kids that addresses a few common shortcomings of existing kids apps and then themed it when they wanted more animals.&lt;/p&gt;
+&lt;p&gt;Differences that I felt were important:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There&amp;rsquo;s nothing to distract from the gameplay. I don&amp;rsquo;t do promotions, ads, in app purchases or even more inocuous things like a start button or settings page. If the app is open, it&amp;rsquo;s ready to play.&lt;/li&gt;
+&lt;li&gt;No sounds. My kids love to play with the vibration toggle on my phone and being able to give them something to play with that definitely won&amp;rsquo;t make noise has been very helpful at times.&lt;/li&gt;
+&lt;li&gt;All 3 are universal apps so it&amp;rsquo;s not necessary to buy it again on the iPad.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-apps&#34;&gt;The Apps&lt;/h2&gt;
+&lt;h3 id=&#34;animal-match&#34;&gt;Animal Match&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2013/08/animal_match.png&#34;&gt;&lt;img alt=&#34;animal_match&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/08/animal_match-169x300.png&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/animal-match!/id498695602?ls=1&amp;amp;mt=8&#34;&gt;View in App Store&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disabling the save shortcut for browsers</title>
+      <link>http://localhost:1313/2013/08/26/disabling-the-save-shortcut-for-browsers/</link>
+      <pubDate>Mon, 26 Aug 2013 18:20:46 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/26/disabling-the-save-shortcut-for-browsers/</guid>
+      <description>&lt;p&gt;The save hotkey in Chrome needs to be changed for all the same reasons I &lt;a href=&#34;http://localhost:1313/2013/07/23/disabling-the-print-hotkey-in-os-x/&#34;&gt;disabled the Print hotkey&lt;/a&gt;. I hit it by accident a few times a week thinking some other application is active and then I have to wait for it to load to get out of it. It&amp;rsquo;s only a few seconds but it&amp;rsquo;s an easily fixed annoyance.&lt;/p&gt;
+&lt;h2 id=&#34;the-fix&#34;&gt;The Fix&lt;/h2&gt;
+&lt;p&gt;Changing the Save hotkey for Chrome is pretty simple and it&amp;rsquo;ll work similarly for other browsers. Open System Preferences &amp;gt; Keyboard &amp;gt; Keyboard Shortcuts &amp;gt; Application Shortcuts. Add custom shortcuts for:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sharing a single NSDateFormatter instance</title>
+      <link>http://localhost:1313/2013/08/15/sharing-a-single-nsdateformatter-instance/</link>
+      <pubDate>Thu, 15 Aug 2013 15:00:05 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/15/sharing-a-single-nsdateformatter-instance/</guid>
+      <description>&lt;p&gt;Formatting dates in cellForRowAtIndexPath or another method that gets called very often will make an app noticeably slower if an NSDateFormatter needs to be initialized on every call. Storing the NSDateFormatter in a property or making it static are both fine options but if it&amp;rsquo;s around anyway it might as well be used by the rest of the app.&lt;/p&gt;
+&lt;h2 id=&#34;nsdateformatter-instance-category&#34;&gt;NSDateFormatter Instance Category&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-objc&#34; data-lang=&#34;objc&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//NSDateFormatter Category
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;+ (NSDateFormatter &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)&lt;span style=&#34;color:#a6e22e&#34;&gt;instance&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; dispatch_once_t onceMark;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; NSDateFormatter &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;formatter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; nil;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    dispatch_once(&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;onceMark, &lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        formatter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [[NSDateFormatter alloc] init];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; formatter;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//Usage
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;NSDateFormatter &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;dateformatter &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSDateFormatter instance];
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;drawbacks&#34;&gt;Drawbacks&lt;/h2&gt;
+&lt;p&gt;If there are multiple date formats in use the date format needs to be set before each use. Not a major drawback but it can get annoying.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Retina alterative to CGRectIntegral</title>
+      <link>http://localhost:1313/2013/08/14/retina-alterative-to-cgrectintegral/</link>
+      <pubDate>Wed, 14 Aug 2013 15:00:07 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/14/retina-alterative-to-cgrectintegral/</guid>
+      <description>&lt;p&gt;CGRectIntegral is a function for rounding all the values of a CGRect at once, typically used for snapping frames to pixels. For a good example of how this helps prevent image blurring and other related rendering issues see &lt;a href=&#34;http://stackoverflow.com/a/9975374/659989&#34;&gt;this stackoverflow answer&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On retina screens CGRectIntegral still rounds to the nearest point (1.0) rather than the nearest pixel (0.5) which isn&amp;rsquo;t ideal.&lt;/p&gt;
+&lt;p&gt;My solution to this is implemented as a UIView category which matches my use case for CGRectIntegral 100% of the time. Your mileage may vary.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac constantly switching to a new finder window when the space key is pressed</title>
+      <link>http://localhost:1313/2013/08/13/mac-constantly-switching-to-a-new-finder-window-when-the-space-key-is-pressed/</link>
+      <pubDate>Tue, 13 Aug 2013 15:00:13 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/13/mac-constantly-switching-to-a-new-finder-window-when-the-space-key-is-pressed/</guid>
+      <description>&lt;p&gt;If whenever you press the space key your mac shifts focus to a finder window you should be able to fix it by hard booting Finder. Open terminal and run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;killall Finder
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Unarchiving 7z files on OS X</title>
+      <link>http://localhost:1313/2013/08/12/unarchiving-7z-files-on-os-x/</link>
+      <pubDate>Mon, 12 Aug 2013 15:00:33 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/12/unarchiving-7z-files-on-os-x/</guid>
+      <description>&lt;p&gt;Brew is always saving the day.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Install p7zip&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install p7zip
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# extract&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;7z x file.7z
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Quick Browser Detection One Liners</title>
+      <link>http://localhost:1313/2013/08/09/quick-browser-detection-one-liners/</link>
+      <pubDate>Fri, 09 Aug 2013 15:00:03 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/09/quick-browser-detection-one-liners/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// You can expand this out in any line below
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// but it makes things much more readable
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;navigator&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;userAgent&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toString&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;toLowerCase&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//Browsers
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;IE6&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;/*@cc_on || @_jscript_version &amp;lt; 5.7 @*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;IE7&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (document.&lt;span style=&#34;color:#a6e22e&#34;&gt;all&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;window.&lt;span style=&#34;color:#a6e22e&#34;&gt;opera&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; window.&lt;span style=&#34;color:#a6e22e&#34;&gt;XMLHttpRequest&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;trident/4.0&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;IE8&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;trident/4.0&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;IE9&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;trident/5&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;IE10&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;trident/6&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;SAFARI&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;safari&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;chrome&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;FIREFOX&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;firefox&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CHROME&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;chrome&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//Platforms
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MAC&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mac&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;!=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;WINDOWS&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;navigator&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;appVersion&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Win&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;!=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;LINUX&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;navigator&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;appVersion&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Linux&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;!=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;UNIX&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;navigator&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;appVersion&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;X11&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;!=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;IOS&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ((&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;iphone&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;!=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ipod&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;!=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ipad&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;!=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ANDROID&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;android&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;!=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;BLACKBERRY&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;blackberry&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;!=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//mobile browsers
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;OPERA_MINI&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;ua&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;indexOf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;opera mini&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;!=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Vertical space in bootstrap</title>
+      <link>http://localhost:1313/2013/08/08/vertical-space-in-bootstrap/</link>
+      <pubDate>Thu, 08 Aug 2013 15:00:13 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/08/vertical-space-in-bootstrap/</guid>
+      <description>&lt;p&gt;I use &lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; for most personal projects lately but one thing that consistently gets me is the lack of vertical spacing classes.&lt;/p&gt;
+&lt;h2 id=&#34;quick-fix&#34;&gt;Quick fix&lt;/h2&gt;
+&lt;p&gt;I added these classes to my bootstrap stylesheet&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset&lt;/span&gt;  { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset1&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset2&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset3&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset4&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset5&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset6&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset7&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset8&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset9&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;150&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        Vertically offset text
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Checking if a UITableViewCell is fully visible</title>
+      <link>http://localhost:1313/2013/08/07/checking-if-a-uitableviewcell-is-fully-visible/</link>
+      <pubDate>Wed, 07 Aug 2013 15:00:38 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/07/checking-if-a-uitableviewcell-is-fully-visible/</guid>
+      <description>&lt;p&gt;Sometime you need to know if a UITableViewCell is completely visible and for those times there&amp;rsquo;s this handy UITableViewCell category.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-objc&#34; data-lang=&#34;objc&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//Place in UITableViewCell Category
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;- (&lt;span style=&#34;color:#66d9ef&#34;&gt;BOOL&lt;/span&gt;) &lt;span style=&#34;color:#a6e22e&#34;&gt;isCompletelyVisible&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// For parents category see pdenya.com/g/uiview_parents
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    UITableView &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;tableview &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (UITableView &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)[self parents:[UITableView &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt;]];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    CGRect rect &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [tableview rectForRowAtIndexPath:[tableview indexPathForCell:self]];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    rect &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [tableview convertRect:rect toView:tableview.superview];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;BOOL&lt;/span&gt; completelyVisible &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; CGRectContainsRect(tableview.frame, rect);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; completelyVisible;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I&amp;rsquo;d like to mention that you can skip this check entirely if your goal is to make sure a cell is completely visible. With UITableViewScrollPositionNone scrollToRowAtIndexPath:atScrollPosition:animated: doesn&amp;rsquo;t scroll at all if the cell is totally visible and in other cases it scrolls as little as possible which is usually the ideal behavior.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HelloSign for Gmail</title>
+      <link>http://localhost:1313/2013/08/06/hellosign-for-gmail/</link>
+      <pubDate>Tue, 06 Aug 2013 19:24:54 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/06/hellosign-for-gmail/</guid>
+      <description>&lt;p&gt;HelloSign for Gmail is a browser extension for Chrome, FireFox and Safari that lets users fill out and sign documents without ever leaving Gmail.&lt;/p&gt;
+&lt;p&gt;The user clicks the sign button next to an attachment and the file is uploaded to HelloSign and the HelloSign editor is opened in a lightbox for the user to sign and make annotations. When the user clicks Continue the iframe closes, a compose window opens in Gmail (as if the user had clicked reply) and the signed document is attached, ready to be sent.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tap anywhere else to cancel in Objective C</title>
+      <link>http://localhost:1313/2013/08/06/tap-anywhere-else-to-cancel-in-objective-c/</link>
+      <pubDate>Tue, 06 Aug 2013 17:10:57 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/06/tap-anywhere-else-to-cancel-in-objective-c/</guid>
+      <description>&lt;p&gt;Whenever you have a modal element that outside touches should cancel a few things need to happen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Touches inside the modal element should behave normally&lt;/li&gt;
+&lt;li&gt;Outside touches should not trigger touch events on tappable elements&lt;/li&gt;
+&lt;li&gt;Outside touches should trigger a handler to close the modal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In my case I was swiping a UITableViewCell and revealing a controls view that should close if any other UITableViewCell is tapped.&lt;/p&gt;
+&lt;h2 id=&#34;hittestwithevent---the-easiest-method&#34;&gt;hitTest:withEvent - The easiest method&lt;/h2&gt;
+&lt;p&gt;Touch events bubble down from the root view rather than up from the target view which makes this a bit easier. On whichever view needs to capture the touch events, we need to override hitTest:withEvent: to return nil and call a function whenever a modal is open and a view other than the modal is tapped. I overrode this method in my UITableView&amp;rsquo;s superview.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hiding the WP Admin Bar</title>
+      <link>http://localhost:1313/2013/08/03/hiding-the-wp-admin-bar/</link>
+      <pubDate>Sat, 03 Aug 2013 17:36:09 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/03/hiding-the-wp-admin-bar/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s a few plugins for hiding the WordPress admin bar that shows up on top of your site when you&amp;rsquo;re logged in but it seems like overkill.&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t care about preventing it from loading you can drop this in your stylesheet at wp-admin/themes.php?page=editcss to hide it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;!important&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#wpadminbar {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Accepting developer roles on facebook</title>
+      <link>http://localhost:1313/2013/08/01/accepting-developer-roles-on-facebook/</link>
+      <pubDate>Fri, 02 Aug 2013 04:30:40 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/01/accepting-developer-roles-on-facebook/</guid>
+      <description>&lt;p&gt;Log into Facebook and go to &lt;a href=&#34;https://developers.facebook.com/apps&#34;&gt;https://developers.facebook.com/apps&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;register-as-a-developer-if-you-havent-yet&#34;&gt;Register as a developer if you haven&amp;rsquo;t yet&lt;/h2&gt;
+&lt;p&gt;This process is a pain and involves entering your phone number and receiving a confirmation text.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2013/08/Screen-Shot-2013-08-08-at-9.06.39-PM.png&#34;&gt;&lt;img alt=&#34;Screen Shot 2013-08-08 at 9.06.39 PM&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/08/Screen-Shot-2013-08-08-at-9.06.39-PM-1024x943.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;check-for-invites&#34;&gt;Check for invites&lt;/h2&gt;
+&lt;p&gt;You should get a notification at the top about any pending invites.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2013/08/pending_invites.png&#34;&gt;&lt;img alt=&#34;pending_invites&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/08/pending_invites-1024x943.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Click through and confirm.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2013/08/invite_list1.png&#34;&gt;&lt;img alt=&#34;invite_list&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/08/invite_list1-1024x943.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A less frustrating suspend shortcut for VMWare Fusion</title>
+      <link>http://localhost:1313/2013/07/31/frustrating-vmware-fusion-suspend-shortcut/</link>
+      <pubDate>Wed, 31 Jul 2013 18:02:31 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/31/frustrating-vmware-fusion-suspend-shortcut/</guid>
+      <description>&lt;p&gt;&amp;ldquo;⌘ + w&amp;rdquo; in VMWare has been frustrating me for months. The situation goes something like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I have a VM open and active&lt;/li&gt;
+&lt;li&gt;I hit &amp;ldquo;⌘ + W&amp;rdquo; like an idiot&lt;/li&gt;
+&lt;li&gt;My VM starts suspending, forcing me to wait for suspending and resuming to complete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I needed a way to stop myself from accidentally closing my VMs multiple times per week.&lt;/p&gt;
+&lt;h2 id=&#34;the-fix&#34;&gt;The Fix&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s pretty simple, we just remap &amp;ldquo;⌘ + w&amp;rdquo; to something else like &amp;ldquo;⌘ + ⇧ + w&amp;rdquo; in System Preferences. First, open System Preferences and go to Keyboard &amp;gt; Keyboard Shortcuts &amp;gt; Application Shortcuts. Use &amp;ldquo;File-&amp;gt;Close&amp;rdquo; as the menu title and VMWare Fusion as the application.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Custom Relative Time with Date Components</title>
+      <link>http://localhost:1313/2013/07/30/custom-relative-time-with-date-components/</link>
+      <pubDate>Tue, 30 Jul 2013 18:43:38 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/30/custom-relative-time-with-date-components/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s an if chain that figures out the relative time. The current version suites my needs but it&amp;rsquo;s easy to modify.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-objc&#34; data-lang=&#34;objc&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//print date to countdown_label
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;NSCalendar &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;calendar &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NSDate &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;fromDate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSDate date];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NSDate &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;toDate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [user filtered_until];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NSDateComponents &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;components &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [calendar components:NSDayCalendarUnit&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;NSHourCalendarUnit&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;NSMinuteCalendarUnit fromDate:fromDate toDate:toDate options:&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NSString &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.day &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%i days&amp;#34;&lt;/span&gt;, components.day];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//1d 4hrs
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.day &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; components.hour &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%id %ihrs&amp;#34;&lt;/span&gt;, components.day, components.hour];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//1d 1hr
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.day &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; components.hour &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%id %ihr&amp;#34;&lt;/span&gt;, components.day, components.hour];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//1 day  ..this probably won&amp;#39;t happen
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.day &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; components.hour &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%i day&amp;#34;&lt;/span&gt;, components.day];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//12 hours
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.hour &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%i hours&amp;#34;&lt;/span&gt;, components.hour];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//1 hour
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.hour &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;1 hour&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//48 mins
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.minute &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [NSString stringWithFormat:&lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;%i mins&amp;#34;&lt;/span&gt;, components.minute];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//1 min
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (components.minute &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;1 min&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//0 min or less
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    countdown_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;@&amp;#34;now&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Disabling the Print hotkey in OS X</title>
+      <link>http://localhost:1313/2013/07/23/disabling-the-print-hotkey-in-os-x/</link>
+      <pubDate>Tue, 23 Jul 2013 17:20:24 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/23/disabling-the-print-hotkey-in-os-x/</guid>
+      <description>&lt;p&gt;The print hotkey is not useful to me. If it opened immediately and was immediately dismissible with &lt;code&gt;esc&lt;/code&gt; it would be less frustrating but as it is every time the print dialogue opens I need to wait several seconds before I can dismiss it regardless of which app it&amp;rsquo;s in.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;⌘+P&amp;rdquo; has been frustrating me for a while, being next to &amp;ldquo;⌘+[&amp;rdquo;. Now that i&amp;rsquo;m using Sublime Text 2 as my editor of choice it&amp;rsquo;s worse because &amp;ldquo;⌘+P&amp;rdquo; is ST2&amp;rsquo;s default quick open hotkey.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Custom Theme for Sublime Text 2 and XCode</title>
+      <link>http://localhost:1313/2013/07/22/custom-tmtheme-for-sublime-text-2/</link>
+      <pubDate>Mon, 22 Jul 2013 22:32:41 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/22/custom-tmtheme-for-sublime-text-2/</guid>
+      <description>&lt;p&gt;My personal syntax highlighting theme. I use this in various forms aside from Sublime Text 2 including on this blog for the code examples and in XCode, Sublime Text 2, and where ever else I can get away with it.&lt;/p&gt;
+&lt;h2 id=&#34;color-codes&#34;&gt;Color Codes&lt;/h2&gt;
+&lt;p&gt;Background - #161714&lt;/p&gt;
+&lt;p&gt;Text Color - #e6e2da&lt;/p&gt;
+&lt;p&gt;Green - #ADBC68&lt;/p&gt;
+&lt;p&gt;Dark Blue - #4793CB&lt;/p&gt;
+&lt;p&gt;Light Blue - #A5CFE1&lt;/p&gt;
+&lt;p&gt;Burnt Orange - #D76E28&lt;/p&gt;
+&lt;p&gt;Orange - #FD971F&lt;/p&gt;
+&lt;p&gt;Grey - #686760&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exporting PDFs in Illustrator</title>
+      <link>http://localhost:1313/2013/07/18/exporting-pdfs-in-illustrator/</link>
+      <pubDate>Thu, 18 Jul 2013 22:10:39 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/18/exporting-pdfs-in-illustrator/</guid>
+      <description>&lt;p&gt;There are a few common issues with saving PDFs in Adobe Illustrator. I experienced these with CS5 (5.1 specifically) but while looking for a fix I saw reports of the same errors from users with CS2, CS3, CS4, and CS6 as well. Commond errors include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;This file cannot be found.&amp;rdquo; when trying to save a PDF in Illustrator&lt;/li&gt;
+&lt;li&gt;Saved PDFs coming out blank white or empty with file sizes 500k+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;this-file-cannot-be-found&#34;&gt;This file cannot be found&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;illustrator_cannot_be_found&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/07/illustrator_cannot_be_found.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assigning variable defaults in PHP</title>
+      <link>http://localhost:1313/2013/07/16/assigning-variable-defaults-in-php/</link>
+      <pubDate>Tue, 16 Jul 2013 18:21:43 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/16/assigning-variable-defaults-in-php/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;d be nice if PHP had a quick Or-Equals expression like Ruby:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user &lt;span style=&#34;color:#f92672&#34;&gt;||=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;User&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;new
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;but we make do with few slightly less sugary idioms.&lt;/p&gt;
+&lt;h3 id=&#34;the-standard-way&#34;&gt;The standard way&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;isset&lt;/span&gt;($user)) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  $user &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;a-bit-shorter&#34;&gt;A bit shorter&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$user &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;isset&lt;/span&gt;($user) &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; $user &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;shorter-still&#34;&gt;Shorter still&lt;/h3&gt;
+&lt;p&gt;This is my preferred way of making sure variables are set. Short and clear.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;isset&lt;/span&gt;($user) &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; $user &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;expressions-with-defaults&#34;&gt;Expressions with defaults&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s usually best not to treat variable assignments as booleans but in cases like this I think it&amp;rsquo;s clear enough what&amp;rsquo;s happening.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IE8 select element change event not firing with the keyboard</title>
+      <link>http://localhost:1313/2013/07/11/ie8-select-element-change-event-not-firing-with-the-keyboard/</link>
+      <pubDate>Thu, 11 Jul 2013 14:00:45 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/11/ie8-select-element-change-event-not-firing-with-the-keyboard/</guid>
+      <description>&lt;p&gt;Change events on select elements don&amp;rsquo;t fire in IE8 when the user confirms the selection with the enter key until the user clicks elsewhere. If your users are waiting on something in particular to happen after updating the select this is a bit of a problem.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s my solution:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// jQuery syntax for ease of reading
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;the_select&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#my_select&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// this works great for most browsers
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;the_select&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;change&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;changed&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;});
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// if IE8
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;msie&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; parseInt(&lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;browser&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;version&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// get the keypress event
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;the_select&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;keypress&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;// if the user pushed enter
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;keyCode&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;keyCode&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ENTER&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;// manually trigger the change handler
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            &lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;change&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#75715e&#34;&gt;// blur afterwards isn&amp;#39;t ideal but
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                    &lt;span style=&#34;color:#75715e&#34;&gt;// it doesn&amp;#39;t work correctly otherwise
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                    .&lt;span style=&#34;color:#a6e22e&#34;&gt;blur&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Getting a particular superview in Objective-C</title>
+      <link>http://localhost:1313/2013/07/10/getting-a-particular-superview-in-objective-c/</link>
+      <pubDate>Thu, 11 Jul 2013 05:00:05 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/10/getting-a-particular-superview-in-objective-c/</guid>
+      <description>&lt;p&gt;If you have, for example, a child view of a UITableViewCell and you need to get the UITableViewCell in question you can quickly do something like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-objc&#34; data-lang=&#34;objc&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;UITableViewCell &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;cell &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (UITableViewCell &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)the_view.superview.superview;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It works but this code is fragile because it requires that the view heirarchy not change (also things like this usually point to a code organization issue but hey, i&amp;rsquo;m not here to judge). If we want to be able to add a scrollview in between without editing this method we&amp;rsquo;ll have to take a different approach.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Debugging Javascript with Console</title>
+      <link>http://localhost:1313/2013/07/09/hello-world/</link>
+      <pubDate>Tue, 09 Jul 2013 19:24:29 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/09/hello-world/</guid>
+      <description>&lt;p&gt;A quick review.&lt;/p&gt;
+&lt;h3 id=&#34;consolelog&#34;&gt;Console.log()&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//how to print a log statement
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;That thing you expected to happen is now happening!&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//how to break production sites in internet explorer
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;anything&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//how to log safer
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;l&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;){&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(window.&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;){&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;);}}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;l&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;I can forget this in my code base without breaking anything!&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;consoletrace&#34;&gt;Console.trace()&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//how to figure out what&amp;#39;s calling what
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;trace&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//console.trace example:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;() { &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;trace&lt;/span&gt;(); }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;() { &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;(); }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;() { &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;(); }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;() { &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;(); }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (Math.&lt;span style=&#34;color:#a6e22e&#34;&gt;random&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you copy and paste that console.trace example into the Chrome Console you&amp;rsquo;ll get a full stack trace like this one:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

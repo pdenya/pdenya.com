@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Css on Paul Denya</title>
+    <link>http://localhost:1313/category/css/</link>
+    <description>Recent content in Css on Paul Denya</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2015 18:55:37 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/category/css/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remove all images from JQuery UI CSS</title>
+      <link>http://localhost:1313/2015/05/04/remove-images-jquery-ui-css/</link>
+      <pubDate>Mon, 04 May 2015 18:55:37 +0000</pubDate>
+      <guid>http://localhost:1313/2015/05/04/remove-images-jquery-ui-css/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/* remove all default background images from jquery ui */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-active&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-active&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-active&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-active&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-default&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-default&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-error&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-error-text&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-error&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-error&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-error&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-highlight&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-highlight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-highlight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-highlight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-hover&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-focus&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-hover&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-focus&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-focus&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-state-focus&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-header&lt;/span&gt; .&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-icon&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-overlay&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;ui-widget-shadow&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;background-image&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Custom cursors, relative paths, and internet explorer</title>
+      <link>http://localhost:1313/2013/10/02/custom-cursors-relative-paths-and-internet-explorer/</link>
+      <pubDate>Wed, 02 Oct 2013 15:00:57 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/02/custom-cursors-relative-paths-and-internet-explorer/</guid>
+      <description>&lt;p&gt;Custom cursors in an external CSS file will 404 in Internet Explorer unless your using fully qualified urls. This effects IE6, IE7, IE8, IE9 and IE10.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-happening&#34;&gt;What is happening&lt;/h2&gt;
+&lt;p&gt;Internet Explorer for some ungodly reason treats relative font paths as relative to the page, not relative to the CSS File.&lt;/p&gt;
+&lt;h2 id=&#34;my-fix&#34;&gt;My Fix&lt;/h2&gt;
+&lt;p&gt;You can fully qualify the URL for all clients but I work offline often so I&amp;rsquo;d rather have Chrome referencing my dev server rather than the production CDN. Normally I&amp;rsquo;d turn to CSS hacks here but there&amp;rsquo;s nothing easy to include inline for IE10. I ended up using the &lt;code&gt;ie&lt;/code&gt; class which is added via javascript onReady because IE10 doesn&amp;rsquo;t support conditional comments.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vertical space in bootstrap</title>
+      <link>http://localhost:1313/2013/08/08/vertical-space-in-bootstrap/</link>
+      <pubDate>Thu, 08 Aug 2013 15:00:13 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/08/vertical-space-in-bootstrap/</guid>
+      <description>&lt;p&gt;I use &lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; for most personal projects lately but one thing that consistently gets me is the lack of vertical spacing classes.&lt;/p&gt;
+&lt;h2 id=&#34;quick-fix&#34;&gt;Quick fix&lt;/h2&gt;
+&lt;p&gt;I added these classes to my bootstrap stylesheet&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset&lt;/span&gt;  { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset1&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset2&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset3&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset4&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset5&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset6&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset7&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset8&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;voffset9&lt;/span&gt; { &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;150&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;px&lt;/span&gt;; }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        Vertically offset text
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

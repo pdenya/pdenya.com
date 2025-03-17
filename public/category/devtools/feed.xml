@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Devtools on Paul Denya</title>
+    <link>http://localhost:1313/category/devtools/</link>
+    <description>Recent content in Devtools on Paul Denya</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 24 May 2015 05:43:04 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/category/devtools/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disable Full Screen Shortcut on Mac OSX 10.10 Yosemite</title>
+      <link>http://localhost:1313/2015/05/23/disable-full-screen-shortcut-mac-osx-10-10-yosemite/</link>
+      <pubDate>Sun, 24 May 2015 05:43:04 +0000</pubDate>
+      <guid>http://localhost:1313/2015/05/23/disable-full-screen-shortcut-mac-osx-10-10-yosemite/</guid>
+      <description>&lt;p&gt;Full screen is super annoying on OS X lately. I use &lt;a href=&#34;http://www.irradiatedsoftware.com/sizeup/&#34;&gt;SizeUp&lt;/a&gt; which gives me a shortcut for expanding the windows instead of using the green button but i&amp;rsquo;m still having random encounters with full screen mode because of the shortcut ctrl+shift+f. So here&amp;rsquo;s how to disable that..or at least make it harder to do by accident:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Change full screen shortcut to Shift + Ctrl + Opt + Cmd + F&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;defaults write -g NSUserKeyEquivalents -dict-add &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Enter Full Screen&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$&lt;span style=&#34;color:#e6db74&#34;&gt;~^@F&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Better read-only view for google spreadsheets</title>
+      <link>http://localhost:1313/2013/10/28/better-read-only-view-for-google-spreadsheets/</link>
+      <pubDate>Mon, 28 Oct 2013 15:00:36 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/28/better-read-only-view-for-google-spreadsheets/</guid>
+      <description>&lt;p&gt;If you need read only access to a google docs spreadsheet it&amp;rsquo;s much faster and easier to use an exported version. Just go to File &amp;gt; Download As &amp;gt; Web Page and it&amp;rsquo;ll open a new window with the fully loaded spreadsheet.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a &lt;a href=&#34;https://docs.google.com/spreadsheet/ccc?key=0Ajf-Cys1JrC9dHpmQjNtakpVdW9yLVpsR0xWT1FYenc&amp;amp;usp=sharing&#34;&gt;public spreadsheet&lt;/a&gt; if you want to try it out.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Problems authenticating on public wifi</title>
+      <link>http://localhost:1313/2013/10/24/problems-authenticating-on-public-wifi/</link>
+      <pubDate>Fri, 25 Oct 2013 00:45:14 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/24/problems-authenticating-on-public-wifi/</guid>
+      <description>&lt;p&gt;At Starbucks or McDonalds, on airplanes, at libraries or anywhere else they have free wifi you get popups asking you to accept terms and conditions and click a [Connect Now] button.&lt;/p&gt;
+&lt;p&gt;If you ever have problems getting these screens to display it&amp;rsquo;s almost certainly because you&amp;rsquo;re using non-default DNS servers. The solution for me was to go to System Preferences &amp;gt; Network and create a new Location called &amp;ldquo;Default DNS&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logging into postgres on Bitnami&#39;s Ruby Stack VM</title>
+      <link>http://localhost:1313/2013/10/03/logging-into-postgres-on-bitnamis-ruby-stack-vm/</link>
+      <pubDate>Thu, 03 Oct 2013 15:00:19 +0000</pubDate>
+      <guid>http://localhost:1313/2013/10/03/logging-into-postgres-on-bitnamis-ruby-stack-vm/</guid>
+      <description>&lt;p&gt;The VM for the &lt;a href=&#34;http://bitnami.com/stack/ruby&#34;&gt;Bitnami Ruby Stack&lt;/a&gt; doesn&amp;rsquo;t have the correct credentials for postgres anywhere that I could find. Incorrect credentials that I saw on the Bitnami site, in the docs hosted on the VM, or on the internet while searching for a solution:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: root
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: root
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass: root
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: administrator
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass: bitnami
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: bitnami
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass: bitnami
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: postgres
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: postgres
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass: bitnami
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;user: postgres
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pass: postgres
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I never found the correct combination but instead simply installed postgres via apt-get and moved the bitnami postgres installation outside of $PATH in case I need it in the future.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disabling the save shortcut for browsers</title>
+      <link>http://localhost:1313/2013/08/26/disabling-the-save-shortcut-for-browsers/</link>
+      <pubDate>Mon, 26 Aug 2013 18:20:46 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/26/disabling-the-save-shortcut-for-browsers/</guid>
+      <description>&lt;p&gt;The save hotkey in Chrome needs to be changed for all the same reasons I &lt;a href=&#34;http://localhost:1313/2013/07/23/disabling-the-print-hotkey-in-os-x/&#34;&gt;disabled the Print hotkey&lt;/a&gt;. I hit it by accident a few times a week thinking some other application is active and then I have to wait for it to load to get out of it. It&amp;rsquo;s only a few seconds but it&amp;rsquo;s an easily fixed annoyance.&lt;/p&gt;
+&lt;h2 id=&#34;the-fix&#34;&gt;The Fix&lt;/h2&gt;
+&lt;p&gt;Changing the Save hotkey for Chrome is pretty simple and it&amp;rsquo;ll work similarly for other browsers. Open System Preferences &amp;gt; Keyboard &amp;gt; Keyboard Shortcuts &amp;gt; Application Shortcuts. Add custom shortcuts for:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mac constantly switching to a new finder window when the space key is pressed</title>
+      <link>http://localhost:1313/2013/08/13/mac-constantly-switching-to-a-new-finder-window-when-the-space-key-is-pressed/</link>
+      <pubDate>Tue, 13 Aug 2013 15:00:13 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/13/mac-constantly-switching-to-a-new-finder-window-when-the-space-key-is-pressed/</guid>
+      <description>&lt;p&gt;If whenever you press the space key your mac shifts focus to a finder window you should be able to fix it by hard booting Finder. Open terminal and run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;killall Finder
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Unarchiving 7z files on OS X</title>
+      <link>http://localhost:1313/2013/08/12/unarchiving-7z-files-on-os-x/</link>
+      <pubDate>Mon, 12 Aug 2013 15:00:33 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/12/unarchiving-7z-files-on-os-x/</guid>
+      <description>&lt;p&gt;Brew is always saving the day.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Install p7zip&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install p7zip
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# extract&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;7z x file.7z
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Hiding the WP Admin Bar</title>
+      <link>http://localhost:1313/2013/08/03/hiding-the-wp-admin-bar/</link>
+      <pubDate>Sat, 03 Aug 2013 17:36:09 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/03/hiding-the-wp-admin-bar/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s a few plugins for hiding the WordPress admin bar that shows up on top of your site when you&amp;rsquo;re logged in but it seems like overkill.&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t care about preventing it from loading you can drop this in your stylesheet at wp-admin/themes.php?page=editcss to hide it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;margin-top&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;!important&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#wpadminbar {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Accepting developer roles on facebook</title>
+      <link>http://localhost:1313/2013/08/01/accepting-developer-roles-on-facebook/</link>
+      <pubDate>Fri, 02 Aug 2013 04:30:40 +0000</pubDate>
+      <guid>http://localhost:1313/2013/08/01/accepting-developer-roles-on-facebook/</guid>
+      <description>&lt;p&gt;Log into Facebook and go to &lt;a href=&#34;https://developers.facebook.com/apps&#34;&gt;https://developers.facebook.com/apps&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;register-as-a-developer-if-you-havent-yet&#34;&gt;Register as a developer if you haven&amp;rsquo;t yet&lt;/h2&gt;
+&lt;p&gt;This process is a pain and involves entering your phone number and receiving a confirmation text.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2013/08/Screen-Shot-2013-08-08-at-9.06.39-PM.png&#34;&gt;&lt;img alt=&#34;Screen Shot 2013-08-08 at 9.06.39 PM&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/08/Screen-Shot-2013-08-08-at-9.06.39-PM-1024x943.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;check-for-invites&#34;&gt;Check for invites&lt;/h2&gt;
+&lt;p&gt;You should get a notification at the top about any pending invites.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2013/08/pending_invites.png&#34;&gt;&lt;img alt=&#34;pending_invites&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/08/pending_invites-1024x943.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Click through and confirm.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2013/08/invite_list1.png&#34;&gt;&lt;img alt=&#34;invite_list&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2013/08/invite_list1-1024x943.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A less frustrating suspend shortcut for VMWare Fusion</title>
+      <link>http://localhost:1313/2013/07/31/frustrating-vmware-fusion-suspend-shortcut/</link>
+      <pubDate>Wed, 31 Jul 2013 18:02:31 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/31/frustrating-vmware-fusion-suspend-shortcut/</guid>
+      <description>&lt;p&gt;&amp;ldquo;⌘ + w&amp;rdquo; in VMWare has been frustrating me for months. The situation goes something like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I have a VM open and active&lt;/li&gt;
+&lt;li&gt;I hit &amp;ldquo;⌘ + W&amp;rdquo; like an idiot&lt;/li&gt;
+&lt;li&gt;My VM starts suspending, forcing me to wait for suspending and resuming to complete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I needed a way to stop myself from accidentally closing my VMs multiple times per week.&lt;/p&gt;
+&lt;h2 id=&#34;the-fix&#34;&gt;The Fix&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s pretty simple, we just remap &amp;ldquo;⌘ + w&amp;rdquo; to something else like &amp;ldquo;⌘ + ⇧ + w&amp;rdquo; in System Preferences. First, open System Preferences and go to Keyboard &amp;gt; Keyboard Shortcuts &amp;gt; Application Shortcuts. Use &amp;ldquo;File-&amp;gt;Close&amp;rdquo; as the menu title and VMWare Fusion as the application.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disabling the Print hotkey in OS X</title>
+      <link>http://localhost:1313/2013/07/23/disabling-the-print-hotkey-in-os-x/</link>
+      <pubDate>Tue, 23 Jul 2013 17:20:24 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/23/disabling-the-print-hotkey-in-os-x/</guid>
+      <description>&lt;p&gt;The print hotkey is not useful to me. If it opened immediately and was immediately dismissible with &lt;code&gt;esc&lt;/code&gt; it would be less frustrating but as it is every time the print dialogue opens I need to wait several seconds before I can dismiss it regardless of which app it&amp;rsquo;s in.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;⌘+P&amp;rdquo; has been frustrating me for a while, being next to &amp;ldquo;⌘+[&amp;rdquo;. Now that i&amp;rsquo;m using Sublime Text 2 as my editor of choice it&amp;rsquo;s worse because &amp;ldquo;⌘+P&amp;rdquo; is ST2&amp;rsquo;s default quick open hotkey.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Custom Theme for Sublime Text 2 and XCode</title>
+      <link>http://localhost:1313/2013/07/22/custom-tmtheme-for-sublime-text-2/</link>
+      <pubDate>Mon, 22 Jul 2013 22:32:41 +0000</pubDate>
+      <guid>http://localhost:1313/2013/07/22/custom-tmtheme-for-sublime-text-2/</guid>
+      <description>&lt;p&gt;My personal syntax highlighting theme. I use this in various forms aside from Sublime Text 2 including on this blog for the code examples and in XCode, Sublime Text 2, and where ever else I can get away with it.&lt;/p&gt;
+&lt;h2 id=&#34;color-codes&#34;&gt;Color Codes&lt;/h2&gt;
+&lt;p&gt;Background - #161714&lt;/p&gt;
+&lt;p&gt;Text Color - #e6e2da&lt;/p&gt;
+&lt;p&gt;Green - #ADBC68&lt;/p&gt;
+&lt;p&gt;Dark Blue - #4793CB&lt;/p&gt;
+&lt;p&gt;Light Blue - #A5CFE1&lt;/p&gt;
+&lt;p&gt;Burnt Orange - #D76E28&lt;/p&gt;
+&lt;p&gt;Orange - #FD971F&lt;/p&gt;
+&lt;p&gt;Grey - #686760&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
