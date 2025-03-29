@@ -1,0 +1,232 @@
+// Custom Bootstrap variables
+$primary: #2b7fc7;
+$secondary: #4a6db5;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+// Font settings
+$font-family-sans-serif: "Lexend", sans-serif;
+$font-weight-normal: 300;
+$headings-font-weight: 600;
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Site variables - Bootstrap-compatible variables for custom styles
+:root {
+  --bs-primary: #{$primary};
+  --bs-secondary: #{$secondary};
+  --bs-background: #f7f9fc;
+  --bs-text-color: #333;
+  --bs-light-text-color: #666;
+  --bs-border-color: #ddd;
+}
+
+// Dark mode
+body.dark {
+  --bs-background: #18191b;
+  --bs-text-color: #eee;
+  --bs-light-text-color: #bbb;
+  --bs-border-color: #444;
+  --bs-body-bg: #1a1a1a;
+  --bs-body-color: #eee;
+}
+
+// Basic styles
+body {
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  background: var(--bs-background);
+  color: var(--bs-text-color);
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Button styles (combines Bootstrap and custom styles)
+.btn {
+  border-radius: 6px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.9);
+  position: relative;
+  margin: 5px 10px 5px 0;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+// Dark mode button styles
+body.dark {
+  .btn-outline-primary {
+    border-color: var(--bs-primary);
+    color: var(--bs-text-color);
+
+    &:hover {
+      background-color: var(--bs-primary);
+      color: #fff;
+    }
+  }
+}
+
+// Content styles
+.post-content {
+  font-size: 1.1rem;
+
+  a {
+    color: var(--bs-primary);
+    text-decoration: none;
+    transition: border-bottom 0.3s;
+
+    &:hover {
+      border-bottom: 1px solid var(--bs-primary);
+    }
+
+    &.btn {
+      color: var(--bs-text-color);
+    }
+  }
+
+  strong {
+    font-weight: 600;
+    color: var(--bs-primary);
+  }
+}
+
+// Navigation
+.nav {
+  display: flex;
+  align-items: center;
+  background: var(--bs-background);
+  border-bottom: 1px solid var(--bs-border-color);
+  padding: 15px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bs-primary);
+    text-decoration: none;
+  }
+}
+
+.logo-img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-image: url("/favicon.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#menu {
+  margin-left: auto;
+
+  a {
+    color: var(--bs-text-color);
+    font-weight: 400;
+    transition: color 0.3s;
+
+    &:hover,
+    &.active {
+      color: var(--bs-primary);
+    }
+  }
+}
+
+// Homepage styles
+.home-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-profile {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 0;
+  background: var(--bs-background);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+// Posts list
+.post-entry {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background: var(--bs-background);
+  border: 1px solid var(--bs-border-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.entry-header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--bs-primary);
+}
+
+// Code blocks
+pre {
+  border-radius: 6px;
+  padding: 15px;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+  font-size: 0.9em;
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .home-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .post-content {
+      margin-top: 20px;
+    }
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+}

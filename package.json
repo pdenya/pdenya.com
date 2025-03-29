@@ -1,0 +1,13 @@
+{
+  "name": "pdenya-hugo-site",
+  "version": "1.0.0",
+  "description": "Paul Denya's personal website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "hugo server -D",
+    "build": "hugo"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}

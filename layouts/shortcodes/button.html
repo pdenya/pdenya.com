@@ -1,0 +1,26 @@
+{{ $url := .Get "url" | default "#" }}
+{{ $class := .Get "class" | default "primary" }}
+{{ $size := .Get "size" | default "" }}
+{{ $outline := .Get "outline" | default "false" }}
+{{ $icon := .Get "icon" | default "" }}
+
+{{ $buttonClass := "" }}
+{{ if eq $outline "true" }}
+  {{ $buttonClass = printf "btn btn-outline-%s" $class }}
+{{ else }}
+  {{ $buttonClass = printf "btn btn-%s" $class }}
+{{ end }}
+
+{{ if ne $size "" }}
+  {{ $buttonClass = printf "%s btn-%s" $buttonClass $size }}
+{{ end }}
+
+<a href="{{ $url }}" class="{{ $buttonClass }}">
+  {{ if ne $icon "" }}<i class="{{ $icon }} me-1"></i>{{ end }}
+  {{ if .IsNamedParams }}
+    {{ .Get "text" | default "" }}
+  {{ else }}
+    {{ .Get 0 | default "" }}
+  {{ end }}
+  {{ .Inner }}
+</a>
