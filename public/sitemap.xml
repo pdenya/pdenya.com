@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-03-20T12:00:00-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/pages/</loc>
     <lastmod>2022-10-17T18:05:30+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/portfolio/</loc>
     <lastmod>2022-10-17T18:05:30+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2017-03-10T05:30:08+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/category/</loc>
     <lastmod>2017-03-10T05:30:08+00:00</lastmod>
@@ -149,12 +149,6 @@
     <loc>http://localhost:1313/2013/07/30/custom-relative-time-with-date-components/</loc>
     <lastmod>2013-07-30T18:43:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pages/good-faux-meat/</loc>
-    <lastmod>2013-07-28T01:01:43+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/a-light-commuter-laptop-backpack/</loc>
-    <lastmod>2013-07-26T04:16:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/2013/07/23/disabling-the-print-hotkey-in-os-x/</loc>
     <lastmod>2013-07-23T17:20:24+00:00</lastmod>
   </url><url>
@@ -173,23 +167,11 @@
     <loc>http://localhost:1313/category/php/</loc>
     <lastmod>2013-07-16T18:21:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tracking-down-exceptions-in-xcode/</loc>
-    <lastmod>2013-07-16T17:37:43+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/bitbucket/</loc>
-    <lastmod>2013-07-14T02:21:12+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/sane-default-categories/</loc>
-    <lastmod>2013-07-12T07:51:18+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/2013/07/11/ie8-select-element-change-event-not-firing-with-the-keyboard/</loc>
     <lastmod>2013-07-11T14:00:45+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/2013/07/10/getting-a-particular-superview-in-objective-c/</loc>
     <lastmod>2013-07-11T05:00:05+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/work/</loc>
-    <lastmod>2013-07-10T05:02:54+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2013-07-09T19:24:29+00:00</lastmod>

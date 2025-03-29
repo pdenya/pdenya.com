@@ -21,6 +21,7 @@ HTML/CSS, SQL, Elasticsearch, MongoDB, Redis, AWS, Docker, Git, AI/ML APIs (Open
 
 Working remotely from Raleigh, NC.
 
-[Book time with me](https://calendly.com/pauldenya/30min)
-
-[Email me](mailto:pdenya+wp@gmail.com)
+<div class="home-buttons">
+  <a href="https://calendly.com/pauldenya/30min" class="btn btn-success btn-lg"><i class="fas fa-calendar-alt"></i> &nbsp;Book a free consultation</a>
+  <a href="mailto:pdenya+wp@gmail.com" class="btn btn-secondary btn-lg"><i class="fas fa-envelope"></i> &nbsp;Send me an email</a>
+</div>

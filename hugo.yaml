@@ -47,3 +47,15 @@ menu:
       url: /about
 permalinks:
   posts: "/blog/:title"
+module:
+  hugoVersion:
+    extended: true
+  mounts:
+    - source: node_modules/bootstrap/scss
+      target: assets/bootstrap/scss
+    - source: node_modules/bootstrap/dist/js
+      target: assets/bootstrap/js
+    - source: assets
+      target: assets
+    - source: static
+      target: static

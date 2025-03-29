@@ -667,29 +667,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
-      <title>Good faux meat</title>
-      <link>http://localhost:1313/pages/good-faux-meat/</link>
-      <pubDate>Sun, 28 Jul 2013 01:01:43 +0000</pubDate>
-       <guid isPermaLink="false">https://pdenya.com/?page_id=149</guid> 
-      <description>&lt;p&gt;Chipotles new veggie&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>A light commuter laptop backpack</title>
-      <link>http://localhost:1313/blog/a-light-commuter-laptop-backpack/</link>
-      <pubDate>Fri, 26 Jul 2013 04:16:00 +0000</pubDate>
-       <guid isPermaLink="false">https://pdenya.com/?p=141</guid> 
-      <description>&lt;h2 id=&#34;my-pre-purchase-requirements&#34;&gt;My pre-purchase requirements&lt;/h2&gt;
-&lt;h2 id=&#34;the-product&#34;&gt;The Product&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.caselogic.com/en-us/us/products/laptop-cases/laptop-backpacks/16-laptop-backpack-&#34;&gt;http://www.caselogic.com/en-us/us/products/laptop-cases/laptop-backpacks/16-laptop-backpack-&lt;/a&gt; &lt;em&gt;-ulb&lt;/em&gt;- &lt;em&gt;116&lt;/em&gt;-_gray#&lt;/p&gt;
-&lt;h2 id=&#34;price&#34;&gt;Price&lt;/h2&gt;
-&lt;h2 id=&#34;alternatives&#34;&gt;Alternatives&lt;/h2&gt;
-&lt;h4 id=&#34;belkin-slim&#34;&gt;Belkin Slim&lt;/h4&gt;
-&lt;p&gt;Belkin Slim 15&amp;quot; Notebook Polyester Backpack&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/B001586UI2/ref=as_li_qf_sp_asin_il?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B001586UI2&amp;amp;linkCode=as2&amp;amp;tag=pdenyacom-20&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B001586UI2&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=pdenyacom-20&#34;&gt;&lt;/a&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=pdenyacom-20&amp;l=as2&amp;o=1&amp;a=B001586UI2&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Case Logic DLBP-114 14-Inch Laptop /MacBook Air / Pro Retina Display Backpack (Black)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/B004AM624C/ref=as_li_tf_il?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B004AM624C&amp;amp;linkCode=as2&amp;amp;tag=pdenyacom-20&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B004AM624C&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=pdenyacom-20&#34;&gt;&lt;/a&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=pdenyacom-20&amp;l=as2&amp;o=1&amp;a=B004AM624C&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Disabling the Print hotkey in OS X</title>
       <link>http://localhost:1313/2013/07/23/disabling-the-print-hotkey-in-os-x/</link>
       <pubDate>Tue, 23 Jul 2013 17:20:24 +0000</pubDate>
@@ -747,27 +724,6 @@
 &lt;p&gt;It&amp;rsquo;s usually best not to treat variable assignments as booleans but in cases like this I think it&amp;rsquo;s clear enough what&amp;rsquo;s happening.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Tracking down exceptions in XCode</title>
-      <link>http://localhost:1313/blog/tracking-down-exceptions-in-xcode/</link>
-      <pubDate>Tue, 16 Jul 2013 17:37:43 +0000</pubDate>
-       <guid isPermaLink="false">https://pdenya.com/?p=72</guid> 
-      <description>&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1093999/stack-trace-or-more-info-on-unhandled-exception-in-xcode-iphone&#34;&gt;http://stackoverflow.com/questions/1093999/stack-trace-or-more-info-on-unhandled-exception-in-xcode-iphone&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Bitbucket</title>
-      <link>http://localhost:1313/blog/bitbucket/</link>
-      <pubDate>Sun, 14 Jul 2013 02:21:12 +0000</pubDate>
-       <guid isPermaLink="false">https://pdenya.com/?p=71</guid> 
-      <description>&lt;p&gt;If you have side projects not backed up with git offsite, you should go sign up for a bit bucket account.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sane default categories</title>
-      <link>http://localhost:1313/blog/sane-default-categories/</link>
-      <pubDate>Fri, 12 Jul 2013 07:51:18 +0000</pubDate>
-       <guid isPermaLink="false">https://pdenya.com/?p=57</guid> 
-      <description></description>
-    </item>
-    <item>
       <title>IE8 select element change event not firing with the keyboard</title>
       <link>http://localhost:1313/2013/07/11/ie8-select-element-change-event-not-firing-with-the-keyboard/</link>
       <pubDate>Thu, 11 Jul 2013 14:00:45 +0000</pubDate>
@@ -810,14 +766,6 @@
       <description>&lt;p&gt;If you have, for example, a child view of a UITableViewCell and you need to get the UITableViewCell in question you can quickly do something like:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-objc&#34; data-lang=&#34;objc&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;UITableViewCell &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;cell &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (UITableViewCell &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;)the_view.superview.superview;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It works but this code is fragile because it requires that the view heirarchy not change (also things like this usually point to a code organization issue but hey, i&amp;rsquo;m not here to judge). If we want to be able to add a scrollview in between without editing this method we&amp;rsquo;ll have to take a different approach.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Work</title>
-      <link>http://localhost:1313/work/</link>
-      <pubDate>Wed, 10 Jul 2013 05:02:54 +0000</pubDate>
-       <guid isPermaLink="false">https://pdenya.com/?page_id=20</guid> 
-      <description>&lt;p&gt;[vc_row][vc_column][vc_custom_heading text=&amp;ldquo;Things I&amp;rsquo;ve made&amp;rdquo; use_theme_fonts=&amp;ldquo;yes&amp;rdquo;][vc_column_text]I’ve built a lot of cool things. Here’s a few of them.[/vc_column_text][/vc_column][/vc_row][vc_row][vc_column][vc_custom_heading text=&amp;ldquo;Pitchfriendly&amp;rdquo; font_container=&amp;ldquo;tag:h3|text_align:left&amp;rdquo; use_theme_fonts=&amp;ldquo;yes&amp;rdquo;][/vc_column][vc_column width=&amp;ldquo;2/3&amp;rdquo;][vc_column_text]PitchFriendly is an outreach tool for PR reps with a focus on organization and time savings. It includes email scheduling, read receipts, reply handling, press list handling, team sharing, a metrics dashboard and other efficiency features.&lt;/p&gt;
-&lt;p&gt;PitchFriendly also includes functionality to generate a press list of reporters likely to respond well to particular stories.  It works by maintaining a separate classifier for each reporter trained with the articles they&amp;rsquo;ve published recently.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>

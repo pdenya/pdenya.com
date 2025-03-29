@@ -125,20 +125,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
-      <title>Tracking down exceptions in XCode</title>
-      <link>http://localhost:1313/blog/tracking-down-exceptions-in-xcode/</link>
-      <pubDate>Tue, 16 Jul 2013 17:37:43 +0000</pubDate>
-      <guid>http://localhost:1313/blog/tracking-down-exceptions-in-xcode/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1093999/stack-trace-or-more-info-on-unhandled-exception-in-xcode-iphone&#34;&gt;http://stackoverflow.com/questions/1093999/stack-trace-or-more-info-on-unhandled-exception-in-xcode-iphone&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sane default categories</title>
-      <link>http://localhost:1313/blog/sane-default-categories/</link>
-      <pubDate>Fri, 12 Jul 2013 07:51:18 +0000</pubDate>
-      <guid>http://localhost:1313/blog/sane-default-categories/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Getting a particular superview in Objective-C</title>
       <link>http://localhost:1313/2013/07/10/getting-a-particular-superview-in-objective-c/</link>
       <pubDate>Thu, 11 Jul 2013 05:00:05 +0000</pubDate>

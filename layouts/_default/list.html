@@ -31,10 +31,13 @@
 {{- end }}
 
 {{- if and .IsHome .Content }}
-<div class="post-content">
-  {{- if not (.Param "disableAnchoredHeadings") }}
-  {{- partial "anchored_headings.html" .Content -}}
-  {{- else }}{{ .Content }}{{ end }}
+<div class="home-profile">
+  <img src="/me_round.png" alt="Paul Denya" class="profile-image">
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
 </div>
 {{- else if .Content }}
 <div class="post-content">
