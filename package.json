@@ -8,6 +8,8 @@
     "build": "hugo"
   },
   "dependencies": {
-    "bootstrap": "^5.3.2"
+    "bootstrap": "^5.3.2",
+    "three": "^0.175.0",
+    "vanta": "^0.5.24"
   }
 }

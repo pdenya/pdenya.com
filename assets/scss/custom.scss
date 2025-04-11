@@ -21,6 +21,7 @@ $headings-font-weight: 600;
   --bs-primary: #{$primary};
   --bs-secondary: #{$secondary};
   --bs-background: #f7f9fc;
+  --bs-background-transparent: rgba(0, 0, 0, 0.7);
   --bs-text-color: #333;
   --bs-light-text-color: #666;
   --bs-border-color: #ddd;
@@ -28,7 +29,7 @@ $headings-font-weight: 600;
 
 // Dark mode
 body.dark {
-  --bs-background: #18191b;
+  --bs-background: rgb(16 40 56);
   --bs-text-color: #eee;
   --bs-light-text-color: #bbb;
   --bs-border-color: #444;
@@ -85,6 +86,13 @@ body.dark {
 // Content styles
 .post-content {
   font-size: 1.1rem;
+  background-color: var(--bs-background);
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  margin-top: 20px;
+  border: 10px solid var(--bs-background-transparent);
+  background-clip: padding-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 
   a {
     color: var(--bs-primary);
@@ -110,9 +118,11 @@ body.dark {
 .nav {
   display: flex;
   align-items: center;
-  background: var(--bs-background);
+  background: var(--bs-background-transparent);
   border-bottom: 1px solid var(--bs-border-color);
   padding: 15px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .logo {
@@ -124,6 +134,7 @@ body.dark {
     font-weight: 600;
     color: var(--bs-primary);
     text-decoration: none;
+    text-shadow: 0 0 3px black;
   }
 }
 
@@ -164,10 +175,9 @@ body.dark {
   display: flex;
   align-items: flex-start;
   margin: 40px 0;
-  background: var(--bs-background);
+  background: transparent;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .profile-image {
@@ -176,8 +186,10 @@ body.dark {
   border-radius: 50%;
   margin-right: 30px;
   margin-top: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 4px solid var(--bs-primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   flex-shrink: 0;
+  object-fit: cover;
 }
 
 // Posts list
@@ -229,4 +241,28 @@ code {
   .home-buttons {
     justify-content: center;
   }
+}
+
+// VantaJS Background styles
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+// Make sure content is readable on VantaJS background
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+// Apply background to specific elements for readability
+.post-entry,
+.post-content,
+.home-info {
+  background-color: var(--bs-background);
+  border-radius: var(--radius);
 }
