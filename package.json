@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "hugo server -D",
     "build": "hugo",
-    "publish": "hugo && aws s3 sync public/ s3://pdenya.com --delete"
+    "deploy": "hugo && aws s3 sync public/ s3://pdenya.com --delete --profile personal"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
