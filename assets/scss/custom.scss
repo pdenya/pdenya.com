@@ -28,7 +28,7 @@ $headings-font-weight: 600;
 
   --bs-background: rgb(16 40 56);
   --bs-text-color: #eee;
-  --bs-light-text-color: #bbb;
+  --bs-light-text-color: #fff;
   --bs-dark-text-color: #444;
   --bs-border-color: #444;
   --bs-body-bg: #1a1a1a;
@@ -109,6 +109,11 @@ body.dark {
   strong {
     font-weight: 600;
     color: var(--bs-primary);
+  }
+
+  em {
+    font-style: italic;
+    color: var(--bs-light-text-color);
   }
 }
 
@@ -245,17 +250,17 @@ code {
   .home-buttons {
     justify-content: center;
   }
-  
+
   // Center logo and menu on mobile
   .nav {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .logo {
     margin-bottom: 10px;
   }
-  
+
   #menu {
     margin-left: 0; // Override the auto margin
     justify-content: center;

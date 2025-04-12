@@ -7,19 +7,19 @@ Over the past **15+ years** I've delivered software projects for small startups,
 
 **Nowadays I architect AI systems and build products for early-stage startups** including PressFriendly, the one I co-founded.
 
-**I prefer to work with Ruby and React** but i've also worked professionally in Javascript/Typescript, PHP, Python, and Swift. I've used many frameworks including Rails, Laravel, NLTK, Scikit-learn, Django, Vue, Ember, Angular, CakePHP, Symphony, jQuery, and more.
+**I prefer to work with Ruby and React** but i've also worked professionally in *Javascript/Typescript*, *PHP*, *Python*, and *Swift*. I've used many frameworks including *Rails*, *Laravel*, *NLTK*, *Scikit-learn*, *Django*, *Vue*, *Ember*, *Angular*, *CakePHP*, *Symphony*, *jQuery*, and many more. Skilled at *HTML/CSS*, *UI/UX design*, and thinking through the *user experience*.
 
-HTML/CSS, SQL, Elasticsearch, MongoDB, Redis, AWS, Docker, Git, AI/ML APIs (OpenAI, Claude), payment processing (Stripe, PayPal), and various other integrations. Comfortable with architecture, UI/UX, database optimization, bash scripting, and general server admin tasks.
+*I've worked extensively with AI/ML APIs** including OpenAI, Claude, and Gemini. I've also worked with *Elasticsearch*, *MongoDB*, *Redis*, *AWS*, *Docker*, *Git*, *Stripe*, *PayPal*, and various other integrations. Comfortable with architecture, UI/UX, database optimization, and bash scripting.
 
-**I've delivered products and features** for startups of all sizes, from early-stage to acquisition. Notable projects include HelloSign (employee #2, acquired by Dropbox), Mattermark, and Groupthink.
+**I've delivered products and features** for startups of all sizes, from early-stage to acquisition. Notable projects include *HelloSign* (employee #2, acquired by Dropbox), *Mattermark*, and *Groupthink*.
 
-**When I worked in advertising I built microsites and apps for high profile brands** including Exxon, Claritin, Oppenheimer, Allure, Hyatt, Plantronics, Paypal, LiveActive, Barilla, Triscuit, Charles Schwab, Clearasil, Volvo Cars North America, Lacoste, and Dos Equis.
+**When I worked in advertising I built microsites and apps for high profile brands** including *Exxon*, *Claritin*, *Oppenheimer*, *Allure*, *Hyatt*, *Plantronics*, *Paypal*, *LiveActive*, *Barilla*, *Triscuit*, *Charles Schwab*, *Clearasil*, *Volvo Cars North America*, *Lacoste*, and *Dos Equis*.
 
 **Excellent communication skills.** Happy to go into detail explaining options and limitations.
 
 **Calm and collected** during crunch time.
 
-Working remotely from Raleigh, NC.
+Working remotely from *Raleigh, NC*.
 
 <div class="home-buttons">
   <a href="https://calendly.com/pauldenya/30min" class="btn btn-success btn-lg"><i class="fas fa-calendar-alt"></i> &nbsp;Book a free consultation</a>
