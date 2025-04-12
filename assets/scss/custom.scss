@@ -178,6 +178,12 @@ body.dark {
   padding: 30px;
 }
 
+@media (max-width: 768px) {
+  .home-profile {
+    padding: 0px;
+  }
+}
+
 .profile-image {
   width: 180px;
   height: 180px;
