@@ -7,7 +7,7 @@ taxonomies:
   tag: tag
 params:
   description: Solving problems
-  defaultTheme: auto
+  defaultTheme: dark
   disableThemeToggle: true
   showShareButtons: false
   showReadingTime: true

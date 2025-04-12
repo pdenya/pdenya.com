@@ -1,11 +1,12 @@
 {
   "name": "pdenya-hugo-site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Paul Denya's personal website",
   "main": "index.js",
   "scripts": {
     "dev": "hugo server -D",
-    "build": "hugo"
+    "build": "hugo",
+    "publish": "hugo && aws s3 sync public/ s3://pdenya.com --delete"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
