@@ -1,6 +1,19 @@
 # Paul Denya's Personal Website
 
-This is a static website built with [Hugo](https://gohugo.io/) using the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+This is a static website built with [Hugo](https://gohugo.io/) using a modified version of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+
+## Development
+
+```zsh
+yarn
+yarn dev
+yarn deploy
+yarn invalidate # clear cloudfront cache if necessary
+```
+
+## AWS
+
+Remember to use `--profile personal` or `EXPORT AWS_PROFILE=personal` when running aws commands.
 
 ## Getting Started
 
@@ -73,4 +86,4 @@ hugo
 
 ## License
 
-This site's content is copyright © Paul Denya.
+This site's content is copyright ï¿½ Paul Denya.
