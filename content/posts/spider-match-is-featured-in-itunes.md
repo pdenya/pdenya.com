@@ -3,7 +3,7 @@ author: Paul
 category:
   - work
 date: "2013-10-03T21:50:48+00:00"
-guid: https://pdenya.com/?p=361
+guid: https://www.pdenya.com/?p=361
 title: Spider Match! is featured in iTunes!
 url: /2013/10/03/spider-match-is-featured-in-itunes/
 

@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2013-08-13T15:00:13+00:00"
-guid: https://pdenya.com/?p=227
+guid: https://www.pdenya.com/?p=227
 title: Mac constantly switching to a new finder window when the space key is pressed
 url: /2013/08/13/mac-constantly-switching-to-a-new-finder-window-when-the-space-key-is-pressed/
 

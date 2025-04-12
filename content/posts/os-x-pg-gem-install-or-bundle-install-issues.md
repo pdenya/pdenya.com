@@ -3,7 +3,7 @@ author: Paul
 category:
   - uncategorized
 date: "2014-08-16T00:38:44+00:00"
-guid: https://pdenya.com/?p=414
+guid: https://www.pdenya.com/?p=414
 title: OS X pg gem install or bundle install issues
 url: /2014/08/15/os-x-pg-gem-install-bundle-install-issues/
 

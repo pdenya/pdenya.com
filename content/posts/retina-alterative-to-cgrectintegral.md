@@ -3,7 +3,7 @@ author: Paul
 category:
   - objective-c
 date: "2013-08-14T15:00:07+00:00"
-guid: https://pdenya.com/?p=272
+guid: https://www.pdenya.com/?p=272
 title: Retina alterative to CGRectIntegral
 url: /2013/08/14/retina-alterative-to-cgrectintegral/
 

@@ -3,7 +3,7 @@ author: Paul
 category:
   - css
 date: "2013-10-02T15:00:57+00:00"
-guid: https://pdenya.com/?p=350
+guid: https://www.pdenya.com/?p=350
 title: Custom cursors, relative paths, and internet explorer
 url: /2013/10/02/custom-cursors-relative-paths-and-internet-explorer/
 

@@ -3,7 +3,7 @@ author: Paul
 category:
   - javascript
 date: "2013-07-11T14:00:45+00:00"
-guid: https://pdenya.com/?p=23
+guid: https://www.pdenya.com/?p=23
 title: IE8 select element change event not firing with the keyboard
 url: /2013/07/11/ie8-select-element-change-event-not-firing-with-the-keyboard/
 

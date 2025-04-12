@@ -3,7 +3,7 @@ author: Paul
 category:
   - objective-c
 date: "2013-08-15T15:00:05+00:00"
-guid: https://pdenya.com/?p=277
+guid: https://www.pdenya.com/?p=277
 title: Sharing a single NSDateFormatter instance
 url: /2013/08/15/sharing-a-single-nsdateformatter-instance/
 

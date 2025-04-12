@@ -1,7 +1,7 @@
 ---
 author: Paul
 date: "2013-07-09T19:24:29+00:00"
-guid: https://pdenya.com/?page_id=2
+guid: https://www.pdenya.com/?page_id=2
 title: About
 url: /about/
 

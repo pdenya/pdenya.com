@@ -3,7 +3,7 @@ author: Paul
 category:
   - python
 date: "2014-06-03T20:09:41+00:00"
-guid: https://pdenya.com/?p=408
+guid: https://www.pdenya.com/?p=408
 title: Quick Top Level Domain Lookup in Python
 url: /2014/06/03/quick-top-level-domain-lookup-python/
 

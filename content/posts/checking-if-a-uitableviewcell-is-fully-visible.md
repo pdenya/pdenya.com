@@ -3,7 +3,7 @@ author: Paul
 category:
   - objective-c
 date: "2013-08-07T15:00:38+00:00"
-guid: https://pdenya.com/?p=162
+guid: https://www.pdenya.com/?p=162
 title: Checking if a UITableViewCell is fully visible
 url: /2013/08/07/checking-if-a-uitableviewcell-is-fully-visible/
 

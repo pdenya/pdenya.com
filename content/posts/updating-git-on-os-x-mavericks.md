@@ -3,7 +3,7 @@ author: Paul
 category:
   - uncategorized
 date: "2015-01-13T19:37:48+00:00"
-guid: https://pdenya.com/?p=423
+guid: https://www.pdenya.com/?p=423
 title: Updating git on OS X Mavericks
 url: /2015/01/13/updating-git-os-x-mavericks/
 

@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2013-10-28T15:00:36+00:00"
-guid: https://pdenya.com/?p=380
+guid: https://www.pdenya.com/?p=380
 title: Better read-only view for google spreadsheets
 url: /2013/10/28/better-read-only-view-for-google-spreadsheets/
 

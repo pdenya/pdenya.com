@@ -3,7 +3,7 @@ author: Paul
 category:
   - db
 date: "2014-01-17T02:15:54+00:00"
-guid: https://pdenya.com/?p=403
+guid: https://www.pdenya.com/?p=403
 title: Postgres Bytea Size
 url: /2014/01/16/postgres-bytea-size/
 

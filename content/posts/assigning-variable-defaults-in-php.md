@@ -3,7 +3,7 @@ author: Paul
 category:
   - php
 date: "2013-07-16T18:21:43+00:00"
-guid: https://pdenya.com/?p=74
+guid: https://www.pdenya.com/?p=74
 title: Assigning variable defaults in PHP
 url: /2013/07/16/assigning-variable-defaults-in-php/
 

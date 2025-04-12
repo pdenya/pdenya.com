@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2013-10-03T15:00:19+00:00"
-guid: https://pdenya.com/?p=351
+guid: https://www.pdenya.com/?p=351
 title: Logging into postgres on Bitnami's Ruby Stack VM
 url: /2013/10/03/logging-into-postgres-on-bitnamis-ruby-stack-vm/
 

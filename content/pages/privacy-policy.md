@@ -1,7 +1,7 @@
 ---
 author: Paul
 date: "2013-09-24T18:39:43+00:00"
-guid: https://pdenya.com/?page_id=346
+guid: https://www.pdenya.com/?page_id=346
 title: Privacy Policy
 url: /privacy-policy/
 

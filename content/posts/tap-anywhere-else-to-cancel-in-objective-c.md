@@ -3,7 +3,7 @@ author: Paul
 category:
   - objective-c
 date: "2013-08-06T17:10:57+00:00"
-guid: https://pdenya.com/?p=163
+guid: https://www.pdenya.com/?p=163
 title: Tap anywhere else to cancel in Objective C
 url: /2013/08/06/tap-anywhere-else-to-cancel-in-objective-c/
 

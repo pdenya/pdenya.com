@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2013-07-22T22:32:41+00:00"
-guid: https://pdenya.com/?p=113
+guid: https://www.pdenya.com/?p=113
 title: Custom Theme for Sublime Text 2 and XCode
 url: /2013/07/22/custom-tmtheme-for-sublime-text-2/
 

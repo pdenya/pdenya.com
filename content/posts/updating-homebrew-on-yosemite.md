@@ -3,7 +3,7 @@ author: Paul
 category:
   - uncategorized
 date: "2015-01-13T19:33:16+00:00"
-guid: https://pdenya.com/?p=421
+guid: https://www.pdenya.com/?p=421
 title: Updating Homebrew on Yosemite
 url: /2015/01/13/updating-homebrew-yosemite/
 

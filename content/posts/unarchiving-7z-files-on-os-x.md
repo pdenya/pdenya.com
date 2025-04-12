@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2013-08-12T15:00:33+00:00"
-guid: https://pdenya.com/?p=224
+guid: https://www.pdenya.com/?p=224
 title: Unarchiving 7z files on OS X
 url: /2013/08/12/unarchiving-7z-files-on-os-x/
 

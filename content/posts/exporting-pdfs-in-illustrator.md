@@ -3,7 +3,7 @@ author: Paul
 category:
   - illustrator
 date: "2013-07-18T22:10:39+00:00"
-guid: https://pdenya.com/?p=89
+guid: https://www.pdenya.com/?p=89
 title: Exporting PDFs in Illustrator
 url: /2013/07/18/exporting-pdfs-in-illustrator/
 

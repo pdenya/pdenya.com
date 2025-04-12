@@ -3,7 +3,7 @@ author: Paul
 category:
   - work
 date: "2013-09-09T15:00:24+00:00"
-guid: https://pdenya.com/?p=287
+guid: https://www.pdenya.com/?p=287
 title: Animal Match Games for iOS
 url: /2013/09/09/animal-match-games-for-ios/
 

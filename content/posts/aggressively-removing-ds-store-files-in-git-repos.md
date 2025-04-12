@@ -3,7 +3,7 @@ author: Paul
 category:
   - git
 date: "2013-09-18T15:00:00+00:00"
-guid: https://pdenya.com/?p=343
+guid: https://www.pdenya.com/?p=343
 title: Aggressively removing DS_Store files in git repos
 url: /2013/09/18/aggressively-removing-ds_store-files-in-git-repos/
 

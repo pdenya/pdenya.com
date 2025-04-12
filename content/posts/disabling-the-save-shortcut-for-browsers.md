@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2013-08-26T18:20:46+00:00"
-guid: https://pdenya.com/?p=298
+guid: https://www.pdenya.com/?p=298
 title: Disabling the save shortcut for browsers
 url: /2013/08/26/disabling-the-save-shortcut-for-browsers/
 

@@ -3,7 +3,7 @@ author: Paul
 category:
   - objective-c
 date: "2013-07-11T05:00:05+00:00"
-guid: https://pdenya.com/?p=30
+guid: https://www.pdenya.com/?p=30
 title: Getting a particular superview in Objective-C
 url: /2013/07/10/getting-a-particular-superview-in-objective-c/
 

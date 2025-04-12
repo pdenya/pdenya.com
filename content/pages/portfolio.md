@@ -1,7 +1,7 @@
 ---
 author: Paul
 date: "2022-10-17T18:05:30+00:00"
-guid: https://pdenya.com/?page_id=630
+guid: https://www.pdenya.com/?page_id=630
 title: Portfolio
 url: /portfolio/
 

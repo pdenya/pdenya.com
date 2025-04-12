@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2015-05-24T05:43:04+00:00"
-guid: https://pdenya.com/?p=440
+guid: https://www.pdenya.com/?p=440
 title: Disable Full Screen Shortcut on Mac OSX 10.10 Yosemite
 url: /2015/05/23/disable-full-screen-shortcut-mac-osx-10-10-yosemite/
 

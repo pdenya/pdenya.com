@@ -4,7 +4,7 @@ category:
   - git
 date: "2013-07-14T02:21:12+00:00"
 draft: "true"
-guid: https://pdenya.com/?p=71
+guid: https://www.pdenya.com/?p=71
 title: Bitbucket
 
 ---

@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2013-08-02T04:30:40+00:00"
-guid: https://pdenya.com/?p=230
+guid: https://www.pdenya.com/?p=230
 title: Accepting developer roles on facebook
 url: /2013/08/01/accepting-developer-roles-on-facebook/
 

@@ -3,7 +3,7 @@ author: Paul
 category:
   - javascript
 date: "2013-08-09T15:00:03+00:00"
-guid: https://pdenya.com/?p=211
+guid: https://www.pdenya.com/?p=211
 title: Quick Browser Detection One Liners
 url: /2013/08/09/quick-browser-detection-one-liners/
 

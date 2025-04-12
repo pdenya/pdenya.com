@@ -3,7 +3,7 @@ author: Paul
 category:
   - work
 date: "2013-08-06T19:24:54+00:00"
-guid: https://pdenya.com/?p=239
+guid: https://www.pdenya.com/?p=239
 title: HelloSign for Gmail
 url: /2013/08/06/hellosign-for-gmail/
 

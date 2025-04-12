@@ -2,7 +2,7 @@
 author: Paul
 date: "2013-07-10T05:02:54+00:00"
 draft: "true"
-guid: https://pdenya.com/?page_id=20
+guid: https://www.pdenya.com/?page_id=20
 title: Work
 url: /work
 

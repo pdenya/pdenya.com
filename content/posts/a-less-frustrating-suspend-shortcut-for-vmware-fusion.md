@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2013-07-31T18:02:31+00:00"
-guid: https://pdenya.com/?p=147
+guid: https://www.pdenya.com/?p=147
 title: A less frustrating suspend shortcut for VMWare Fusion
 url: /2013/07/31/frustrating-vmware-fusion-suspend-shortcut/
 

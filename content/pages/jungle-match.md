@@ -1,7 +1,7 @@
 ---
 author: Paul
 date: "2013-09-11T23:41:26+00:00"
-guid: https://pdenya.com/?page_id=319
+guid: https://www.pdenya.com/?page_id=319
 title: Jungle Match
 url: /jungle-match/
 

@@ -1,7 +1,7 @@
 ---
 author: Paul
 date: "2013-09-11T21:29:58+00:00"
-guid: https://pdenya.com/?page_id=314
+guid: https://www.pdenya.com/?page_id=314
 title: Ocean Match
 url: /ocean-match/
 

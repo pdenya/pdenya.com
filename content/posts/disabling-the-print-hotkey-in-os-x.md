@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2013-07-23T17:20:24+00:00"
-guid: https://pdenya.com/?p=132
+guid: https://www.pdenya.com/?p=132
 title: Disabling the Print hotkey in OS X
 url: /2013/07/23/disabling-the-print-hotkey-in-os-x/
 

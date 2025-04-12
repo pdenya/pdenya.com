@@ -3,7 +3,7 @@ author: Paul
 category:
   - devtools
 date: "2013-08-03T17:36:09+00:00"
-guid: https://pdenya.com/?p=193
+guid: https://www.pdenya.com/?p=193
 title: Hiding the WP Admin Bar
 url: /2013/08/03/hiding-the-wp-admin-bar/
 

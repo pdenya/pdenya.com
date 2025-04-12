@@ -3,7 +3,7 @@ author: Paul
 category:
   - javascript
 date: "2013-10-14T15:00:29+00:00"
-guid: https://pdenya.com/?p=365
+guid: https://www.pdenya.com/?p=365
 title: Debugging bottlenecks in Javascript
 url: /2013/10/14/debugging-bottlenecks-in-javascript/
 

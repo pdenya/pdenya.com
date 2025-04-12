@@ -3,7 +3,7 @@ author: Paul
 category:
   - uncategorized
 date: "2013-11-25T18:35:24+00:00"
-guid: https://pdenya.com/?p=389
+guid: https://www.pdenya.com/?p=389
 title: Bonjour issues cause problems with teleport
 url: /2013/11/25/teleport-showing-accept-prompt/
 

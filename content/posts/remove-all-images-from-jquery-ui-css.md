@@ -4,7 +4,7 @@ category:
   - css
   - javascript
 date: "2015-05-04T18:55:37+00:00"
-guid: https://pdenya.com/?p=434
+guid: https://www.pdenya.com/?p=434
 title: Remove all images from JQuery UI CSS
 url: /2015/05/04/remove-images-jquery-ui-css/
 

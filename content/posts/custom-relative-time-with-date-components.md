@@ -3,7 +3,7 @@ author: Paul
 category:
   - objective-c
 date: "2013-07-30T18:43:38+00:00"
-guid: https://pdenya.com/?p=150
+guid: https://www.pdenya.com/?p=150
 title: Custom Relative Time with Date Components
 url: /2013/07/30/custom-relative-time-with-date-components/
 

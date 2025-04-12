@@ -3,7 +3,7 @@ author: Paul
 category:
   - work
 date: "2013-10-26T00:14:48+00:00"
-guid: https://pdenya.com/?p=375
+guid: https://www.pdenya.com/?p=375
 title: Status for Facebook
 url: /2013/10/25/status-for-facebook/
 

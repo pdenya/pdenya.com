@@ -3,7 +3,7 @@ author: Paul
 category:
   - css
 date: "2013-08-08T15:00:13+00:00"
-guid: https://pdenya.com/?p=216
+guid: https://www.pdenya.com/?p=216
 title: Vertical space in bootstrap
 url: /2013/08/08/vertical-space-in-bootstrap/
 

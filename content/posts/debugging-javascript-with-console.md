@@ -3,7 +3,7 @@ author: Paul
 category:
   - javascript
 date: "2013-07-09T19:24:29+00:00"
-guid: https://pdenya.com/?p=1
+guid: https://www.pdenya.com/?p=1
 title: Debugging Javascript with Console
 url: /2013/07/09/hello-world/
 
