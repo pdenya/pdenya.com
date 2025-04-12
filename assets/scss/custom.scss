@@ -20,18 +20,16 @@ $headings-font-weight: 600;
 :root {
   --bs-primary: #{$primary};
   --bs-secondary: #{$secondary};
-  --bs-background: #f7f9fc;
+  // --bs-background: #f7f9fc;
   --bs-background-transparent: rgba(0, 0, 0, 0.7);
-  --bs-text-color: #333;
-  --bs-light-text-color: #666;
-  --bs-border-color: #ddd;
-}
+  // --bs-text-color: #333;
+  // --bs-light-text-color: #666;
+  // --bs-border-color: #ddd;
 
-// Dark mode
-body.dark {
   --bs-background: rgb(16 40 56);
   --bs-text-color: #eee;
   --bs-light-text-color: #bbb;
+  --bs-dark-text-color: #444;
   --bs-border-color: #444;
   --bs-body-bg: #1a1a1a;
   --bs-body-color: #eee;
@@ -89,7 +87,7 @@ body.dark {
   background-color: var(--bs-background);
   padding: 10px 20px;
   border-radius: var(--radius);
-  margin-top: 20px;
+  margin-top: 10px;
   border: 10px solid var(--bs-background-transparent);
   background-clip: padding-box;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);

@@ -25,6 +25,7 @@ markup:
     codeFences: true
     guessSyntax: true
     style: monokai
+    noClasses: false
   goldmark:
     renderer:
       unsafe: true

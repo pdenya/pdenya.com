@@ -15,12 +15,17 @@
 
 .post-meta,
 .breadcrumbs {
-  color: var(--secondary);
-  font-size: 14px;
-  display: flex;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: var(--bs-dark-text-color);
+  display: inline-flex;
   flex-wrap: wrap;
-  background: white;
+  font-size: 14px;
+  margin-top: 8px;
+  padding: 4px 11px;
   width: auto;
+  margin-bottom: 10px;
 }
 
 .post-meta .i18n_list li {
@@ -31,7 +36,17 @@
 }
 
 .breadcrumbs a {
-  font-size: 16px;
+  color: var(--bs-dark-text-color);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.post-meta {
+  font-size: 11px;
+  font-style: italic;
 }
 
 .post-content {
