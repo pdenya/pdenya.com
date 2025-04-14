@@ -9,7 +9,7 @@ $light: #f8f9fa;
 $dark: #343a40;
 
 // Font settings
-$font-family-sans-serif: "Lexend", sans-serif;
+$font-family-sans-serif: "Inter", sans-serif;
 $font-weight-normal: 300;
 $headings-font-weight: 600;
 
@@ -37,7 +37,7 @@ $headings-font-weight: 600;
 
 // Basic styles
 body {
-  font-family: "Lexend", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   line-height: 1.7;
   background: var(--bs-background);
@@ -55,7 +55,6 @@ body {
   border-radius: 6px;
   font-weight: 400;
   transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.9);
   position: relative;
   margin: 5px 10px 5px 0;
 
@@ -90,7 +89,6 @@ body.dark {
   margin-top: 10px;
   border: 10px solid var(--bs-background-transparent);
   background-clip: padding-box;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 
   a {
     color: var(--bs-primary);
@@ -190,13 +188,13 @@ body.dark {
 }
 
 .profile-image {
-  width: 180px;
-  height: 180px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   margin-right: 30px;
   margin-top: 10px;
-  border: 4px solid var(--bs-primary);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  border: 1px solid var(--bs-background-transparent);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
   object-fit: cover;
 }

@@ -23,5 +23,5 @@ Working remotely from *Raleigh, NC*.
 
 <div class="home-buttons">
   <a href="https://calendly.com/pauldenya/30min" class="btn btn-success btn-lg"><i class="fas fa-calendar-alt"></i> &nbsp;Book a free consultation</a>
-  <a href="mailto:pdenya+wp@gmail.com" class="btn btn-secondary btn-lg"><i class="fas fa-envelope"></i> &nbsp;Send me an email</a>
+  <a href="mailto:pdenya+wp@gmail.com" class="btn btn-primary btn-lg"><i class="fas fa-envelope"></i> &nbsp;Send me an email</a>
 </div>
