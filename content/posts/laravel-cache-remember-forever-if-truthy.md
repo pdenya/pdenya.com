@@ -11,9 +11,7 @@ I kept needing a cache method that would only store a value permanently if the r
 
 ### The problem
 
-Laravel's `Cache::rememberForever()` will cache any result, including null or false values. But sometimes you only want to cache successful results and keep retrying failed ones.
-
-For example, if you're making an API call that might fail, or calculating something expensive that could return null, you don't want to cache the failure.
+Laravel's `Cache::rememberForever()` caches any result, including null/false values. Fairly often I want to cache successful results and keep retrying failed ones.
 
 ### The solution
 
