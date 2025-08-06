@@ -1,88 +1,41 @@
-# Paul Denya's Personal Website
+# pdenya.com
 
-This is a static website built with [Hugo](https://gohugo.io/) using a modified version of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+Personal website of Paul Denya - software engineer and co-founder of PressFriendly.
 
-## Development
+Built with [Hugo](https://gohugo.io/) using a modified [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
 
-```zsh
-yarn
-yarn dev
-yarn deploy
-yarn invalidate # clear cloudfront cache if necessary
-```
+## Prerequisites
 
-## AWS
-
-Remember to use `--profile personal` or `EXPORT AWS_PROFILE=personal` when running aws commands.
-
-## Getting Started
-
-### Prerequisites
 - [Hugo](https://gohugo.io/installation/) (Extended version)
+- Node.js (for Bootstrap dependencies)
 
-### Development
-
-Clone the repository and start the Hugo development server:
+## Quick Start
 
 ```bash
+# Install dependencies
+yarn
+
 # Start development server
 hugo server -D
+# or
+yarn dev
 
-# Access the site at http://localhost:1313
-```
-
-### Building the site
-
-```bash
-# Build the site (output to ./public)
+# Build for production
 hugo
-
-# Build including draft content
-hugo -D
 ```
 
-## Creating New Content
+## Commands
 
-### New Blog Post
-
-```bash
-# Create a new blog post
-hugo new content posts/my-new-post.md
-```
-
-Edit the front matter in the new file:
-
-```yaml
----
-title: "My New Post"
-date: "2025-03-17T12:00:00-07:00"
-draft: false
-category:
-  - category-name
-tags:
-  - tag-name
----
-
-Write your content here using Markdown.
-```
-
-### New Page
-
-```bash
-# Create a new page
-hugo new content pages/my-new-page.md
-```
+- `hugo server -D` - Development server with drafts (http://localhost:1313)
+- `hugo` - Build site to `./public`
+- `hugo new content posts/post-name.md` - Create new blog post
+- `hugo new content pages/page-name.md` - Create new page
+- `yarn deploy` - Deploy to AWS
+- `yarn invalidate` - Clear CloudFront cache
 
 ## Deployment
 
-This site is deployed by building the static files and serving them with nginx.
-
-```bash
-# Build the site
-hugo
-
-# Files are generated in the public/ directory
-```
+Site deploys to AWS S3/CloudFront. Use `--profile personal` for AWS CLI commands.
 
 ## License
 
