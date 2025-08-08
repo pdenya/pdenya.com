@@ -3,25 +3,27 @@ author: Paul
 date: "2016-09-15T15:10:59+00:00"
 title: Home
 ---
-Over the past **15+ years** I've delivered software projects for small startups, established businesses, and major brands.
+Over the past **15+ years** I've delivered scalable, user-focused products for startups, established businesses, and major brands.
 
-**Nowadays I architect AI systems and build products for early-stage startups** including PressFriendly, the one I co-founded.
+I was **employee #2 at HelloSign** (YC W11, $230M exit), helping grow the platform from an MVP to a product used by millions.
 
-**I prefer to work with Ruby and React** but i've also worked professionally in *Javascript/Typescript*, *PHP*, *Python*, and *Swift*. I've used many frameworks including *Rails*, *Laravel*, *NLTK*, *Scikit-learn*, *Django*, *Vue*, *Ember*, *Angular*, *CakePHP*, *Symphony*, *jQuery*, and many more. Skilled at *HTML/CSS*, *UI/UX design*, and thinking through the *user experience*.
+Recently at Groupthink, I built **real-time AI meeting insights** that processed transcription data as it came in, delivering notes and building user confidence in the moment while competitors offered only post-meeting summaries. I developed cross-platform audio/video capture and processing and integrated transcription and AI APIs to create a smarter meeting experience.
 
-*I've worked extensively with AI/ML APIs** including OpenAI, Claude, and Gemini. I've also worked with *Elasticsearch*, *MongoDB*, *Redis*, *AWS*, *Docker*, *Git*, *Stripe*, *PayPal*, and various other integrations. Comfortable with architecture, UI/UX, database optimization, and bash scripting.
+**I co-founded PressFriendly**, a PR automation platform that began as SaaS for startups managing their own PR and evolved into a profitable agency powered by our own software, which is also licensed to other PR reps and agencies on a subscription basis.
 
-**I've delivered products and features** for startups of all sizes, from early-stage to acquisition. Notable projects include *HelloSign* (employee #2, acquired by Dropbox), *Mattermark*, and *Groupthink*.
+**Core strengths**
 
-**When I worked in advertising I built microsites and apps for high profile brands** including *Exxon*, *Claritin*, *Oppenheimer*, *Allure*, *Hyatt*, *Plantronics*, *Paypal*, *LiveActive*, *Barilla*, *Triscuit*, *Charles Schwab*, *Clearasil*, *Volvo Cars North America*, *Lacoste*, and *Dos Equis*.
+* **Full-stack execution** – Laravel, Rails, React, TypeScript, Swift, Python, Node.js
+* **Product design & usability** – Translating user needs into intuitive, polished interfaces; balancing speed, clarity, polish, and accessibility in frontend development
+* **AI/ML integration** – OpenAI, Claude, Gemini, NLP pipelines, embeddings / vector search
+* **Real-time systems** – Audio/video streaming, live transcription, WebRTC, event-driven backends
+* **Integration expertise** – Google/Outlook APIs, Slack, payment systems, enterprise tooling
 
-**Excellent communication skills.** Happy to go into detail explaining options and limitations.
-
-**Calm and collected** during crunch time.
-
-Working remotely from *Raleigh, NC*.
+I care about building things that work at scale, solve real problems, and are a pleasure to use.
 
 <div class="home-buttons">
-  <a href="https://calendly.com/pauldenya/30min" class="btn btn-success btn-lg"><i class="fas fa-calendar-alt"></i> &nbsp;Book a free consultation</a>
-  <a href="mailto:pdenya+wp@gmail.com" class="btn btn-primary btn-lg"><i class="fas fa-envelope"></i> &nbsp;Send me an email</a>
+  <a href="https://calendly.com/pauldenya/30min" class="btn btn-success btn-lg"><i class="fas fa-calendar-alt"></i> &nbsp;Let's chat</a>
+  <a href="mailto:paul@denya.dev" class="btn btn-primary btn-lg"><i class="fas fa-envelope"></i> &nbsp;Send me an email</a>
 </div>
+
+
