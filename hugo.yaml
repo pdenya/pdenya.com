@@ -1,6 +1,7 @@
 baseURL: https://www.pdenya.com
 languageCode: en-US
 title: Paul Denya
+googleAnalytics: G-ZS6EPHLQB0
 theme: PaperMod
 taxonomies:
   category: category
