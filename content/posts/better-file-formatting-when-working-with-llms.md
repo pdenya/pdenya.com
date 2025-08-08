@@ -1,7 +1,7 @@
 ---
 date: '2025-04-12T13:46:25-04:00'
 draft: false
-title: 'Better File Formatting When Working With Llms'
+title: 'Better File Formatting When Working With LLMs'
 ---
 
 Copilot, Cursor, Claude Code, etc are convenient for automatically pulling relevant files from your codebase when asking questions but with difficult or sprawling questions I get much better results by manually selecting the files I want to include.
