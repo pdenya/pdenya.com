@@ -3,13 +3,14 @@ title = "SideNotes: zero‑friction project notes next to your code"
 date = "2025-08-08T10:00:00-04:00"
 draft = false
 category = ["devtools"]
-tags = ["notes", "cli", "productivity", "git"]
+tags = ["notes", "productivity", "git"]
 +++
 
-I wanted a scratchpad that lives with the code but never in Git. SideNotes is a tiny shell helper that gives every repo a persistent notes area you can open instantly in your editor. It shows up as a `SideNotes` folder in your project tree, but the notes live outside the repo and are globally ignored.
+I wanted a scratchpad that lives with the code but never in Git. SideNotes is a tiny shell helper that gives every repo a persistent notes that are already available in your editor. It shows up as a `SideNotes` folder in your project tree, but the notes live outside the repo and are globally git ignored.
 
 ### Why
 
+- Mostly because I always use vs code for scratch notes anyway
 - Keep brainstorming and temporary thinking near the code without polluting commits or PRs
 - One consistent place for notes across all repos
 - Fast to open and create notes from the shell
@@ -41,13 +42,17 @@ By default, files open with `$EDITOR` (falls back to VS Code via `code`). Use lo
 - A `SideNotes` symlink is created in your repo so notes appear in your editor’s file tree
 - Git ignores the `SideNotes` symlink globally, so nothing lands in version control
 
-```text
-~/Code/SideNotes/
-  api-server/
-    2025-08-08_14-22_performance-sweep.md
+```zsh
+# Disk location
+~/Code/SideNotes/your-repo/2025-08-08_14-22_first-idea.md
 
-/path/to/your/repo/
-  SideNotes -> ~/Code/SideNotes/api-server/
+# You and your editor see
+./your-repo/SideNotes/2025-08-08_14-22_first-idea.md
+
+# Git sees
+git status
+#  On branch develop
+#  nothing to commit, working tree clean
 ```
 
 ### Commands
@@ -66,6 +71,6 @@ By default, files open with `$EDITOR` (falls back to VS Code via `code`). Use lo
 
 ### Why not keep notes in the repo?
 
-I like design docs and durable decisions in Git. But daily sketches, half‑ideas, and quick experiments create noise in diffs and PRs. SideNotes keeps that stream next to the code and out of the history.
+Documentation should be kept in the repo but can't keep every little thing in there for someone else to review.
 
 Grab the code here: [SideNotes on GitHub](https://github.com/pdenya/side-notes).
