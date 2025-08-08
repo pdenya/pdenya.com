@@ -33,6 +33,9 @@ $headings-font-weight: 600;
   --bs-border-color: #444;
   --bs-body-bg: #1a1a1a;
   --bs-body-color: #eee;
+  
+  // Override PaperMod theme variable to be transparent
+  --theme: transparent;
 }
 
 // Basic styles
@@ -69,6 +72,9 @@ body {
 
 // Dark mode button styles
 body.dark {
+  // Ensure theme stays transparent in dark mode too
+  --theme: transparent;
+  
   .btn-outline-primary {
     border-color: var(--bs-primary);
     color: var(--bs-text-color);
@@ -307,7 +313,6 @@ code {
   .home-profile {
     flex-direction: column;
     align-items: center;
-    text-align: center;
 
     .post-content {
       margin-top: 20px;
