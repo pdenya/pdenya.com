@@ -127,6 +127,26 @@
 {{- end }}
 {{- end }}
 
+{{- if .IsHome }}
+  {{- $recent := first 3 (sort (where site.RegularPages "Type" "in" site.Params.mainSections) "Date" "desc") }}
+  {{- if gt (len $recent) 0 }}
+  <section class="home-touts">
+    <h3>Latest posts</h3>
+    <div class="home-touts-grid">
+      {{- range $recent }}
+      <article class="tout-card">
+        <header>
+          <h4 class="tout-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+          <div class="tout-meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+        </header>
+        <a class="tout-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .RelPermalink }}"></a>
+      </article>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+{{- end }}
+
 {{- if and (not .IsHome) (gt $paginator.TotalPages 1) }}
 <footer class="page-footer">
   <nav class="pagination">
