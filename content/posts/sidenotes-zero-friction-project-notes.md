@@ -16,25 +16,6 @@ I wanted a scratchpad that lives with the code but never in Git. SideNotes is a 
 - Fast to open and create notes from the shell
 - Plain Markdown on disk, editor‑agnostic
 
-### Install
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/pdenya/side-notes/main/install.sh | bash
-```
-
-This copies a small script into your shell functions, ensures the base notes directory exists (defaults to `~/Code/SideNotes`), and adds `SideNotes` to your global Git ignore. Restart your shell (or `source ~/.zshrc`) to load the functions.
-
-### Quickstart
-
-```bash
-# In any project directory
-notes_init            # one-time per project
-note first-idea       # creates a timestamped Markdown note
-notes_latest          # opens the most recent note in your editor
-notes                 # shows usage and lists your notes
-```
-
-By default, files open with `$EDITOR` (falls back to VS Code via `code`). Use lowercase with hyphens for note names: `note exploring-build-flags`.
 
 ### How it works
 
