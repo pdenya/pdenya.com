@@ -10,7 +10,7 @@ I wanted a scratchpad that lives with the code but never in Git. SideNotes is a 
 
 ### Why
 
-- Mostly because I always use vs code for scratch notes anyway
+- Mostly because I always use VS Code for scratch notes anyway
 - Keep brainstorming and temporary thinking near the code without polluting commits or PRs
 - One consistent place for notes across all repos
 - Fast to open and create notes from the shell
@@ -43,6 +43,10 @@ By default, files open with `$EDITOR` (falls back to VS Code via `code`). Use lo
 - Git ignores the `SideNotes` symlink globally, so nothing lands in version control
 
 ```zsh
+# Create a new note
+note first-idea
+#=>  Created: SideNotes/2025-08-08_14-22_first-idea.md
+
 # Disk location
 ~/Code/SideNotes/your-repo/2025-08-08_14-22_first-idea.md
 
@@ -51,8 +55,8 @@ By default, files open with `$EDITOR` (falls back to VS Code via `code`). Use lo
 
 # Git sees
 git status
-#  On branch develop
-#  nothing to commit, working tree clean
+#=>  On branch develop
+#=>  nothing to commit, working tree clean
 ```
 
 ### Commands
