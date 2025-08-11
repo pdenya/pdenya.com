@@ -19,7 +19,7 @@ I wanted a scratchpad that lives with the code but never in Git. SideNotes is a 
 
 ### How it works
 
-- Per project, notes live under a central directory (e.g. `~/Code/SideNotes/<project>/`)
+- Per-project notes live under a central directory (e.g. `~/Code/SideNotes/<project>/`)
 - A `SideNotes` symlink is created in your repo so notes appear in your editor’s file tree
 - Git ignores the `SideNotes` symlink globally, so nothing lands in version control
 
