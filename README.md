@@ -1,13 +1,14 @@
 # pdenya.com
 
-Personal website of Paul Denya - software engineer and co-founder of PressFriendly.
+This is the source code for my personal website and blog — [pdenya.com](https://pdenya.com).
 
-Built with [Hugo](https://gohugo.io/) using a modified [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+I built it with [Hugo (Extended)](https://gohugo.io/) and a customized version of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+
 
 ## Prerequisites
 
-- [Hugo](https://gohugo.io/installation/) (Extended version)
-- Node.js (for Bootstrap dependencies)
+- [Hugo](https://gohugo.io/installation/)
+- Node.js
 
 ## Quick Start
 
@@ -16,12 +17,13 @@ Built with [Hugo](https://gohugo.io/) using a modified [PaperMod](https://github
 yarn
 
 # Start development server
-hugo server -D
-# or
 yarn dev
 
 # Build for production
 hugo
+
+# Build and deploy
+yarn deploy && yarn invalidate
 ```
 
 ## Commands
@@ -35,8 +37,9 @@ hugo
 
 ## Deployment
 
-Site deploys to AWS S3/CloudFront. Use `--profile personal` for AWS CLI commands.
+Site deploys to AWS S3/CloudFront.
 
-## License
+## License & Usage
+The content on this site is copyright © Paul Denya.
 
-This site's content is copyright � Paul Denya.
+You’re welcome to use the structure, theme customizations, and setup as inspiration for your own site. Please replace my content, credits, and license details with your own before publishing.
