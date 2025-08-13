@@ -355,22 +355,22 @@ body.dark {
       grid-area: pdf; 
       border-radius: 8px 8px 0 0;
       border: none;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
     }
     
     .resume-link.docx { 
       grid-area: docx; 
       border-radius: 0 0 0 8px;
       border: none;
-      border-right: 1px solid rgba(255,255,255,0.06);
-      font-size: 0.9rem;
+      border-right: 1px solid rgba(255,255,255,0.15);
+      font-size: 0.75rem;
     }
     
     .resume-link.gdoc { 
       grid-area: gdoc;
       border-radius: 0 0 8px 0;
       border: none;
-      font-size: 0.9rem;
+      font-size: 0.75rem;
     }
 
   }
