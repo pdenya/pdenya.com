@@ -22,8 +22,8 @@ Recently at Groupthink, I built **real-time AI meeting insights** that processed
 I care about building things that work at scale, solve real problems, and are a pleasure to use.
 
 <div class="home-buttons">
-  <a href="https://calendly.com/pauldenya/30min" class="btn btn-success btn-lg"><i class="fas fa-calendar-alt"></i> &nbsp;Let's chat</a>
-  <a href="mailto:paul@denya.dev" class="btn btn-primary btn-lg"><i class="fas fa-envelope"></i> &nbsp;Send me an email</a>
+  <a href="https://calendly.com/pauldenya/30min" class="btn btn-shimmer btn-shimmer-success btn-lg"><i class="fas fa-calendar-alt"></i> &nbsp;Let's chat</a>
+  <a href="mailto:paul@denya.dev" class="btn btn-shimmer btn-lg"><i class="fas fa-envelope"></i> &nbsp;Send me an email</a>
 </div>
 
 

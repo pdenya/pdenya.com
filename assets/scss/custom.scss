@@ -70,6 +70,74 @@ body {
   }
 }
 
+// Generic shimmer button class
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+  background: rgba(20, 20, 20, 0.85);
+  border: 2px solid rgba(20, 20, 20, 0.85);
+  color: white;
+  transition: all 0.3s ease;
+  
+  // Animated shimmer effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+      transparent, 
+      rgba(255, 255, 255, 0.15), 
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.15),
+      transparent
+    );
+    transition: left 0.5s ease;
+    z-index: 0;
+  }
+  
+  // Content layer
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  &:hover {
+    background: linear-gradient(135deg, 
+      rgba(var(--bs-primary-rgb), 0.8),
+      rgba(var(--bs-secondary-rgb), 0.8)
+    );
+    border-color: rgba(var(--bs-primary-rgb), 0.8);
+    color: #fff;
+    transform: none; // Override default btn transform
+    
+    &::before {
+      left: 100%;
+    }
+  }
+  
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+// Green variant of shimmer button
+.btn-shimmer-success {
+  &:hover {
+    background: linear-gradient(135deg, 
+      rgba(var(--bs-success-rgb), 0.8),
+      rgba(40, 167, 69, 0.8)
+    );
+    border-color: rgba(var(--bs-success-rgb), 0.8);
+    
+    &::before {
+      left: 100%;
+    }
+  }
+}
+
 // Dark mode button styles
 body.dark {
   // Ensure theme stays transparent in dark mode too
@@ -226,56 +294,8 @@ body.dark {
     font-size: 0.95rem;
     padding: 10px 16px;
     margin: 0;
-    background: rgba(20, 20, 20, 0.85);
-    color: white;
-    border: 2px solid rgba(20, 20, 20, 0.85);
     border-radius: 8px;
     font-weight: 500;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    
-    // Animated shimmer effect
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, 
-        transparent, 
-        rgba(255, 255, 255, 0.15), 
-        rgba(255, 255, 255, 0.25),
-        rgba(255, 255, 255, 0.15),
-        transparent
-      );
-      transition: left 0.5s ease;
-      z-index: 0;
-    }
-    
-    // Content layer
-    & > * {
-      position: relative;
-      z-index: 1;
-    }
-    
-    &:hover {
-      background: linear-gradient(135deg, 
-        rgba(var(--bs-primary-rgb), 0.8),
-        rgba(var(--bs-secondary-rgb), 0.8)
-      );
-      border-color: rgba(var(--bs-primary-rgb), 0.8);
-      color: #fff;
-      
-      &::before {
-        left: 100%;
-      }
-    }
-    
-    &:active {
-      transform: scale(0.98);
-    }
     
     i {
       font-size: 1.1rem;
@@ -322,40 +342,10 @@ body.dark {
       justify-content: center;
       gap: 8px;
       padding: 12px 16px;
-      color: white;
       text-decoration: none;
       font-weight: 500;
-      transition: all 0.3s ease;
       white-space: nowrap;
       min-height: 44px;
-      position: relative;
-      overflow: hidden;
-      background: rgba(20, 20, 20, 0.85);
-      
-      // Animated shimmer effect
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, 
-          transparent, 
-          rgba(255, 255, 255, 0.15), 
-          rgba(255, 255, 255, 0.25),
-          rgba(255, 255, 255, 0.15),
-          transparent
-        );
-        transition: left 0.5s ease;
-        z-index: 0;
-      }
-      
-      // Content layer
-      & > * {
-        position: relative;
-        z-index: 1;
-      }
     }
 
     .resume-link.pdf { 
@@ -377,22 +367,6 @@ body.dark {
       font-size: 0.9rem;
     }
 
-    .resume-link:hover {
-      background: linear-gradient(135deg, 
-        rgba(var(--bs-primary-rgb), 0.8),
-        rgba(var(--bs-secondary-rgb), 0.8)
-      );
-      border-color: rgba(var(--bs-primary-rgb), 0.8);
-      color: #fff;
-      
-      &::before {
-        left: 100%;
-      }
-    }
-    
-    .resume-link:active {
-      transform: scale(0.98);
-    }
   }
 }
 
