@@ -157,12 +157,13 @@ body.dark {
 // Content styles
 .post-content {
   font-size: 1.1rem;
-  background-color: var(--bs-background);
-  padding: 10px 20px;
-  border-radius: var(--radius);
-  margin-top: 10px;
-  border: 10px solid var(--bs-background-transparent);
-  background-clip: padding-box;
+  background-color: rgba(16, 40, 56, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
 
   a {
     color: var(--bs-primary);
