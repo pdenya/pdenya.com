@@ -13,7 +13,7 @@ params:
   showShareButtons: false
   showReadingTime: true
   showToc: false
-  showBreadCrumbs: true
+  showBreadCrumbs: false
   showCodeCopyButtons: true
   comments: false
   hideFooter: true

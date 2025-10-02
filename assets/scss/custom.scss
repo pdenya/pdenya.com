@@ -158,12 +158,6 @@ body.dark {
 // Content styles
 .post-content {
   font-size: 1.1rem;
-  padding: 30px;
-  border-radius: 12px;
-  margin-top: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(10px);
 
   a {
     color: var(--bs-primary-light);
@@ -465,13 +459,19 @@ code {
 }
 
 // Apply background to specific elements for readability
-.post-content,
-.home-info {
-  background: linear-gradient(135deg, 
+.post-single,
+.home-info,
+.home-profile .post-content {
+  background: linear-gradient(135deg,
     rgba(16, 40, 56, 0.72) 0%,
     rgba(25, 35, 65, 0.94) 100%
   );
-  border-radius: var(--radius);
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
 }
 
 .post-entry,
@@ -558,10 +558,10 @@ code {
   }
 }
 
-// Page and post titles - make them black
+// Page and post titles - make them white
 .page-header h1,
 .post-title,
 .post-header h1,
 .archive-entry-title {
-  color: #000 !important;
+  color: white !important;
 }
