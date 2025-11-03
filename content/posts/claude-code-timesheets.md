@@ -60,8 +60,6 @@ Thursday, Oct 31, 2025
 ================================================================================
 ```
 
-Weekly summaries are perfect for billing cycles—no more manual addition.
-
 ## Why 15-minute blocks?
 
 Messages are grouped into 15-minute intervals. Multiple messages in the same interval count as one block (0.25 hours). Gaps with no activity are automatically excluded.
