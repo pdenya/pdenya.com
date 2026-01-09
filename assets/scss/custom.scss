@@ -235,8 +235,9 @@ body.dark {
   height: 240px;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--bs-border-color);
   object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .profile-links {
