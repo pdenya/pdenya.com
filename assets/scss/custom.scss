@@ -56,87 +56,51 @@ body {
   padding: 0 20px;
 }
 
-// Button styles (combines Bootstrap and custom styles)
+// Button styles - Modern simplified design
 .btn {
-  border-radius: 6px;
-  font-weight: 400;
+  border-radius: 8px;
+  font-weight: 500;
   transition: all 0.2s ease;
   position: relative;
   margin: 5px 10px 5px 0;
+  border: 1px solid var(--bs-border-color);
 
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 229, 255, 0.15);
   }
 
   &:active {
-    transform: translateY(1px);
+    transform: scale(0.99);
   }
 }
 
-// Generic shimmer button class
+// Shimmer button class - simplified with clean hover effect
 .btn-shimmer {
   position: relative;
-  overflow: hidden;
-  background: rgba(20, 20, 20, 0.85);
-  color: white;
-  transition: all 0.3s ease;
-  
-  // Animated shimmer effect
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, 
-      transparent, 
-      rgba(255, 255, 255, 0.15), 
-      rgba(255, 255, 255, 0.25),
-      rgba(255, 255, 255, 0.15),
-      transparent
-    );
-    transition: left 0.5s ease;
-    z-index: 0;
-  }
-  
-  // Content layer
-  & > * {
-    position: relative;
-    z-index: 1;
-  }
-  
+  background: var(--bs-surface);
+  color: var(--bs-text-color);
+  border: 1px solid var(--bs-border-color);
+  transition: all 0.25s ease;
+
   &:hover {
-    background: linear-gradient(135deg, 
-      rgba(var(--bs-primary-rgb), 0.8),
-      rgba(var(--bs-secondary-rgb), 0.8)
-    );
-    border-color: rgba(var(--bs-primary-rgb), 0.8);
-    color: #fff;
-    transform: none; // Override default btn transform
-    
-    &::before {
-      left: 100%;
-    }
+    background: var(--bs-surface-elevated);
+    border-color: var(--bs-primary);
+    color: var(--bs-primary-light);
+    box-shadow: 0 4px 16px rgba(0, 229, 255, 0.2);
   }
-  
+
   &:active {
-    transform: scale(0.98);
+    transform: scale(0.99);
   }
 }
 
-// Green variant of shimmer button
+// Success variant
 .btn-shimmer-success {
   &:hover {
-    background: linear-gradient(135deg, 
-      rgba(var(--bs-success-rgb), 0.8),
-      rgba(40, 167, 69, 0.8)
-    );
-    border-color: rgba(var(--bs-success-rgb), 0.8);
-    
-    &::before {
-      left: 100%;
-    }
+    border-color: var(--bs-success);
+    color: var(--bs-success);
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.2);
   }
 }
 
@@ -144,14 +108,15 @@ body {
 body.dark {
   // Ensure theme stays transparent in dark mode too
   --theme: transparent;
-  
+
   .btn-outline-primary {
     border-color: var(--bs-primary);
     color: var(--bs-text-color);
 
     &:hover {
-      background-color: var(--bs-primary);
-      color: #fff;
+      background-color: rgba(0, 229, 255, 0.1);
+      border-color: var(--bs-primary-light);
+      color: var(--bs-primary-light);
     }
   }
 }
