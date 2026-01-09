@@ -190,12 +190,12 @@ body.dark {
 
   a {
     color: var(--bs-text-color);
-    font-weight: 400;
+    font-weight: 500;
     transition: color 0.3s;
 
     &:hover,
     &.active {
-      color: var(--bs-primary);
+      color: var(--bs-primary-light);
     }
   }
 }
