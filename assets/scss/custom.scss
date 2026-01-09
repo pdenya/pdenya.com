@@ -1,41 +1,41 @@
-// Custom Bootstrap variables
-$primary: #2b7fc7;
-$primary-light: #aad8ff;
-$secondary: #4a6db5;
-$success: #28a745;
-$info: #17a2b8;
-$warning: #ffc107;
-$danger: #dc3545;
-$light: #f8f9fa;
-$dark: #343a40;
+// Custom Bootstrap variables - Modern Dark Theme
+$primary: #00e5ff;
+$primary-light: #5ffbff;
+$secondary: #1a1a1a;
+$success: #10b981;
+$info: #06b6d4;
+$warning: #f59e0b;
+$danger: #ef4444;
+$light: #f5f5f5;
+$dark: #0a0a0a;
 
 // Font settings
 $font-family-sans-serif: "Inter", sans-serif;
-$font-weight-normal: 300;
+$font-family-monospace: "JetBrains Mono", monospace;
+$font-weight-normal: 400;
 $headings-font-weight: 600;
 
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap";
 
-// Site variables - Bootstrap-compatible variables for custom styles
+// Site variables - Modern dark theme color system
 :root {
   --bs-primary: #{$primary};
   --bs-primary-light: #{$primary-light};
   --bs-secondary: #{$secondary};
-  // --bs-background: #f7f9fc;
-  --bs-background-transparent: rgba(0, 0, 0, 0.7);
-  // --bs-text-color: #333;
-  // --bs-light-text-color: #666;
-  // --bs-border-color: #ddd;
 
-  --bs-background: rgb(16 40 56);
-  --bs-text-color: #eee;
-  --bs-light-text-color: #fff;
-  --bs-dark-text-color: #444;
-  --bs-border-color: #444;
-  --bs-body-bg: #1a1a1a;
-  --bs-body-color: #eee;
-  
+  // New semantic color system
+  --bs-background: #0a0a0a;
+  --bs-surface: #1a1a1a;
+  --bs-surface-elevated: #2a2a2a;
+  --bs-text-color: #e5e5e5;
+  --bs-text-secondary: #a3a3a3;
+  --bs-light-text-color: #ffffff;
+  --bs-dark-text-color: #737373;
+  --bs-border-color: #2a2a2a;
+  --bs-body-bg: #0a0a0a;
+  --bs-body-color: #e5e5e5;
+
   // Override PaperMod theme variable to be transparent
   --theme: transparent;
 }
