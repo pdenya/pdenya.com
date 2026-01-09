@@ -462,14 +462,16 @@ code {
 
 .tout-card {
   position: relative;
-  border-radius: 10px;
-  padding: 16px;
+  border-radius: 8px;
+  padding: 20px;
   min-height: 140px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--bs-border-color);
+  transition: all 0.25s ease;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 229, 255, 0.3);
   }
 
   .tout-title {
