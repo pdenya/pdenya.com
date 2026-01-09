@@ -335,16 +335,17 @@ body.dark {
 
 // Posts list
 .post-entry {
-  padding: 20px;
+  padding: 24px;
   margin: 20px 0;
   border-radius: 8px;
-  background: var(--bs-background);
+  background: var(--bs-surface);
   border: 1px solid var(--bs-border-color);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: all 0.25s ease;
 
   &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 229, 255, 0.3);
   }
 }
 
