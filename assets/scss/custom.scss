@@ -53,6 +53,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  padding-bottom: 50vh;
 }
 
 // Button styles (combines Bootstrap and custom styles)
@@ -491,7 +492,7 @@ code {
 
   h3 {
     margin-bottom: 16px;
-    color: #000;
+    color: var(--bs-primary-light);
     font-weight: 600;
   }
 }
