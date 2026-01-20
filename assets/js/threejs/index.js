@@ -6,6 +6,7 @@ import { Background } from './Background.js';
 import { BasicScene } from './scenes/BasicScene.js';
 import { StarsLayer } from './layers/StarsLayer.js';
 import { CloudsLayer } from './layers/CloudsLayer.js';
+import { LaserLayer } from './layers/LaserLayer.js';
 
 // Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add layers (stars first so they render behind clouds)
   background.addLayer(StarsLayer);
   background.addLayer(CloudsLayer);
+  background.addLayer(LaserLayer);
 
   // Start animation
   background.start();
