@@ -182,6 +182,7 @@ if (container) {
 </script>
 <style>
 .saturn-v-viewer {
+  position: relative;
   width: 100%;
   height: 14000px;
   margin-top: 300px;
@@ -199,18 +200,90 @@ if (container) {
   display: block;
 }
 
+/* Placards */
+.saturn-v-placards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+.sv-placard {
+  position: absolute;
+  max-width: 220px;
+  padding: 14px 18px;
+  background: rgba(8, 8, 18, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.sv-placard.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.sv-placard h4 {
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.sv-placard p {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.6);
+}
+.sv-placard-left { left: 2%; }
+.sv-placard-right { right: 2%; }
+.sv-placard-1 { top: 700px; }
+.sv-placard-2 { top: 2100px; }
+.sv-placard-3 { top: 5700px; }
+.sv-placard-4 { top: 4900px; }
+
 /* Mobile: full width, 20% shorter */
 @media (max-width: 767px) {
   .saturn-v-viewer {
-    height: 6000px; /* 12000 * 0.8 */
+    height: 6000px;
     margin-top: 150px;
     margin-bottom: 500px;
     margin-left: calc(-1 * var(--gap));
     margin-right: calc(-1 * var(--gap));
     width: calc(100% + 2 * var(--gap));
   }
+  .sv-placard {
+    max-width: 190px;
+    padding: 10px 14px;
+  }
+  .sv-placard h4 { font-size: 11.5px; }
+  .sv-placard p { font-size: 11px; }
+  .sv-placard-left { left: 4%; }
+  .sv-placard-right { right: 4%; }
+  .sv-placard-1 { top: 300px; }
+  .sv-placard-2 { top: 900px; }
+  .sv-placard-3 { top: 2500px; }
+  .sv-placard-4 { top: 1900px; }
 }
 </style>
+<script>
+// Fade in placards on scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const placards = document.querySelectorAll('.sv-placard');
+  if (!placards.length) return;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  placards.forEach(p => observer.observe(p));
+});
+</script>
 {{- end }}
 
 {{- /* Footer custom content area end */ -}}
