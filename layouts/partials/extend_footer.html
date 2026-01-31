@@ -15,20 +15,29 @@
   }
 }
 </script>
+{{ $rocketFire := resources.Get "js/threejs/layers/RocketFireLayerV2.js" }}
 <script type="module">
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RocketFireV2 } from '{{ $rocketFire.RelPermalink }}';
 
 // Configuration
-const CANVAS_HEIGHT = 2000;
-const BUFFER = 0.8; // Model fills 80% of height
+const CANVAS_HEIGHT = 14000;
+const BUFFER = 0.4; // Model fills 40% of height
 const BASE_ROTATION_SPEED = 0.001; // Very slow base rotation
 
 const container = document.getElementById('saturn-v-container');
 if (container) {
   const scene = new THREE.Scene();
 
-  const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 2000);
+  // Orthographic camera for flat, no-FOV view (like Blender's Y view)
+  const aspect = container.clientWidth / container.clientHeight;
+  const frustumSize = 10; // Will be updated when model loads
+  const camera = new THREE.OrthographicCamera(
+    -frustumSize * aspect / 2, frustumSize * aspect / 2,
+    frustumSize / 2, -frustumSize / 2,
+    0.1, 2000
+  );
 
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setSize(container.clientWidth, container.clientHeight);
@@ -36,16 +45,9 @@ if (container) {
   renderer.setClearColor(0x000000, 0);
   container.appendChild(renderer.domElement);
 
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+  // Just enough light to see the shape, no highlights
+  const ambientLight = new THREE.AmbientLight(0x333344, 0.4);
   scene.add(ambientLight);
-
-  const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-  directionalLight.position.set(10, 20, 10);
-  scene.add(directionalLight);
-
-  const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5);
-  directionalLight2.position.set(-10, 10, -10);
-  scene.add(directionalLight2);
 
   // Pivot group for proper rotation around center
   const pivot = new THREE.Group();
@@ -54,6 +56,8 @@ if (container) {
   let userSpinVelocity = 0;
   let isDragging = false;
   let previousMouseX = 0;
+
+  let modelFrustumSize = 10; // Store for resize handler
 
   const loader = new GLTFLoader();
   loader.load('/models/saturn-v.glb', (gltf) => {
@@ -67,14 +71,35 @@ if (container) {
     model.position.sub(center);
     pivot.add(model);
 
-    // Calculate camera distance to fit model height with buffer
-    const fov = camera.fov * (Math.PI / 180);
-    const modelHeight = size.y;
-    const targetHeight = modelHeight / BUFFER;
-    const distance = (targetHeight / 2) / Math.tan(fov / 2);
+    // Make materials more matte - reduce metalness and increase roughness
+    model.traverse((child) => {
+      if (child.isMesh && child.material) {
+        const mat = child.material;
+        if (mat.metalness !== undefined) mat.metalness = Math.min(mat.metalness, 0.1);
+        if (mat.roughness !== undefined) mat.roughness = Math.max(mat.roughness, 0.7);
+      }
+    });
 
-    camera.position.set(0, 0, distance);
+    // Set orthographic frustum to fit model height with buffer
+    const modelHeight = size.y;
+    modelFrustumSize = modelHeight / BUFFER;
+    const aspect = container.clientWidth / container.clientHeight;
+
+    camera.left = -modelFrustumSize * aspect / 2;
+    camera.right = modelFrustumSize * aspect / 2;
+    // Asymmetric frustum: rocket near top, lots of room below for flame
+    camera.top = modelFrustumSize * 0.2;
+    camera.bottom = -modelFrustumSize * 0.8;
+    camera.updateProjectionMatrix();
+
+    // Position camera in front of model
+    camera.position.set(0, 0, 500);
     camera.lookAt(0, 0, 0);
+
+    // Initialize rocket fire — add to scene (not pivot) so it doesn't rotate
+    const rocketBottomY = -size.y / 2 + pivot.position.y;
+    const rocketRadius = Math.max(size.x, size.z) / 2;
+    RocketFireV2.init(scene, rocketBottomY, rocketRadius);
   });
 
   // Mouse/touch handling for Y-axis rotation only
@@ -119,8 +144,11 @@ if (container) {
     isDragging = false;
   });
 
+  const animClock = new THREE.Clock();
+
   function animate() {
     requestAnimationFrame(animate);
+    const delta = animClock.getDelta();
 
     if (!isDragging) {
       // Apply user spin velocity with decay
@@ -134,12 +162,19 @@ if (container) {
       }
     }
 
+    // Update fire effect
+    RocketFireV2.update(delta);
+
     renderer.render(scene, camera);
   }
   animate();
 
   window.addEventListener('resize', () => {
-    camera.aspect = container.clientWidth / container.clientHeight;
+    const aspect = container.clientWidth / container.clientHeight;
+    camera.left = -modelFrustumSize * aspect / 2;
+    camera.right = modelFrustumSize * aspect / 2;
+    camera.top = modelFrustumSize * 0.2;
+    camera.bottom = -modelFrustumSize * 0.8;
     camera.updateProjectionMatrix();
     renderer.setSize(container.clientWidth, container.clientHeight);
   });
@@ -148,7 +183,7 @@ if (container) {
 <style>
 .saturn-v-viewer {
   width: 100%;
-  height: 2000px; /* Match CANVAS_HEIGHT */
+  height: 14000px;
   margin-top: 300px;
   margin-bottom: 1000px;
 }
@@ -162,6 +197,18 @@ if (container) {
 }
 #saturn-v-container canvas {
   display: block;
+}
+
+/* Mobile: full width, 20% shorter */
+@media (max-width: 767px) {
+  .saturn-v-viewer {
+    height: 6000px; /* 12000 * 0.8 */
+    margin-top: 150px;
+    margin-bottom: 500px;
+    margin-left: calc(-1 * var(--gap));
+    margin-right: calc(-1 * var(--gap));
+    width: calc(100% + 2 * var(--gap));
+  }
 }
 </style>
 {{- end }}

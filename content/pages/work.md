@@ -9,17 +9,17 @@ I've built a lot of cool things. Here's a few of them.
 
 ### PitchFriendly
 
-PitchFriendly is an outreach tool for PR reps with a focus on organization and time savings. It includes email scheduling, read receipts, reply handling, press list handling, team sharing, a metrics dashboard and other efficiency features.
+PitchFriendly is a PR outreach platform that helps professionals send better pitches, manage press lists, track media coverage, and collaborate with teams. It includes Gmail and Outlook email integration, read receipts, reply handling, scheduled sending, a reporter database with automated enrichment, AI-powered pitch suggestions via OpenAI, semantic reporter search using pgvector embeddings, team permissions, and a campaign analytics dashboard.
 
-PitchFriendly also includes functionality to generate a press list of reporters likely to respond well to particular stories. It works by maintaining a separate classifier for each reporter trained with the articles they've published recently.
+*Rails 7, React, Redux, PostgreSQL (pgvector), Redis, Sidekiq, Docker, AWS, OpenAI*
 
-*Rails, EmberJS, Machine Learning*
+<div class="work-screenshot-row">
+  <img src="/images/work/pitchfriendly-new-pitch-page.png" alt="PitchFriendly pitch page">
+  <img src="/images/work/pitchfriendly-new-reporters.png" alt="PitchFriendly reporters">
+  <img src="/images/work/pitchfriendly-new-pitch-send.png" alt="PitchFriendly pitch send">
+</div>
 
-![PitchFriendly](/images/work/pitchfriendly-main.png)
-
-![PitchFriendly screenshot 1](/images/work/pitchfriendly-1.png) ![PitchFriendly screenshot 2](/images/work/pitchfriendly-2.png) ![PitchFriendly screenshot 3](/images/work/pitchfriendly-3.png)
-
-[Visit PitchFriendly](http://www.pitchfriendly.com/)
+[Visit PitchFriendly](https://www.pitchfriendly.com/) | [PitchFriendly Through the Years](/posts/pitchfriendly-through-the-years/)
 
 ---
 
