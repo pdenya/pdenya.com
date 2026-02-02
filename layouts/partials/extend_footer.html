@@ -87,9 +87,9 @@ if (container) {
 
     camera.left = -modelFrustumSize * aspect / 2;
     camera.right = modelFrustumSize * aspect / 2;
-    // Asymmetric frustum: rocket near top, lots of room below for flame
-    camera.top = modelFrustumSize * 0.2;
-    camera.bottom = -modelFrustumSize * 0.8;
+    // Asymmetric frustum: rocket near top, room below for flame
+    camera.top = modelFrustumSize * 0.35;
+    camera.bottom = -modelFrustumSize * 0.65;
     camera.updateProjectionMatrix();
 
     // Position camera in front of model
@@ -173,8 +173,8 @@ if (container) {
     const aspect = container.clientWidth / container.clientHeight;
     camera.left = -modelFrustumSize * aspect / 2;
     camera.right = modelFrustumSize * aspect / 2;
-    camera.top = modelFrustumSize * 0.2;
-    camera.bottom = -modelFrustumSize * 0.8;
+    camera.top = modelFrustumSize * 0.35;
+    camera.bottom = -modelFrustumSize * 0.65;
     camera.updateProjectionMatrix();
     renderer.setSize(container.clientWidth, container.clientHeight);
   });
@@ -246,8 +246,8 @@ if (container) {
 .sv-placard-right { right: 2%; }
 .sv-placard-1 { top: 700px; }
 .sv-placard-2 { top: 2100px; }
-.sv-placard-3 { top: 5700px; }
-.sv-placard-4 { top: 4900px; }
+.sv-placard-3 { top: 7730px; }
+.sv-placard-4 { top: 6900px; }
 
 /* Mobile: full width, 20% shorter */
 @media (max-width: 767px) {
@@ -269,8 +269,8 @@ if (container) {
   .sv-placard-right { right: 4%; }
   .sv-placard-1 { top: 300px; }
   .sv-placard-2 { top: 900px; }
-  .sv-placard-3 { top: 2500px; }
-  .sv-placard-4 { top: 1900px; }
+  .sv-placard-3 { top: 3350px; }
+  .sv-placard-4 { top: 3000px; }
 }
 </style>
 <script>
