@@ -7,6 +7,7 @@ import { BasicScene } from './scenes/BasicScene.js';
 import { StarsLayer } from './layers/StarsLayer.js';
 import { createCloudsLayer } from './layers/CloudsLayer.js';
 import { LaserLayer } from './layers/LaserLayer.js';
+import { SaturnVViewer } from '../saturn-v-viewer.js';
 
 // Transparent scene for foreground (no background color)
 const TransparentScene = {
@@ -55,5 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
     foreground.addLayer(createCloudsLayer(fgCloudSettings));
     foreground.start();
     window.siteForeground = foreground;
+  }
+
+  // Saturn V 3D Viewer
+  const saturnVContainer = document.getElementById('saturn-v-container');
+  if (saturnVContainer) {
+    window.saturnVViewer = new SaturnVViewer('saturn-v-container');
   }
 });

@@ -27,7 +27,7 @@ const fragmentShader = `
 
   varying vec2 vUv;
 
-  const int OCTAVES = 6;
+  const int OCTAVES = 4;
 
   // Random function
   float rand(vec2 coords) {
@@ -207,6 +207,11 @@ export const RocketFireV2 = {
     this.group.add(this.mesh);
 
     parentGroup.add(this.group);
+
+    // Expose the visible flame bottom in world coords for frustum computation.
+    // The shader's bottomFade (smoothstep at 0.75) means the flame is invisible
+    // past ~80% of the quad length.
+    this.fireVisibleBottomWorldY = this.group.position.y - length * 0.8;
   },
 
   update(delta) {
