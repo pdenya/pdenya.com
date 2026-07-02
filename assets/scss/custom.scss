@@ -888,7 +888,7 @@ button:focus-visible,
   font-size: clamp(3rem, 8vw, 5.5rem);
   font-weight: 700;
   letter-spacing: -0.5px;
-  margin: 0 0 40px;
+  margin: 0 0 18px;
   background: linear-gradient(
     105deg,
     #ffffff 0%,
@@ -898,6 +898,15 @@ button:focus-visible,
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.cta-launchpad-subhead {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto 40px;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .cta-launchpad-buttons {

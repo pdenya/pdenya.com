@@ -8,6 +8,7 @@
 - **Create new post**: `hugo new content posts/post-name.md`
 - **Create new page**: `hugo new content pages/page-name.md`
 - **Install dependencies**: `npm install`
+- **Deploy**: `npm run deploy` — builds, syncs to S3, and submits changed page URLs to IndexNow. It diffs the live sitemap against the freshly built one (using `<lastmod>`) and pings search engines only for new/updated pages. The IndexNow verification key lives in `static/<32-hex>.txt` (served at the site root); the diff/submit logic is in `scripts/indexnow.mjs`.
 
 ## File Structure
 

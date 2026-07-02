@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "hugo server -D",
     "build": "hugo",
-    "deploy": "hugo && aws s3 sync public/ s3://pdenya.com --delete",
+    "deploy": "hugo && node scripts/indexnow.mjs plan && aws s3 sync public/ s3://pdenya.com --delete && node scripts/indexnow.mjs submit",
     "invalidate": "aws cloudfront create-invalidation --distribution-id E2LKZT5VZTOWC5 --paths \"/*\""
   },
   "dependencies": {

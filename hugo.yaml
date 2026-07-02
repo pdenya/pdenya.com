@@ -3,6 +3,9 @@ languageCode: en-US
 title: Paul Denya
 googleAnalytics: G-ZS6EPHLQB0
 theme: PaperMod
+enableGitInfo: true
+frontmatter:
+  lastmod: ["lastmod", ":git", "date", "publishDate"]
 taxonomies:
   category: category
   tag: tag
