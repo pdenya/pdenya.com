@@ -7,6 +7,28 @@ draft: false
 
 I've built a lot of cool things. Here's a few of them.
 
+### Wallfacer
+
+Wallfacer gives AI coding agents persistent cloud environments to work in. I've been a senior software engineer there for about a year, on a small team where the work covers most of the stack.
+
+I built much of the core product: the chat, task, and planning interfaces on web, iOS, and Android, and the Laravel API behind them. From there the work moved into multi-agent orchestration, running Claude Code and Codex behind one harness with a gateway to OpenAI, AWS Bedrock, and xAI models, and down into the microVM platform and public CLI.
+
+*Laravel, React Native, Expo, TypeScript, Go, LiteLLM, AWS*
+
+[Visit Wallfacer](https://wallfacer.ai)
+
+---
+
+### Miatafy
+
+Miatafy is software for the Mazda Connect infotainment system in the MX-5 Miata and other Mazdas. ScreenTune installs from a USB stick in about a minute and cut the time from car start to CarPlay playing music by about 16 seconds (71s to 55s) on my 2022 ND Miata. TouchTune re-enables the touchscreen while the car is moving and is free and open source.
+
+It started with a spare head unit from eBay on the bench and went from reverse engineering to paid orders in four months.
+
+[Visit Miatafy](https://miatafy.com) | [Making My Miata's Screen Wake Up Faster](/blog/miatafy-making-my-miatas-screen-wake-up-faster/)
+
+---
+
 ### PitchFriendly
 
 PitchFriendly is a PR outreach platform that helps professionals send better pitches, manage press lists, track media coverage, and collaborate with teams. It includes Gmail and Outlook email integration, read receipts, reply handling, scheduled sending, a reporter database with automated enrichment, AI-powered pitch suggestions via OpenAI, semantic reporter search using pgvector embeddings, team permissions, and a campaign analytics dashboard.
