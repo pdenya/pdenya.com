@@ -13,8 +13,18 @@ export class Background {
     this.options = {
       antialias: true,
       alpha: true,
+      // Ambient frame rate. The loop only runs faster while boost() is active.
+      fps: 30,
+      maxPixelRatio: 2,
+      // Skip rendering entirely when nothing asks for it (prefers-reduced-motion)
+      isStatic: () => false,
       ...options
     };
+
+    this._last = 0;
+    this._boostUntil = 0;
+    this._dirty = true;
+    this.frames = 0;
 
     this.scene = null;
     this.camera = null;
@@ -50,7 +60,7 @@ export class Background {
       alpha: this.options.alpha
     });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
-    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, this.options.maxPixelRatio));
 
     // Add canvas to container
     this.container.appendChild(this.renderer.domElement);
@@ -93,6 +103,7 @@ export class Background {
    * @param {Object} layerModule - Layer module with setup() and update() methods
    */
   addLayer(layerModule) {
+    layerModule.host = this;
     if (layerModule.setup) {
       layerModule.setup(this.scene, this.camera, this.renderer);
     }
@@ -137,12 +148,45 @@ export class Background {
   }
 
   /**
+   * Render at full display rate for a short while (interaction, bursts)
+   * @param {number} seconds
+   */
+  boost(seconds = 0.4) {
+    this._boostUntil = Math.max(this._boostUntil, performance.now() + seconds * 1000);
+    return this;
+  }
+
+  /**
+   * Request a redraw (only matters in static mode)
+   */
+  invalidate() {
+    this._dirty = true;
+    return this;
+  }
+
+  /**
    * Internal animation loop
    */
-  _animate() {
+  _animate(now) {
     this.animationId = requestAnimationFrame(this._boundAnimate);
+    if (document.hidden) return;
 
-    const delta = this.clock.getDelta();
+    const t = now ?? performance.now();
+    const boosted = t < this._boostUntil;
+
+    // Frame cap: ambient motion runs at options.fps, bursts run at display rate
+    if (!boosted && t - this._last < 1000 / this.options.fps - 2) return;
+
+    // Static mode: only draw when something changed
+    if (!boosted && !this._dirty && this.options.isStatic()) {
+      this._last = t;
+      return;
+    }
+
+    const delta = this._last ? Math.min((t - this._last) / 1000, 0.1) : 0;
+    this._last = t;
+    this._dirty = false;
+    this.frames++;
 
     // Update current scene if it has an update method
     if (this.currentScene && this.currentScene.update) {
@@ -169,6 +213,7 @@ export class Background {
     this.camera.aspect = width / height;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(width, height);
+    this._dirty = true;
 
     // Notify current scene of resize
     if (this.currentScene && this.currentScene.onResize) {

@@ -751,120 +751,12 @@ button:focus-visible,
   border-radius: 6px;
 }
 
-// Saturn V Viewer styles
-// Height is a fallback before JS loads — JS overrides it via computeSizing()
-.saturn-v-viewer {
-  position: relative;
-  width: 100%;
-  height: 9800px;
-  margin-top: 300px;
-  margin-bottom: 1000px;
-}
-
-#saturn-v-container {
-  width: 100%;
-  height: 100%;
-  cursor: grab;
-
-  &:active {
-    cursor: grabbing;
-  }
-
-  canvas {
-    display: block;
-  }
-}
-
-// Saturn V Placards
-.saturn-v-placards {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.sv-placard {
-  position: absolute;
-  max-width: 220px;
-  padding: 14px 18px;
-  background: rgba(8, 8, 18, 0.65);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 6px;
-  color: rgba(255, 255, 255, 0.85);
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
-
-  &.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  h4 {
-    margin: 0 0 6px 0;
-    font-size: 13px;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.92);
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-  }
-
-  p {
-    margin: 0;
-    font-size: 12.5px;
-    line-height: 1.55;
-    color: rgba(255, 255, 255, 0.6);
-
-    + p {
-      margin-top: 8px;
-    }
-  }
-}
-
-// Placard positioning — top is set by JS based on scene coordinates (data-scene-y)
-.sv-placard-left { left: 2%; }
-.sv-placard-right { right: 2%; }
-
-// Mobile responsive styles for Saturn V viewer
-@media (max-width: 767px) {
-  // Height is a fallback before JS loads — JS overrides it via computeSizing()
-  .saturn-v-viewer {
-    height: 4200px;
-    margin-top: 150px;
-    margin-bottom: 500px;
-    margin-left: calc(-1 * var(--gap));
-    margin-right: calc(-1 * var(--gap));
-    width: calc(100% + 2 * var(--gap));
-  }
-
-  .sv-placard {
-    max-width: 190px;
-    padding: 10px 14px;
-
-    h4 {
-      font-size: 11.5px;
-    }
-
-    p {
-      font-size: 11px;
-    }
-  }
-
-  .sv-placard-left { left: 4%; }
-  .sv-placard-right { right: 4%; }
-}
-
 // CTA Launchpad — bottom-of-page call to action
 .cta-launchpad {
   position: relative;
   text-align: center;
   padding: 80px 30px 100px;
-  margin-top: -200px;
+  margin-top: 120px;
 }
 
 .cta-launchpad-glow {
@@ -938,7 +830,7 @@ button:focus-visible,
 @media (max-width: 767px) {
   .cta-launchpad {
     padding: 60px 20px 80px;
-    margin-top: -100px;
+    margin-top: 60px;
   }
 
   .cta-launchpad-glow {
@@ -955,5 +847,54 @@ button:focus-visible,
     width: 100%;
     max-width: 300px;
     justify-content: center;
+  }
+}
+
+// Primary call to action: filled at rest so it reads as the main button.
+// :not(:hover) keeps the shimmer hover effect exactly as it was.
+.home-buttons .btn-shimmer-success:not(:hover),
+.cta-launchpad-btn:not(:hover) {
+  background: rgba(var(--bs-success-rgb), 0.24);
+  border-color: rgba(var(--bs-success-rgb), 0.65);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: var(--edge-light), 0 6px 18px -10px rgba(var(--bs-success-rgb), 0.9);
+}
+
+// Asteroid tally: appears after a laser hit, then fades away
+.sky-score {
+  position: fixed;
+  left: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 12px;
+  border-radius: 999px;
+  background: rgba(8, 20, 32, 0.86);
+  border: 1px solid var(--hairline-bright);
+  color: #dbe9f7;
+  font-size: 13px;
+  line-height: 1;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s ease, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+
+  svg {
+    color: #7fe9ff;
+  }
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sky-score {
+    transition: opacity 0.2s ease;
+    transform: none;
   }
 }
